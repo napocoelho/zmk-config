@@ -41,6 +41,34 @@
         };
     };
 
+    behaviors {
+        aLeftShift: aLeftShift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALEFTSHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <190>;
+            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <6 18 30 31 19 7 8 9 10 11 23 35 34 22 21 33 32 20>;
+        };
+
+        aRightShift: aRightShift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ARIGHTSHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <199>;
+            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 12 24 25 13 1 2 14 26 27 15 3 4 16 28 29 17 5>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -52,10 +80,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE             &kp Q               &kp W           &kp E           &kp R                &kp T        &kp Y            &kp U             &kp I            &kp O            &kp P                        &kp NON_US_BACKSLASH
-&kp ESCAPE            &mt LEFT_CONTROL A  &mt LEFT_GUI S  &mt LEFT_ALT D  &mt LEFT_SHIFT F     &kp G        &kp H            &mt RSHIFT J      &mt RIGHT_ALT K  &mt RIGHT_GUI L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
-&mt LEFT_SHIFT MINUS  &kp Z               &kp X           &kp C           &mt RIGHT_CONTROL V  &kp B        &kp N            &kp M             &kp COMMA        &kp DOT          &kp FSLH                     &mt RIGHT_SHIFT EQUAL
-                                                          &lt 3 ESC       &lt 4 TAB            &lt 1 DEL    &lt 1 BACKSPACE  &mt LSHIFT SPACE  &lt 2 ENTER
+&kp GRAVE             &kp Q               &kp W           &kp E           &kp R                 &kp T        &kp Y            &kp U                  &kp I            &kp O            &kp P                        &kp NON_US_BACKSLASH
+&kp ESCAPE            &mt LEFT_CONTROL A  &mt LEFT_GUI S  &mt LEFT_ALT D  &aLeftShift LSHIFT F  &kp G        &kp H            &aRightShift LSHIFT J  &mt RIGHT_ALT K  &mt RIGHT_GUI L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
+&mt LEFT_SHIFT MINUS  &kp Z               &kp X           &kp C           &mt RIGHT_CONTROL V   &kp B        &kp N            &kp M                  &kp COMMA        &kp DOT          &kp FSLH                     &mt RIGHT_SHIFT EQUAL
+                                                          &lt 3 ESC       &lt 4 TAB             &lt 1 DEL    &lt 1 BACKSPACE  &mt LSHIFT SPACE       &lt 2 ENTER
             >;
         };
 
