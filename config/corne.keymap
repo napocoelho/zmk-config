@@ -32,6 +32,13 @@
             bindings = <&kp LC(RIGHT) &kp LC(LS(LEFT))>;
             label = "SELECT_RIGHT";
         };
+
+        macro_o_agudo: macro_o_agudo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp O>;
+            label = "MACRO_O_AGUDO";
+        };
     };
 
     behaviors {
@@ -62,6 +69,30 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <16 19>;
+        };
+
+        O_agudo {
+            bindings = <&macro_o_agudo>;
+            key-positions = <9 10>;
+        };
+
+        O_circunflexo {
+            bindings = <&kp O>;
+            key-positions = <8 10>;
+        };
+
+        O_til {
+            bindings = <&kp O>;
+            key-positions = <8 10>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -74,7 +105,7 @@
 
             bindings = <
 &kp TAB     &kp Q                &kp W                   &kp E                   &kp R                 &kp T          &kp Y               &kp U                      &kp I                    &kp O                    &kp P                         &kp BACKSPACE
-&kp ESCAPE  &aLeftShift LCTRL A  &aLeftShift LEFT_GUI S  &aLeftShift LEFT_ALT D  &aLeftShift LSHIFT F  &kp G          &kp H               &aRightShift LSHIFT J      &aRightShift LEFT_ALT K  &aRightShift LEFT_GUI L  &aRightShift LCTRL SEMICOLON  &kp ENTER
+&kp ESCAPE  &aLeftShift LCTRL A  &aLeftShift LEFT_GUI S  &aLeftShift LEFT_ALT D  &aLeftShift LSHIFT F  &kp G          &kp H               &aRightShift LSHIFT J      &aRightShift LEFT_ALT K  &aRightShift LEFT_GUI L  &aRightShift LCTRL SEMICOLON  &kp SINGLE_QUOTE
 &kp LSHIFT  &kp Z                &kp X                   &kp C                   &aLeftShift LCTRL V   &kp B          &kp N               &kp M                      &kp COMMA                &kp DOT                  &kp FSLH                      &kp LSHIFT
                                                          &lt 3 ESC               &lt 4 DELETE          &lt 1 GRAVE    &lt 1 SINGLE_QUOTE  &aRightShift LSHIFT SPACE  &lt 2 BACKSLASH
             >;
