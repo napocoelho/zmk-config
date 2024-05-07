@@ -41,6 +41,19 @@
         };
     };
 
+    behaviors {
+        mt2: mt2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT2";
+            bindings = <&mt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <50>;
+            require-prior-idle-ms = <50>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
