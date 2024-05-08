@@ -79,17 +79,17 @@
 
         O_agudo {
             bindings = <&macro_o_agudo>;
-            key-positions = <9 10>;
+            key-positions = <>;
         };
 
         O_circunflexo {
             bindings = <&kp O>;
-            key-positions = <8 10>;
+            key-positions = <>;
         };
 
         O_til {
             bindings = <&kp O>;
-            key-positions = <8 10>;
+            key-positions = <>;
         };
     };
 
