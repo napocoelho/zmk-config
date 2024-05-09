@@ -39,6 +39,20 @@
             bindings = <&kp SINGLE_QUOTE &kp O>;
             label = "MACRO_O_AGUDO";
         };
+
+        Down5x: Down5x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
+            label = "DOWN5X";
+        };
+
+        Up5x: Up5x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UP &kp UP &kp UP &kp UP &kp UP>;
+            label = "UP5X";
+        };
     };
 
     behaviors {
@@ -76,6 +90,16 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <16 19>;
             layers = <0>;
+        };
+
+        UpUp {
+            bindings = <&Up5x>;
+            key-positions = <7 10>;
+        };
+
+        DownDown {
+            bindings = <&Down5x>;
+            key-positions = <31 34>;
         };
     };
 
