@@ -79,6 +79,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             flavor = "tap-unless-interrupted";
+            require-prior-idle-ms = <50>;
         };
 
         aRightShift: aRightShift {
@@ -91,6 +92,7 @@
             quick-tap-ms = <100>;
             flavor = "tap-unless-interrupted";
             hold-while-undecided;
+            require-prior-idle-ms = <50>;
         };
     };
 
