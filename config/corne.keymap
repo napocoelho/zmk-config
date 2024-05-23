@@ -121,6 +121,36 @@
             key-positions = <16 19>;
             layers = <0>;
         };
+
+        PrintScreen {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <12 17>;
+            layers = <0>;
+        };
+
+        AbaLeft {
+            bindings = <&kp LC(PG_UP)>;
+            key-positions = <13 14>;
+            layers = <6 1>;
+        };
+
+        AbaRight {
+            bindings = <&kp LC(PG_DN)>;
+            key-positions = <15 16>;
+            layers = <6 1>;
+        };
+
+        Til {
+            bindings = <&kp TILDE>;
+            key-positions = <19 20 21>;
+            layers = <0>;
+        };
+
+        Circunflexo {
+            bindings = <&kp CARET>;
+            key-positions = <19 8 21>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -151,7 +181,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0      &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &none           &Up5x          &none         &kp HOME      &kp END        &none      &none
+&none      &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &none           &Up5x          &none         &kp HOME      &kp END        &none      &none
 &none      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none           &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT      &kt LCTRL  &none
 &kp LSHFT  &none      &none         &Left5x        &Right5x    &none           &Down5x        &select_left  &select_line  &select_right  &none      &kp LSHIFT
                                     &trans         &trans      &Enter_Acima    &Enter_Abaixo  &trans        &trans
@@ -179,7 +209,7 @@
 
         Functions {
             bindings = <
-&to 0              &kp F1               &kp F2           &kp F3           &kp F4                &none     &trans      &none         &none         &none         &none         &none
+&none              &kp F1               &kp F2           &kp F3           &kp F4                &none     &trans      &none         &none         &none         &none         &kp INS
 &kp C_VOLUME_UP    &mt LEFT_CONTROL F5  &mt LEFT_GUI F6  &mt LEFT_ALT F7  &mt LEFT_SHIFT F8     &none     &trans      &kp RSHFT     &kp RALT      &kp RGUI      &kp RCTRL     &out OUT_TOG
 &kp C_VOLUME_DOWN  &mt LEFT_SHIFT F9    &kp F10          &kp F11          &mt LEFT_CONTROL F12  &none     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                                          &trans           &trans                &trans    &trans      &trans        &trans
@@ -190,7 +220,7 @@
 
         Symbols {
             bindings = <
-&to 0      &none            &kp UNDERSCORE  &kp EQUAL  &kp COLON   &none          &none      &kp LBKT       &kp LBRC       &kp RBRC              &kp RBKT               &none
+&none      &none            &kp UNDERSCORE  &kp EQUAL  &kp COLON   &none          &none      &kp LBKT       &kp LBRC       &kp RBRC              &kp RBKT               &none
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
 &none      &none            &kp MINUS       &kp PLUS   &none       &none          &none      &none          &kp LESS_THAN  &kp GREATER_THAN      &none                  &none
                                             &trans     &trans      &trans         &trans     &trans         &trans
@@ -212,10 +242,10 @@
 
         NavLeft {
             bindings = <
-&none  &none             &kp LC(PAGE_UP)  &kp UP    &kp LC(PAGE_DOWN)  &none    &none  &none      &none     &none     &none      &none
-&none  &kp LEFT_CONTROL  &kp LEFT         &kp DOWN  &kp RIGHT          &none    &none  &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none
-&none  &none             &none            &none     &none              &none    &none  &none      &none     &none     &none      &none
-                                          &none     &none              &none    &none  &none      &none
+&none  &none             &none     &kp UP    &none      &none    &none  &none      &none     &none     &none      &none
+&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &none    &none  &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none
+&none  &none             &none     &none     &none      &none    &none  &none      &none     &none     &none      &none
+                                   &none     &none      &none    &none  &none      &none
             >;
 
             label = "NavLeft";
