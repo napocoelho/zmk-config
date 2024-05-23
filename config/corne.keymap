@@ -79,7 +79,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <190>;
             require-prior-idle-ms = <100>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             hold-trigger-key-positions = <6 18 30 31 19 7 8 9 10 11 23 35 34 22 21 33 32 20 38 39 41>;
         };
 
@@ -92,7 +92,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <199>;
             require-prior-idle-ms = <100>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             hold-trigger-key-positions = <0 12 24 25 13 1 2 14 26 27 15 3 4 16 28 29 17 5 38 39 41>;
         };
     };
@@ -163,10 +163,10 @@
 
         Functions {
             bindings = <
-&to 0              &kp F1               &kp F2           &kp F3           &kp F4                &kp PRINTSCREEN    &trans      &none         &none         &none         &none         &none
-&kp C_VOLUME_UP    &mt LEFT_CONTROL F5  &mt LEFT_GUI F6  &mt LEFT_ALT F7  &mt LEFT_SHIFT F8     &kp INSERT         &trans      &kp RSHFT     &kp RALT      &kp RGUI      &kp RCTRL     &out OUT_TOG
-&kp C_VOLUME_DOWN  &mt LEFT_SHIFT F9    &kp F10          &kp F11          &mt LEFT_CONTROL F12  &kp PAUSE_BREAK    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                                                         &trans           &trans                &trans             &trans      &trans        &trans
+&to 0              &kp F1               &kp F2           &kp F3           &kp F4                &none     &trans      &none         &none         &none         &none         &none
+&kp C_VOLUME_UP    &mt LEFT_CONTROL F5  &mt LEFT_GUI F6  &mt LEFT_ALT F7  &mt LEFT_SHIFT F8     &none     &trans      &kp RSHFT     &kp RALT      &kp RGUI      &kp RCTRL     &out OUT_TOG
+&kp C_VOLUME_DOWN  &mt LEFT_SHIFT F9    &kp F10          &kp F11          &mt LEFT_CONTROL F12  &none     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                                         &trans           &trans                &trans    &trans      &trans        &trans
             >;
 
             label = "Func";
