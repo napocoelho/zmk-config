@@ -176,10 +176,10 @@
 
         Symbols {
             bindings = <
-&to 0  &kp GRAVE        &kp MINUS       &kp PLUS   &none       &none          &none      &kp LBKT       &kp LBRC       &kp RBRC              &kp RBKT               &none
-&none  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&none  &none            &kp UNDERSCORE  &kp EQUAL  &kp COLON   &none          &none      &none          &kp LESS_THAN  &kp GREATER_THAN      &none                  &none
-                                        &trans     &trans      &trans         &trans     &trans         &trans
+&to 0      &none            &kp UNDERSCORE  &kp EQUAL  &kp COLON   &none          &none      &kp LBKT       &kp LBRC       &kp RBRC              &kp RBKT               &none
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
+&none      &none            &kp MINUS       &kp PLUS   &none       &none          &none      &none          &kp LESS_THAN  &kp GREATER_THAN      &none                  &none
+                                            &trans     &trans      &trans         &trans     &trans         &trans
             >;
 
             label = "Symb";
