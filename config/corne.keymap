@@ -224,10 +224,10 @@
 
         Functions {
             bindings = <
-&kp C_VOLUME_UP    &none  &none  &none  &none  &none    &none       &none         &none         &none         &none         &kp INS
-&kp C_VOLUME_DOWN  &none  &none  &none  &none  &none    &none       &kp LSHIFT    &kp LEFT_ALT  &kp LEFT_ALT  &kp LCTRL     &out OUT_TOG
-&none              &none  &none  &none  &none  &none    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                                 &none  &none  &none    &none       &none         &none
+&kp C_VOLUME_UP    &kp LA(F4)    &none    &none    &kp F2     &none      &none       &none         &none         &none         &none         &kp INS
+&kp C_VOLUME_DOWN  &mt LCTRL F5  &none    &none    &kp LSHFT  &kp F7     &none       &kp LSHIFT    &kp LEFT_ALT  &kp LEFT_ALT  &kp LCTRL     &out OUT_TOG
+&kp LSHFT          &kp F9        &kp F10  &kp F11  &kp LCTRL  &kp F12    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                          &none    &none      &none      &none       &none         &none
             >;
 
             label = "Func";
