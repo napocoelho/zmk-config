@@ -151,14 +151,20 @@
             layers = <0 1>;
         };
 
-        ComboShift {
-            bindings = <&kp LSHIFT>;
-            key-positions = <31 33>;
-        };
-
         GoNavLayer {
             bindings = <&to 1>;
             key-positions = <13 37>;
+        };
+
+        EnterUp {
+            bindings = <&Enter_Acima>;
+            key-positions = <7 10>;
+            layers = <0 1>;
+        };
+
+        EnterDown {
+            bindings = <&Enter_Abaixo>;
+            key-positions = <31 34>;
         };
     };
 
@@ -190,10 +196,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp DEL    &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &none           &none          &none         &kp HOME      &kp END        &none      &kp BACKSPACE
-&to 0      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none           &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT      &kt LCTRL  &none
-&kp LSHFT  &none      &none         &none          &none       &none           &none          &select_left  &select_line  &select_right  &none      &kp LSHIFT
-                                    &none          &mo 6       &Enter_Acima    &Enter_Abaixo  &none         &none
+&kp DEL    &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &none      &none      &none         &kp HOME      &kp END        &none      &kp BACKSPACE
+&to 0      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none      &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &kt LCTRL  &none
+&kp LSHFT  &none      &none         &none          &none       &none      &none      &select_left  &select_line  &select_right  &none      &kp LSHIFT
+                                    &none          &mo 6       &kp TAB    &kp ENTER  &kp SPACE     &none
             >;
 
             label = "NavRight";
