@@ -154,7 +154,7 @@
 &kp DEL     &kp Q                &kp W                   &kp E                   &kp R                 &kp T        &kp Y        &kp U                  &kp I                    &kp O                    &kp P                         &kp BACKSPACE
 &lt 2 ESC   &aLeftShift LCTRL A  &aLeftShift LEFT_GUI S  &aLeftShift LEFT_ALT D  &aLeftShift LSHIFT F  &kp G        &kp H        &aRightShift LSHIFT J  &aRightShift LEFT_ALT K  &aRightShift LEFT_GUI L  &aRightShift LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
 &kp LSHIFT  &kp Z                &kp X                   &kp C                   &aLeftShift LCTRL V   &kp B        &kp N        &kp M                  &kp COMMA                &kp DOT                  &kp FSLH                      &kp LSHIFT
-                                                         &lt 3 GRAVE             &lt 5 SPACE           &lt 4 TAB    &lt 4 ENTER  &lt 1 SPACE            &lt 3 CARET
+                                                         &lt 3 MINUS             &lt 5 SPACE           &lt 4 TAB    &lt 4 ENTER  &lt 1 SPACE            &lt 3 EQUAL
             >;
 
             label = "Base";
