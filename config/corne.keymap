@@ -187,7 +187,7 @@
             bindings = <
 &to 0       &kp F1        &kp F2       &kp F3           &kp F4         &none    &none         &kp N7                  &kp N8                    &kp N9                &kp PERCENT       &to 0
 &none       &mt LCTRL F5  &mt LWIN F6  &mt LEFT_ALT F7  &mt LSHFT F8   &none    &kp ASTERISK  &aRightShift LSHIFT N4  &aRightShift LEFT_ALT N5  &aRightShift LGUI N6  &kp LEFT_CONTROL  &none
-&kp LSHIFT  &kp F9        &kp F10      &kp F11          &mt LCTRL F12  &none    &kp SLASH     &kp NUMBER_1            &kp N2                    &kp N3                &none             &kp LSHIFT
+&kp LSHIFT  &kp F9        &kp F10      &kp F11          &mt LCTRL F12  &none    &kp SLASH     &kp N1                  &kp N2                    &kp N3                &none             &kp LSHIFT
                                        &none            &none          &none    &kp PLUS      &kp N0                  &kp MINUS
             >;
 
