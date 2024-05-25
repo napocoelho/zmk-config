@@ -203,10 +203,10 @@
 
         Functions {
             bindings = <
-&kp C_VOLUME_UP    &none  &none        &none  &none  &bootloader    &bootloader  &sys_reset    &none         &none         &none         &kp INS
-&kp C_VOLUME_DOWN  &none  &bootloader  &none  &none  &soft_off      &soft_off    &kp LSHIFT    &kp LEFT_ALT  &kp LEFT_ALT  &kp LCTRL     &out OUT_TOG
-&none              &none  &none        &none  &none  &sys_reset     &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                                       &none  &none  &none          &none        &none         &none
+&kp C_VOLUME_UP    &none  &none  &none  &none  &bootloader    &bootloader  &none         &none         &none         &none         &kp INS
+&kp C_VOLUME_DOWN  &none  &none  &none  &none  &none          &none        &kp LSHIFT    &kp LEFT_ALT  &kp LEFT_ALT  &kp LCTRL     &out OUT_TOG
+&none              &none  &none  &none  &none  &none          &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                 &none  &none  &none          &none        &none         &none
             >;
 
             label = "Func";
@@ -216,7 +216,7 @@
             bindings = <
 &none      &none            &kp UNDERSCORE  &kp EQUAL  &kp COLON   &none          &none      &kp LBKT       &kp LBRC       &kp RBRC              &kp RBKT               &kp BACKSLASH
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&none      &none            &kp MINUS       &kp PLUS   &none       &none          &none      &none          &kp LESS_THAN  &kp GREATER_THAN      &none                  &none
+&none      &none            &kp MINUS       &kp PLUS   &none       &none          &none      &none          &kp LESS_THAN  &kp GREATER_THAN      &none                  &kp PIPE
                                             &none      &none       &none          &kp CARET  &kp TILDE      &kp GRAVE
             >;
 
@@ -225,10 +225,10 @@
 
         NavLeft {
             bindings = <
-&none  &none             &none     &kp UP    &kp F2     &none    &none  &none      &none     &none     &none      &none
-&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &none    &none  &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none
-&none  &none             &none     &none     &none      &none    &none  &none      &none     &none     &none      &none
-                                   &none     &none      &none    &none  &none      &none
+&none  &none             &none     &kp UP    &kp F2     &none           &none          &none      &none     &none     &none      &none
+&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &none           &none          &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none
+&none  &none             &none     &none     &none      &none           &none          &none      &none     &none     &none      &none
+                                   &none     &none      &Enter_Acima    &Enter_Abaixo  &none      &none
             >;
 
             label = "NavLeft";
