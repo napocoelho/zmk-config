@@ -155,6 +155,11 @@
             bindings = <&kp LSHIFT>;
             key-positions = <31 33>;
         };
+
+        GoNavLayer {
+            bindings = <&to 1>;
+            key-positions = <13 37>;
+        };
     };
 
     keymap {
@@ -186,7 +191,7 @@
 
             bindings = <
 &kp DEL    &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &none           &none          &none         &kp HOME      &kp END        &none      &kp BACKSPACE
-&none      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none           &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT      &kt LCTRL  &none
+&to 0      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none           &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT      &kt LCTRL  &none
 &kp LSHFT  &none      &none         &none          &none       &none           &none          &select_left  &select_line  &select_right  &none      &kp LSHIFT
                                     &none          &mo 6       &Enter_Acima    &Enter_Abaixo  &none         &none
             >;
@@ -202,8 +207,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0       &kp F1        &kp F2       &kp F3           &kp F4         &none    &none         &kp N7                  &kp N8                    &kp N9                &kp PERCENT       &to 0
-&none       &mt LCTRL F5  &mt LWIN F6  &mt LEFT_ALT F7  &mt LSHFT F8   &none    &kp ASTERISK  &aRightShift LSHIFT N4  &aRightShift LEFT_ALT N5  &aRightShift LGUI N6  &kp LEFT_CONTROL  &none
+&none       &kp F1        &kp F2       &kp F3           &kp F4         &none    &none         &kp N7                  &kp N8                    &kp N9                &kp PERCENT       &none
+&to 0       &mt LCTRL F5  &mt LWIN F6  &mt LEFT_ALT F7  &mt LSHFT F8   &none    &kp ASTERISK  &aRightShift LSHIFT N4  &aRightShift LEFT_ALT N5  &aRightShift LGUI N6  &kp LEFT_CONTROL  &none
 &kp LSHIFT  &kp F9        &kp F10      &kp F11          &mt LCTRL F12  &none    &kp SLASH     &kp N1                  &kp N2                    &kp N3                &none             &kp LSHIFT
                                        &none            &none          &none    &kp PLUS      &kp N0                  &kp MINUS
             >;
