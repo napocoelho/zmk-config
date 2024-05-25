@@ -210,7 +210,7 @@
 &none      &none            &kp UNDERSCORE  &kp EQUAL  &kp COLON   &none          &none      &kp LBKT       &kp LBRC       &kp RBRC              &kp RBKT               &kp BACKSLASH
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
 &none      &none            &kp MINUS       &kp PLUS   &none       &none          &none      &none          &kp LESS_THAN  &kp GREATER_THAN      &none                  &kp PIPE
-                                            &none      &none       &none          &kp CARET  &kp TILDE      &kp GRAVE
+                                            &none      &none       &none          &none      &none          &none
             >;
 
             label = "Symb";
