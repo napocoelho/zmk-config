@@ -127,15 +127,33 @@
             layers = <0>;
         };
 
-        Enter {
+        EnterRight {
             bindings = <&kp ENTER>;
             key-positions = <19 22>;
+            layers = <0 1>;
         };
 
         Delete {
             bindings = <&kp DEL>;
+            key-positions = <16 14>;
+            layers = <0 1 5>;
+        };
+
+        EnterLeft {
+            bindings = <&kp ENTER>;
             key-positions = <13 16>;
-            layers = <0>;
+            layers = <0 5>;
+        };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 21>;
+            layers = <0 1>;
+        };
+
+        ComboShift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <31 33>;
         };
     };
 
