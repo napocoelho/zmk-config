@@ -118,13 +118,12 @@
         PrintScreen {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <12 17>;
-            layers = <0>;
         };
 
         GoNumbersLayer {
             bindings = <&to 2>;
             key-positions = <38 13>;
-            layers = <0>;
+            layers = <0 1 3>;
         };
 
         EnterRight {
@@ -154,6 +153,7 @@
         GoNavLayer {
             bindings = <&to 1>;
             key-positions = <13 37>;
+            layers = <0 1 3>;
         };
 
         EnterUp {
@@ -165,6 +165,12 @@
         EnterDown {
             bindings = <&Enter_Abaixo>;
             key-positions = <31 34>;
+        };
+
+        GoFunctionLayer {
+            bindings = <&to 3>;
+            key-positions = <13 36>;
+            layers = <0 1 3>;
         };
     };
 
@@ -213,10 +219,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none       &kp F1        &kp F2       &kp F3           &kp F4         &none    &none         &kp N7                  &kp N8                    &kp N9                &kp PERCENT       &none
-&to 0       &mt LCTRL F5  &mt LWIN F6  &mt LEFT_ALT F7  &mt LSHFT F8   &none    &kp ASTERISK  &aRightShift LSHIFT N4  &aRightShift LEFT_ALT N5  &aRightShift LGUI N6  &kp LEFT_CONTROL  &none
-&kp LSHIFT  &kp F9        &kp F10      &kp F11          &mt LCTRL F12  &none    &kp SLASH     &kp N1                  &kp N2                    &kp N3                &none             &kp LSHIFT
-                                       &none            &none          &none    &kp PLUS      &kp N0                  &kp MINUS
+&none       &kp N1        &kp N2  &kp N3  &none       &none    &none         &kp N7                  &kp N8                    &kp N9                &kp PERCENT       &none
+&to 0       &mt LCTRL N4  &kp N5  &kp N6  &kp LSHIFT  &none    &kp ASTERISK  &aRightShift LSHIFT N4  &aRightShift LEFT_ALT N5  &aRightShift LGUI N6  &kp LEFT_CONTROL  &none
+&kp LSHIFT  &kp N7        &kp N8  &kp N9  &kp LCTRL   &none    &kp SLASH     &kp N1                  &kp N2                    &kp N3                &none             &kp LSHIFT
+                                  &none   &kp N0      &none    &kp PLUS      &kp N0                  &kp MINUS
             >;
 
             label = "Num";
@@ -224,10 +230,10 @@
 
         Functions {
             bindings = <
-&kp C_VOLUME_UP    &kp LA(F4)    &kp LS(F3)  &kp F3   &kp F2     &none      &none       &none         &none         &none         &none         &kp INS
-&kp C_VOLUME_DOWN  &mt LCTRL F5  &none       &none    &kp LSHFT  &kp F7     &none       &kp LSHIFT    &kp LEFT_ALT  &kp LEFT_ALT  &kp LCTRL     &out OUT_TOG
-&kp LSHFT          &kp F9        &kp F10     &kp F11  &kp LCTRL  &kp F12    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                                             &none    &none      &none      &none       &none         &none
+&kp C_VOLUME_UP    &kp F1        &kp F2   &kp F3       &kp F4         &none    &none       &none         &none         &none         &none         &kp INS
+&kp C_VOLUME_DOWN  &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8   &none    &none       &kp LSHIFT    &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
+&kp LSHFT          &kp F9        &kp F10  &kp F11      &mt LCTRL F12  &none    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                          &none        &none          &none    &none       &none         &none
             >;
 
             label = "Func";
