@@ -219,10 +219,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none       &kp N1        &kp N2  &kp N3     &none       &none       &none         &kp N7                  &kp N8                    &kp N9                &kp PERCENT       &none
-&to 0       &mt LCTRL N4  &kp N5  &kp N6     &kp LSHIFT  &none       &kp ASTERISK  &aRightShift LSHIFT N4  &aRightShift LEFT_ALT N5  &aRightShift LGUI N6  &kp LEFT_CONTROL  &none
-&kp LSHIFT  &kp N7        &kp N8  &kp N9     &kp LCTRL   &none       &kp SLASH     &kp N1                  &kp N2                    &kp N3                &none             &kp LSHIFT
-                                  &kp MINUS  &kp N0      &kp PLUS    &kp PLUS      &kp N0                  &kp MINUS
+&kp DEL     &kp N1        &kp N2       &kp N3       &none       &none       &none         &kp N7                  &kp N8                    &kp N9                &kp PERCENT       &kp BACKSPACE
+&to 0       &mt LCTRL N4  &mt LGUI N5  &mt LALT N6  &kp LSHIFT  &none       &kp ASTERISK  &aRightShift LSHIFT N4  &aRightShift LEFT_ALT N5  &aRightShift LGUI N6  &kp LEFT_CONTROL  &none
+&kp LSHIFT  &kp N7        &kp N8       &kp N9       &kp LCTRL   &none       &kp SLASH     &kp N1                  &kp N2                    &kp N3                &none             &kp LSHIFT
+                                       &kp MINUS    &kp N0      &kp PLUS    &kp PLUS      &kp N0                  &kp MINUS
             >;
 
             label = "Num";
