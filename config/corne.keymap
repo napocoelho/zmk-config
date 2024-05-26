@@ -141,13 +141,13 @@
         EnterLeft {
             bindings = <&kp ENTER>;
             key-positions = <13 16>;
-            layers = <0 5>;
+            layers = <0 5 2 1>;
         };
 
         Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 21>;
-            layers = <0 1>;
+            layers = <0 1 5 2>;
         };
 
         GoNavLayer {
