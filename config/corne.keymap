@@ -246,10 +246,10 @@
 
         NavLeft {
             bindings = <
-&kp DEL        &none             &none     &kp UP    &kp F2     &none            &none          &none      &none     &none     &none      &kp BACKSPACE
-&kp LC(PG_UP)  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LC(PG_DN)    &none          &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none
-&none          &none             &none     &none     &none      &none            &none          &none      &none     &none     &none      &none
-                                           &none     &none      &Enter_Acima     &Enter_Abaixo  &none      &none
+&kp DEL        &none             &none     &kp UP    &kp F2     &none            &none  &none      &none     &none     &none      &kp BACKSPACE
+&kp LC(PG_UP)  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LC(PG_DN)    &none  &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none
+&none          &none             &none     &none     &none      &none            &none  &none      &none     &none     &none      &none
+                                           &none     &none      &none            &none  &none      &none
             >;
 
             label = "NavLeft";
