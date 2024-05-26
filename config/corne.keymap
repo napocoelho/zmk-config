@@ -123,7 +123,7 @@
 
         GoNumbersLayer {
             bindings = <&to 2>;
-            key-positions = <12 15>;
+            key-positions = <38 13>;
             layers = <0>;
         };
 
@@ -235,10 +235,10 @@
 
         Symbols {
             bindings = <
-&none      &none                  &kp UNDERSCORE   &kp EQUAL      &kp COLON         &none          &none      &kp LBKT        &kp LBRC           &kp RBRC                       &kp RBKT                     &kp BACKSLASH
-&kp GRAVE  &mt LCTRL EXCLAMATION  &mt LEFT_GUI AT  &mt LALT HASH  &mt LSHFT DOLLAR  &kp PERCENT    &kp CARET  &mt LSHFT AMPS  &mt LALT ASTERISK  &mt LEFT_GUI LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp TILDE
-&none      &none                  &kp MINUS        &kp PLUS       &kp LCTRL         &none          &none      &none           &kp LESS_THAN      &kp GREATER_THAN               &none                        &kp PIPE
-                                                   &none          &none             &none          &none      &none           &none
+&none      &none                  &kp UNDERSCORE   &kp EQUAL      &kp COLON         &none          &none         &kp LBKT        &kp LBRC           &kp RBRC                       &kp RBKT                     &kp BACKSLASH
+&kp GRAVE  &mt LCTRL EXCLAMATION  &mt LEFT_GUI AT  &mt LALT HASH  &mt LSHFT DOLLAR  &kp PERCENT    &kp CARET     &mt LSHFT AMPS  &mt LALT ASTERISK  &mt LEFT_GUI LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp TILDE
+&none      &none                  &kp MINUS        &kp PLUS       &kp LCTRL         &none          &none         &none           &kp LESS_THAN      &kp GREATER_THAN               &none                        &kp PIPE
+                                                   &none          &none             &none          &Enter_Acima  &Enter_Abaixo   &none
             >;
 
             label = "Symb";
@@ -249,7 +249,7 @@
 &kp DEL        &none             &none     &kp UP    &kp F2     &none            &none  &none      &none     &none     &none      &kp BACKSPACE
 &kp LC(PG_UP)  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LC(PG_DN)    &none  &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none
 &none          &none             &none     &none     &none      &none            &none  &none      &none     &none     &none      &none
-                                           &none     &none      &none            &none  &none      &none
+                                           &none     &kp SPACE  &kp TAB          &none  &none      &none
             >;
 
             label = "NavLeft";
