@@ -77,9 +77,9 @@
     };
 
     behaviors {
-        aLeftShift: aLeftShift {
+        HoldLeft: HoldLeft {
             compatible = "zmk,behavior-hold-tap";
-            label = "ALEFTSHIFT";
+            label = "HOLDLEFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -91,9 +91,9 @@
             hold-trigger-key-positions = <36 37 38 39 40 41 30 18 7 6 19 31 32 33 34 35 11 23 22 21 20 8 9 10 13 14 15 16 24 25 26 27 28 29 0 1 2 3 4 5 14 15 16 17 12>;
         };
 
-        aRightShift: aRightShift {
+        HoldRight: HoldRight {
             compatible = "zmk,behavior-hold-tap";
-            label = "ARIGHTSHIFT";
+            label = "HOLDRIGHT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -103,6 +103,15 @@
             require-prior-idle-ms = <150>;
             hold-trigger-key-positions = <38 37 36 29 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 22 21 20 19 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 40 41 39>;
             hold-trigger-on-release;
+        };
+
+        ShiftGrudento: ShiftGrudento {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SHIFTGRUDENTO";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
         };
     };
 
@@ -185,10 +194,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp DELETE  &kp Q                &kp W                   &kp E                   &kp R                 &kp T        &kp Y            &kp U                  &kp I                    &kp O                    &kp P                         &kp BACKSPACE
-&lt 2 ESC   &aLeftShift LCTRL A  &aLeftShift LEFT_GUI S  &aLeftShift LEFT_ALT D  &aLeftShift LSHIFT F  &kp G        &kp H            &aRightShift LSHIFT J  &aRightShift LEFT_ALT K  &aRightShift LEFT_GUI L  &aRightShift LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
-&kp LSHIFT  &kp Z                &kp X                   &kp C                   &aLeftShift LCTRL V   &kp B        &kp N            &kp M                  &kp COMMA                &kp DOT                  &kp FSLH                      &kp LSHIFT
-                                                         &lt 3 MINUS             &lt 5 SPACE           &lt 4 TAB    &mt LSHFT ENTER  &lt 1 SPACE            &lt 3 EQUAL
+&kp DELETE  &kp Q              &kp W                 &kp E                 &kp R               &kp T        &kp Y            &kp U                &kp I                  &kp O                  &kp P                       &kp BACKSPACE
+&lt 2 ESC   &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G        &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
+&kp LSHIFT  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B        &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &ShiftGrudento LSHFT
+                                                     &lt 3 MINUS           &lt 5 SPACE         &lt 4 TAB    &mt LSHFT ENTER  &lt 1 SPACE          &lt 3 EQUAL
             >;
 
             label = "Base";
@@ -219,10 +228,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp DEL     &kp N1        &kp N2       &kp N3       &none       &none       &none         &kp N7                  &kp N8                    &kp N9                &kp PERCENT       &kp BACKSPACE
-&to 0       &mt LCTRL N4  &mt LGUI N5  &mt LALT N6  &kp LSHIFT  &none       &kp ASTERISK  &aRightShift LSHIFT N4  &aRightShift LEFT_ALT N5  &aRightShift LGUI N6  &kp LEFT_CONTROL  &none
-&kp LSHIFT  &kp N7        &kp N8       &kp N9       &kp LCTRL   &none       &kp SLASH     &kp N1                  &kp N2                    &kp N3                &none             &kp LSHIFT
-                                       &kp MINUS    &kp N0      &kp PLUS    &kp PLUS      &kp N0                  &kp MINUS
+&kp DEL     &kp N1        &kp N2       &kp N3       &none       &none       &none         &kp N7                &kp N8                  &kp N9              &kp PERCENT       &kp BACKSPACE
+&to 0       &mt LCTRL N4  &mt LGUI N5  &mt LALT N6  &kp LSHIFT  &none       &kp ASTERISK  &HoldRight LSHIFT N4  &HoldRight LEFT_ALT N5  &HoldRight LGUI N6  &kp LEFT_CONTROL  &none
+&kp LSHIFT  &kp N7        &kp N8       &kp N9       &kp LCTRL   &none       &kp SLASH     &kp N1                &kp N2                  &kp N3              &none             &kp LSHIFT
+                                       &kp MINUS    &kp N0      &kp PLUS    &kp PLUS      &kp N0                &kp MINUS
             >;
 
             label = "Num";
