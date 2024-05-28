@@ -241,10 +241,10 @@
 
         Symbols {
             bindings = <
-&none      &none                  &kp UNDERSCORE   &kp EQUAL      &kp COLON         &none          &none         &kp LBKT        &kp LBRC           &kp RBRC                       &kp RBKT                     &kp PIPE
-&kp GRAVE  &mt LCTRL EXCLAMATION  &mt LEFT_GUI AT  &mt LALT HASH  &mt LSHFT DOLLAR  &kp PERCENT    &kp CARET     &mt LSHFT AMPS  &mt LALT ASTERISK  &mt LEFT_GUI LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp TILDE
-&none      &none                  &kp MINUS        &kp PLUS       &kp LCTRL         &none          &none         &none           &kp LESS_THAN      &kp GREATER_THAN               &kp BACKSLASH                &none
-                                                   &none          &none             &none          &Enter_Acima  &Enter_Abaixo   &none
+&none      &none            &kp UNDERSCORE  &kp EQUAL  &kp COLON   &none          &none         &kp LBKT       &kp LBRC       &kp RBRC              &kp RBKT               &kp PIPE
+&kp GRAVE  &kp EXCLAMATION  &kp AT          &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET     &kp AMPS       &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
+&none      &none            &kp MINUS       &kp PLUS   &kp LCTRL   &none          &none         &none          &kp LESS_THAN  &kp GREATER_THAN      &kp BACKSLASH          &none
+                                            &none      &none       &none          &Enter_Acima  &Enter_Abaixo  &none
             >;
 
             label = "Symb";
