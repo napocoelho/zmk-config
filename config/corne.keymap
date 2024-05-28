@@ -105,12 +105,12 @@
             hold-trigger-on-release;
         };
 
-        ShiftGrudento: ShiftGrudento {
+        KpSk: KpSk {
             compatible = "zmk,behavior-sticky-key";
-            label = "SHIFTGRUDENTO";
+            label = "KPSK";
             bindings = <&kp>;
             #binding-cells = <1>;
-            release-after-ms = <1000>;
+            release-after-ms = <300>;
             quick-release;
         };
 
@@ -202,10 +202,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp DELETE  &kp Q              &kp W                 &kp E                 &kp R               &kp T        &kp Y            &kp U                &kp I                  &kp O                  &kp P                       &kp BACKSPACE
-&lt 2 ESC   &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G        &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
-&kp LSHIFT  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B        &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &ShiftGrudento LSHFT
-                                                     &lt 3 MINUS           &lt 5 SPACE         &lt 4 TAB    &mt LSHFT ENTER  &lt 1 SPACE          &lt 3 EQUAL
+&kp DELETE    &kp Q              &kp W                 &kp E                 &kp R               &kp T        &kp Y            &kp U                &kp I                  &kp O                  &kp P                       &kp BACKSPACE
+&lt 2 ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G        &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
+&KpSk LSHIFT  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B        &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &KpSk LSHFT
+                                                       &lt 3 MINUS           &lt 5 SPACE         &lt 4 TAB    &mt LSHFT ENTER  &lt 1 SPACE          &lt 3 EQUAL
             >;
 
             label = "Base";
