@@ -113,6 +113,14 @@
             release-after-ms = <1000>;
             quick-release;
         };
+
+        TapDance: TapDance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&kp A>, <&kp J>;
+        };
     };
 
     combos {
@@ -212,7 +220,7 @@
 
             bindings = <
 &kp DEL    &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &kp F3     &none      &none         &kp HOME      &kp END        &none      &kp BACKSPACE
-&to 0      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none      &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &kt LCTRL  &none
+&to 0      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none      &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &kt LCTRL  &TapDance
 &kp LSHFT  &none      &none         &none          &none       &none      &none      &select_left  &select_line  &select_right  &none      &kp LSHIFT
                                     &none          &mo 6       &kp TAB    &kp ENTER  &kp SPACE     &none
             >;
