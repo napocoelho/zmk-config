@@ -129,7 +129,7 @@
         Capslock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <16 19>;
-            layers = <0>;
+            layers = <0 8>;
         };
 
         PrintScreen {
@@ -172,13 +172,11 @@
         EnterUp {
             bindings = <&Enter_Acima>;
             key-positions = <8 9>;
-            layers = <0 1 8>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
             key-positions = <32 33>;
-            layers = <0 8 1>;
         };
 
         GoFunctionLayer {
@@ -315,13 +313,13 @@
             >;
         };
 
-        X_Type {
-            label = "Type";
+        X_Typing {
+            label = "Typing";
             bindings = <
-&to 7      &kp Q              &kp W                 &kp E                 &kp R               &kp T        &kp Y            &kp U                &kp I                  &kp O                  &kp P                       &SkKp LSHIFT
-&lt 2 ESC  &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G        &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
-&kp DEL    &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B        &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp BACKSPACE
-                                                    &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB    &mt LSHFT ENTER  &lt 1 SPACE          &lt 3 TILDE
+&to 7      &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkKp LSHIFT
+&lt 2 ESC  &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
+&kp DEL    &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &kp BACKSPACE
+                                                          &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB              &mt LSHFT ENTER     &lt 1 SPACE             &lt 3 TILDE
             >;
         };
     };
