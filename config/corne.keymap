@@ -199,12 +199,12 @@
 
         EscLeft {
             bindings = <&kp ESC>;
-            key-positions = <13 16>;
+            key-positions = <13 14>;
         };
 
         EscRight {
             bindings = <&kp ESC>;
-            key-positions = <19 22>;
+            key-positions = <22 21>;
         };
     };
 
