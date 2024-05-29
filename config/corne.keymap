@@ -219,10 +219,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp DEL       &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &kp F3     &none      &none         &kp HOME      &kp END        &none        &kp BACKSPACE
-&to 0         &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none      &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &SkKp LCTRL  &TapDance
-&SkKp LSHIFT  &none      &none         &none          &none       &none      &none      &select_left  &select_line  &select_right  &none        &SkKp LSHIFT
-                                       &none          &mo 6       &kp TAB    &kp ENTER  &kp SPACE     &none
+&SkKp LCTRL  &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &kp F3     &none      &none         &kp HOME      &kp END        &none        &SkKp LSHFT
+&to 0        &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none      &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &SkKp LCTRL  &TapDance
+&kp DEL      &none      &none         &none          &none       &none      &none      &select_left  &select_line  &select_right  &none        &kp BACKSPACE
+                                      &none          &mo 6       &kp TAB    &kp ENTER  &kp SPACE     &none
             >;
 
             label = "NavRight";
@@ -236,10 +236,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp DEL     &kp N1        &kp N2       &kp N3       &none       &none       &none         &kp N7                &kp N8                  &kp N9              &kp PERCENT       &kp BACKSPACE
-&to 0       &mt LCTRL N4  &mt LGUI N5  &mt LALT N6  &kp LSHIFT  &none       &kp ASTERISK  &HoldRight LSHIFT N4  &HoldRight LEFT_ALT N5  &HoldRight LGUI N6  &kp LEFT_CONTROL  &none
-&kp LSHIFT  &kp N7        &kp N8       &kp N9       &kp LCTRL   &none       &kp SLASH     &kp N1                &kp N2                  &kp N3              &none             &kp LSHIFT
-                                       &kp MINUS    &kp N0      &kp PLUS    &kp PLUS      &kp N0                &kp MINUS
+&SkKp LCTRL  &kp N1        &kp N2       &kp N3       &none       &none       &none         &kp N7                &kp N8                  &kp N9              &kp PERCENT       &SkKp LSHFT
+&to 0        &mt LCTRL N4  &mt LGUI N5  &mt LALT N6  &kp LSHIFT  &none       &kp ASTERISK  &HoldRight LSHIFT N4  &HoldRight LEFT_ALT N5  &HoldRight LGUI N6  &kp LEFT_CONTROL  &none
+&kp DEL      &kp N7        &kp N8       &kp N9       &kp LCTRL   &none       &kp SLASH     &kp N1                &kp N2                  &kp N3              &none             &kp BACKSPACE
+                                        &kp MINUS    &kp N0      &kp PLUS    &kp PLUS      &kp N0                &kp MINUS
             >;
 
             label = "Num";
@@ -247,9 +247,9 @@
 
         Functions {
             bindings = <
-&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none    &none       &none         &none         &none         &none         &kp INS
-&kp C_VOLUME_DOWN  &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none    &none       &kp LSHIFT    &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
-&kp LSHFT          &kp F1        &kp F2   &kp F3       &mt LCTRL F4  &none    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none              &kp F9        &kp F10  &kp F11      &kp F12       &none    &none       &none         &none         &none         &none         &kp INS
+&kp C_VOLUME_DOWN  &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none    &none       &SkKp LSHFT   &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
+&kp C_VOLUME_UP    &kp F1        &kp F2   &kp F3       &mt LCTRL F4  &none    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                           &none        &none         &none    &kp LSHFT   &none         &none
             >;
 
@@ -258,10 +258,10 @@
 
         Symbols {
             bindings = <
-&none      &none            &kp UNDERSCORE  &kp EQUAL  &kp COLON   &none          &none      &kp LBKT  &kp LBRC       &kp RBRC              &kp RBKT               &kp PIPE
-&kp GRAVE  &kp EXCLAMATION  &kp AT          &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
-&none      &none            &kp MINUS       &kp PLUS   &kp LCTRL   &none          &none      &none     &kp LESS_THAN  &kp GREATER_THAN      &kp BACKSLASH          &none
-                                            &none      &none       &none          &none      &none     &none
+&none  &none            &kp UNDERSCORE  &kp EQUAL  &kp COLON   &none          &none      &kp LBKT  &kp LBRC       &kp RBRC              &kp RBKT               &SkKp LSHIFT
+&none  &kp EXCLAMATION  &kp AT          &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
+&none  &kp PIPE         &kp MINUS       &kp PLUS   &kp LCTRL   &none          &none      &none     &kp LESS_THAN  &kp GREATER_THAN      &kp BACKSLASH          &none
+                                        &none      &none       &none          &none      &none     &none
             >;
 
             label = "Symb";
@@ -269,10 +269,10 @@
 
         NavLeft {
             bindings = <
-&kp DEL        &none             &none              &kp UP             &kp F2     &kp F3           &none  &none      &none     &none     &none      &kp BACKSPACE
-&kp LC(PG_UP)  &kp LEFT_CONTROL  &kp LEFT           &kp DOWN           &kp RIGHT  &kp LC(PG_DN)    &none  &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none
-&kp LSHFT      &none             &kp LA(LC(PG_UP))  &kp LA(LC(PG_DN))  &none      &none            &none  &none      &none     &none     &none      &none
-                                                    &none              &kp SPACE  &kp TAB          &none  &none      &none
+&none          &none             &none              &kp UP             &kp F2     &kp F3           &none  &none            &none     &none     &none      &SkKp LSHFT
+&kp LC(PG_UP)  &kp LEFT_CONTROL  &kp LEFT           &kp DOWN           &kp RIGHT  &kp LC(PG_DN)    &none  &SkKp LS(LSHFT)  &kp LALT  &kp LGUI  &kp LCTRL  &none
+&kp DEL        &none             &kp LA(LC(PG_UP))  &kp LA(LC(PG_DN))  &none      &none            &none  &none            &none     &none     &none      &kp BACKSPACE
+                                                    &none              &kp SPACE  &kp TAB          &none  &none            &none
             >;
 
             label = "NavLeft";
@@ -281,10 +281,10 @@
         NavTurbo {
             label = "NavTurbo";
             bindings = <
-&kp DEL    &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &none    &none    &none         &kp HOME      &kp END        &none      &kp BACKSPACE
-&none      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none    &Left5x  &Down5x       &Up5x         &Right5x       &kt LCTRL  &none
-&kp LSHFT  &none      &none         &none          &none       &none    &none    &select_left  &select_line  &select_right  &none      &kp LSHIFT
-                                    &none          &none       &none    &none    &none         &none
+&none  &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &none    &none    &none         &kp HOME      &kp END        &none      &none
+&none  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none    &Left5x  &Down5x       &Up5x         &Right5x       &kt LCTRL  &none
+&none  &none      &none         &none          &none       &none    &none    &select_left  &select_line  &select_right  &none      &none
+                                &none          &none       &none    &none    &none         &none
             >;
         };
     };
