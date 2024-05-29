@@ -182,7 +182,7 @@
         EnterUp {
             bindings = <&Enter_Acima>;
             key-positions = <8 9>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <100>;
             timeout-ms = <50>;
         };
 
