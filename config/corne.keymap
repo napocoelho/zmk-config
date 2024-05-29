@@ -150,8 +150,7 @@
 
         Delete {
             bindings = <&kp DEL>;
-            key-positions = <16 14>;
-            layers = <0 1 5>;
+            key-positions = <16 15>;
         };
 
         EnterLeft {
@@ -161,8 +160,7 @@
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <19 21>;
-            layers = <0 1 5 2>;
+            key-positions = <19 20>;
         };
 
         GoNavLayer {
