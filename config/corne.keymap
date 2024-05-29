@@ -131,12 +131,14 @@
             key-positions = <16 19>;
             layers = <0 8>;
             require-prior-idle-ms = <300>;
+            timeout-ms = <50>;
         };
 
         PrintScreen {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <12 17>;
-            slow-release;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
 
         GoNumbersLayer {
@@ -149,28 +151,28 @@
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
 
         Delete {
             bindings = <&kp DEL>;
             key-positions = <16 15>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
 
         EnterLeft {
             bindings = <&kp ENTER>;
             key-positions = <14 15>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
 
         Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
 
         GoNavLayer {
@@ -190,7 +192,7 @@
             bindings = <&Enter_Abaixo>;
             key-positions = <32 33>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
 
         GoFunctionLayer {
@@ -213,14 +215,14 @@
             bindings = <&kp ESC>;
             key-positions = <13 14>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
 
         EscRight {
             bindings = <&kp ESC>;
             key-positions = <22 21>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
     };
 
