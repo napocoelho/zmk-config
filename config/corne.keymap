@@ -145,8 +145,7 @@
 
         EnterRight {
             bindings = <&kp ENTER>;
-            key-positions = <19 22>;
-            layers = <0 1>;
+            key-positions = <20 21>;
         };
 
         Delete {
@@ -157,8 +156,7 @@
 
         EnterLeft {
             bindings = <&kp ENTER>;
-            key-positions = <13 16>;
-            layers = <0 5 2 1>;
+            key-positions = <14 15>;
         };
 
         Backspace {
@@ -175,19 +173,40 @@
 
         EnterUp {
             bindings = <&Enter_Acima>;
-            key-positions = <7 10>;
-            layers = <0 1>;
+            key-positions = <8 9>;
+            layers = <0 1 8>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
-            key-positions = <31 34>;
+            key-positions = <32 33>;
+            layers = <0 8 1>;
         };
 
         GoFunctionLayer {
             bindings = <&to 3>;
             key-positions = <13 36>;
             layers = <0 1 3>;
+        };
+
+        Mod_X {
+            bindings = <&to 7>;
+            key-positions = <11 35>;
+        };
+
+        Mod_Normal {
+            bindings = <&to 0>;
+            key-positions = <0 24>;
+        };
+
+        EscLeft {
+            bindings = <&kp ESC>;
+            key-positions = <13 16>;
+        };
+
+        EscRight {
+            bindings = <&kp ESC>;
+            key-positions = <19 22>;
         };
     };
 
@@ -285,6 +304,26 @@
 &none  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none    &Left5x  &Down5x       &Up5x         &Right5x       &kt LCTRL  &none
 &none  &none      &none         &none          &none       &none    &none    &select_left  &select_line  &select_right  &none      &none
                                 &none          &none       &none    &none    &none         &none
+            >;
+        };
+
+        X_Base {
+            label = "Base";
+            bindings = <
+&mt LC(Y) LC(Z)  &none             &none              &kp UP             &kp F2           &to 8            &none      &kp N7        &kp N8       &kp N9       &none           &SkKp LSHFT
+&kp LC(PG_UP)    &kp LEFT_CONTROL  &mt LWIN LEFT      &mt LALT DOWN      &mt LSHFT RIGHT  &kp LC(PG_DN)    &kp MINUS  &mt LSHFT N4  &mt LALT N5  &mt LWIN N6  &mt LCTRL PLUS  &none
+&kp DEL          &none             &kp LA(LC(PG_UP))  &kp LA(LC(PG_DN))  &kp LCTRL        &none            &kp SLASH  &kp N1        &kp N2       &kp N3       &kp ASTERISK    &kp BACKSPACE
+                                                      &none              &kp SPACE        &kp TAB          &none      &kp N0        &none
+            >;
+        };
+
+        X_Type {
+            label = "Type";
+            bindings = <
+&to 7      &kp Q              &kp W                 &kp E                 &kp R               &kp T        &kp Y            &kp U                &kp I                  &kp O                  &kp P                       &SkKp LSHIFT
+&lt 2 ESC  &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G        &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
+&kp DEL    &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B        &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp BACKSPACE
+                                                    &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB    &mt LSHFT ENTER  &lt 1 SPACE          &lt 3 TILDE
             >;
         };
     };
