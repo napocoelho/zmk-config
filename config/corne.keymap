@@ -130,13 +130,13 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <16 19>;
             layers = <0 8>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
 
         PrintScreen {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <12 17>;
+            slow-release;
         };
 
         GoNumbersLayer {
