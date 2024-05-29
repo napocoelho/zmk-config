@@ -307,13 +307,13 @@
             >;
         };
 
-        X_Base {
-            label = "Base";
+        X_Home {
+            label = "Home";
             bindings = <
-&mt LC(Y) LC(Z)  &none             &none              &kp UP             &kp F2           &to 8            &none      &kp N7        &kp N8       &kp N9       &none           &SkKp LSHFT
-&kp LC(PG_UP)    &kp LEFT_CONTROL  &mt LWIN LEFT      &mt LALT DOWN      &mt LSHFT RIGHT  &kp LC(PG_DN)    &kp MINUS  &mt LSHFT N4  &mt LALT N5  &mt LWIN N6  &mt LCTRL PLUS  &none
-&kp DEL          &none             &kp LA(LC(PG_UP))  &kp LA(LC(PG_DN))  &kp LCTRL        &none            &kp SLASH  &kp N1        &kp N2       &kp N3       &kp ASTERISK    &kp BACKSPACE
-                                                      &none              &kp SPACE        &kp TAB          &none      &kp N0        &none
+&mt LC(C) LC(V)  &none             &kp PG_UP          &kp UP             &mt F2 PG_DN     &to 8      &none      &kp N7        &kp N8       &kp N9       &none           &SkKp LSHFT
+&kp HOME         &kp LEFT_CONTROL  &mt LWIN LEFT      &mt LALT DOWN      &mt LSHFT RIGHT  &kp END    &kp MINUS  &mt LSHFT N4  &mt LALT N5  &mt LWIN N6  &mt LCTRL PLUS  &none
+&kp DEL          &mt LC(Y) LC(Z)   &kp LA(LC(PG_UP))  &kp LA(LC(PG_DN))  &kp LCTRL        &none      &kp SLASH  &kp N1        &kp N2       &kp N3       &kp ASTERISK    &kp BACKSPACE
+                                                      &none              &kp SPACE        &kp TAB    &none      &kp N0        &none
             >;
         };
 
