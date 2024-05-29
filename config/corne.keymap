@@ -130,6 +130,8 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <16 19>;
             layers = <0 8>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         PrintScreen {
@@ -146,21 +148,29 @@
         EnterRight {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         Delete {
             bindings = <&kp DEL>;
             key-positions = <16 15>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         EnterLeft {
             bindings = <&kp ENTER>;
             key-positions = <14 15>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         GoNavLayer {
@@ -172,11 +182,15 @@
         EnterUp {
             bindings = <&Enter_Acima>;
             key-positions = <8 9>;
+            require-prior-idle-ms = <50>;
+            timeout-ms = <50>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
             key-positions = <32 33>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         GoFunctionLayer {
@@ -198,11 +212,15 @@
         EscLeft {
             bindings = <&kp ESC>;
             key-positions = <13 14>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         EscRight {
             bindings = <&kp ESC>;
             key-positions = <22 21>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
     };
 
