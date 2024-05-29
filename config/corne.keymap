@@ -118,7 +118,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DANCEUNDOREDO";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LC(Z)>, <&kp LC(Y)>;
         };
     };
