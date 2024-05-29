@@ -205,7 +205,7 @@
 &kp DELETE    &kp Q              &kp W                 &kp E                 &kp R               &kp T        &kp Y            &kp U                &kp I                  &kp O                  &kp P                       &kp BACKSPACE
 &lt 2 ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G        &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
 &SkKp LSHIFT  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B        &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &SkKp LSHFT
-                                                       &lt 3 MINUS           &lt 5 SPACE         &lt 4 TAB    &mt LSHFT ENTER  &lt 1 SPACE          &lt 3 EQUAL
+                                                       &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB    &mt LSHFT ENTER  &lt 1 SPACE          &lt 3 TILDE
             >;
 
             label = "Base";
