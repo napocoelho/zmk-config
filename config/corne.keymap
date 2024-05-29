@@ -110,7 +110,7 @@
             label = "SKKP";
             bindings = <&kp>;
             #binding-cells = <1>;
-            release-after-ms = <300>;
+            release-after-ms = <500>;
             quick-release;
         };
 
