@@ -224,6 +224,16 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
+
+        combo_qa {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <1 13>;
+        };
+
+        combo_ws {
+            bindings = <&kp AT>;
+            key-positions = <2 14>;
+        };
     };
 
     keymap {
