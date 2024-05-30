@@ -273,10 +273,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0  &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &kp F3     &none      &none         &kp HOME      &kp END        &none              &SkKeyPress LSHFT
-&none  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none      &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &SkKeyPress LCTRL  &none
-&none  &none      &none         &none          &none       &none      &none      &select_left  &select_line  &select_right  &none              &none
-                                &none          &mo 6       &kp TAB    &kp ENTER  &kp SPACE     &none
+&none  &none            &kp N1       &kp N2       &kp N3        &none           &none      &kp PG_UP     &kp HOME      &kp END        &kp PG_DN          &SkKeyPress LSHFT
+&to 0  &mt LCTRL MINUS  &mt LWIN N4  &mt LALT N5  &mt LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &SkKeyPress LCTRL  &none
+&none  &kp SLASH        &kp N7       &kp N8       &kp N9        &kp ASTERISK    &none      &select_left  &select_line  &select_right  &none              &none
+                                     &none        &mo 6         &kp TAB         &kp ENTER  &kp SPACE     &none
             >;
 
             label = "NavRight";
@@ -301,8 +301,8 @@
 
         Functions {
             bindings = <
-&to 0              &kp F9        &kp F10  &kp F11      &kp F12       &none    &none       &none              &none         &none         &none         &kp INS
-&kp C_VOLUME_UP    &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none    &none       &SkKeyPress LSHFT  &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
+&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none    &none       &none              &none         &none         &none         &kp INS
+&to 0              &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none    &none       &SkKeyPress LSHFT  &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
 &kp C_VOLUME_DOWN  &kp F1        &kp F2   &kp F3       &mt LCTRL F4  &none    &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                           &none        &none         &none    &kp LSHFT   &none              &none
             >;
@@ -323,8 +323,8 @@
 
         NavLeft {
             bindings = <
-&to 0    &kp F3            &kp PG_UP      &kp UP         &mt F2 PG_DN     &none      &none      &kp N7         &kp N8       &kp N9       &none           &none
-&none    &kp LEFT_CONTROL  &mt LWIN LEFT  &mt LALT DOWN  &mt LSHFT RIGHT  &none      &kp MINUS  &mt LSHIFT N4  &mt LALT N5  &mt LALT N6  &mt LCTRL PLUS  &none
+&none    &kp F3            &kp PG_UP      &kp UP         &mt F2 PG_DN     &none      &none      &kp N7         &kp N8       &kp N9       &none           &none
+&to 0    &kp LEFT_CONTROL  &mt LWIN LEFT  &mt LALT DOWN  &mt LSHFT RIGHT  &none      &kp MINUS  &mt LSHIFT N4  &mt LALT N5  &mt LALT N6  &mt LCTRL PLUS  &none
 &kp DEL  &DanceUndoRedo    &none          &none          &mt LC(C) LC(V)  &none      &kp FSLH   &kp N1         &kp N2       &kp N3       &kp ASTERISK    &kp BACKSPACE
                                           &none          &kp SPACE        &kp TAB    &kp ENTER  &kp SPACE      &kp N0
             >;
