@@ -210,14 +210,14 @@
             layers = <0 1 3>;
         };
 
-        Mod_X {
-            bindings = <&to 7>;
-            key-positions = <11 35>;
+        FirmwareWriteRight {
+            bindings = <&bootloader>;
+            key-positions = <11 35 23>;
         };
 
-        Mod_Normal {
-            bindings = <&to 0>;
-            key-positions = <0 24>;
+        FirmwareWriteLeft {
+            bindings = <&bootloader>;
+            key-positions = <0 24 12>;
         };
 
         EscLeft {
@@ -282,6 +282,16 @@
         combo_pcolon {
             bindings = <&kp RPAR>;
             key-positions = <10 22>;
+        };
+
+        ResetLeft {
+            bindings = <&sys_reset>;
+            key-positions = <0 24>;
+        };
+
+        ResetRight {
+            bindings = <&sys_reset>;
+            key-positions = <11 35>;
         };
     };
 
