@@ -313,10 +313,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none            &kp N1       &kp N2       &kp N3        &none           &none      &kp PG_UP     &kp HOME      &kp END        &kp PG_DN          &SkKeyPress LSHFT
-&to 0  &mt LCTRL MINUS  &mt LWIN N4  &mt LALT N5  &mt LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &SkKeyPress LCTRL  &none
-&none  &kp SLASH        &kp N7       &kp N8       &kp N9        &kp ASTERISK    &none      &select_left  &select_line  &select_right  &none              &none
-                                     &kp N0       &mo 6         &kp TAB         &kp ENTER  &kp SPACE     &none
+&none  &none                  &kp N1             &kp N2             &kp N3              &none           &none      &kp PG_UP     &kp HOME      &kp END        &kp PG_DN          &SkKeyPress LSHFT
+&to 0  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &SkKeyPress LCTRL  &none
+&none  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &none      &select_left  &select_line  &select_right  &none              &none
+                                                 &kp N0             &mo 6               &kp TAB         &kp ENTER  &kp SPACE     &none
             >;
 
             label = "NavRight";
@@ -363,10 +363,10 @@
 
         NavLeft {
             bindings = <
-&none    &kp F3            &kp PG_UP      &kp UP         &mt F2 PG_DN     &none      &none      &kp N7         &kp N8       &kp N9       &none           &none
-&to 0    &kp LEFT_CONTROL  &mt LWIN LEFT  &mt LALT DOWN  &mt LSHFT RIGHT  &none      &kp MINUS  &mt LSHIFT N4  &mt LALT N5  &mt LALT N6  &mt LCTRL PLUS  &none
-&kp DEL  &DanceUndoRedo    &none          &none          &mt LC(C) LC(V)  &none      &kp FSLH   &kp N1         &kp N2       &kp N3       &kp ASTERISK    &kp BACKSPACE
-                                          &none          &kp SPACE        &kp TAB    &kp ENTER  &kp SPACE      &kp N0
+&none    &kp F3             &kp PG_UP            &kp UP               &mt F2 PG_DN            &none      &none      &kp N7               &kp N8              &kp N9              &none                  &none
+&to 0    &SkKeyPress LCTRL  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none      &kp MINUS  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL PLUS  &none
+&kp DEL  &DanceUndoRedo     &none                &none                &mt LC(C) LC(V)         &none      &kp FSLH   &kp N1               &kp N2              &kp N3              &kp ASTERISK           &kp BACKSPACE
+                                                 &none                &kp SPACE               &kp TAB    &kp ENTER  &kp SPACE            &kp N0
             >;
 
             label = "NavLeft";
