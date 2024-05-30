@@ -210,16 +210,6 @@
             layers = <0 1 3>;
         };
 
-        FirmwareWriteRight {
-            bindings = <&bootloader>;
-            key-positions = <11 35 23>;
-        };
-
-        FirmwareWriteLeft {
-            bindings = <&bootloader>;
-            key-positions = <0 24 12>;
-        };
-
         EscLeft {
             bindings = <&kp ESC>;
             key-positions = <13 14>;
@@ -282,16 +272,6 @@
         combo_pcolon {
             bindings = <&kp RPAR>;
             key-positions = <10 22>;
-        };
-
-        ResetLeft {
-            bindings = <&sys_reset>;
-            key-positions = <0 24>;
-        };
-
-        ResetRight {
-            bindings = <&sys_reset>;
-            key-positions = <11 35>;
         };
     };
 
