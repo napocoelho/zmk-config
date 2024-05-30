@@ -243,6 +243,46 @@
             bindings = <&kp AT>;
             key-positions = <2 14>;
         };
+
+        combo_ed {
+            bindings = <&kp HASH>;
+            key-positions = <3 15>;
+        };
+
+        combo_rf {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 16>;
+        };
+
+        combo_tg {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
+        };
+
+        combo_yh {
+            bindings = <&kp LCTRL>;
+            key-positions = <6 18>;
+        };
+
+        combo_uj {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <7 19>;
+        };
+
+        combo_ik {
+            bindings = <&kp ASTERISK>;
+            key-positions = <8 20>;
+        };
+
+        combo_ol {
+            bindings = <&kp LPAR>;
+            key-positions = <21 9>;
+        };
+
+        combo_pcolon {
+            bindings = <&kp RPAR>;
+            key-positions = <10 22>;
+        };
     };
 
     keymap {
@@ -276,7 +316,7 @@
 &none  &none            &kp N1       &kp N2       &kp N3        &none           &none      &kp PG_UP     &kp HOME      &kp END        &kp PG_DN          &SkKeyPress LSHFT
 &to 0  &mt LCTRL MINUS  &mt LWIN N4  &mt LALT N5  &mt LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &SkKeyPress LCTRL  &none
 &none  &kp SLASH        &kp N7       &kp N8       &kp N9        &kp ASTERISK    &none      &select_left  &select_line  &select_right  &none              &none
-                                     &none        &mo 6         &kp TAB         &kp ENTER  &kp SPACE     &none
+                                     &kp N0       &mo 6         &kp TAB         &kp ENTER  &kp SPACE     &none
             >;
 
             label = "NavRight";
