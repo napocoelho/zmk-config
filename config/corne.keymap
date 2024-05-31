@@ -144,15 +144,6 @@
             quick-release;
         };
 
-        morph_teste: morph_teste {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORPH_TESTE";
-            bindings = <&kp A>, <&kp B>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         ToTap: To_Tap {
             compatible = "zmk,behavior-hold-tap";
             label = "To/Tap";
@@ -177,6 +168,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
             continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z TILDE CARET GRAVE SINGLE_QUOTE BACKSPACE>;
+        };
+
+        DanceCapsLetterWordFrase: DanceCapsLetterWordFrase {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DANCECAPSLETTERWORDFRASE";
+            #binding-cells = <0>;
+            bindings = <&SkKeyPress LSHIFT>, <&CapsPalavra>, <&CapsFrase>;
         };
     };
 
@@ -355,7 +353,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&to 3    &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkKeyPress LSHIFT
+&to 3    &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &DanceCapsLetterWordFrase
 &kp ESC  &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 5 SINGLE_QUOTE
 &to 1    &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &SkLayer 4
                                                         &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB              &mt LSHFT ENTER     &lt 1 SPACE             &lt 5 TILDE
@@ -400,7 +398,7 @@
 
         Functions {
             bindings = <
-&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none    &ext_power EP_OFF  &none              &morph_teste  &none         &none         &kp INS
+&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none    &ext_power EP_OFF  &none              &none         &none         &none         &kp INS
 &to 0              &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none    &none              &SkKeyPress LSHFT  &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
 &kp C_VOLUME_DOWN  &kp F1        &kp F2   &kp F3       &mt LCTRL F4  &none    &bt BT_CLR         &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                           &none        &none         &none    &kp LSHFT          &none              &none
