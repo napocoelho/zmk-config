@@ -18,6 +18,8 @@
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
             label = "SELECT_LINE";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         select_left: select_left {
@@ -25,6 +27,8 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LEFT) &kp LC(LS(RIGHT))>;
             label = "SELECT_LEFT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         select_right: select_right {
@@ -32,6 +36,8 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RIGHT) &kp LC(LS(LEFT))>;
             label = "SELECT_RIGHT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         Down5x: Down5x {
