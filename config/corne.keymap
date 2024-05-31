@@ -329,15 +329,11 @@
         RepeatLeft {
             bindings = <&key_repeat>;
             key-positions = <13 16>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <300>;
         };
 
         RepeatRight {
             bindings = <&key_repeat>;
             key-positions = <19 22>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <300>;
         };
 
         Insert {
