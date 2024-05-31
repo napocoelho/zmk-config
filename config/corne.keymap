@@ -296,10 +296,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&to 3      &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkKeyPress LSHIFT
-&lt 2 ESC  &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
-&to 1      &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &SkLayer 4
-                                                          &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB              &mt LSHFT ENTER     &lt 1 SPACE             &lt 3 TILDE
+&to 3    &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkKeyPress LSHIFT
+&kp ESC  &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
+&to 1    &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &SkLayer 4
+                                                        &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB              &mt LSHFT ENTER     &lt 1 SPACE             &lt 5 TILDE
             >;
 
             label = "Base";
@@ -313,9 +313,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none                  &kp N1             &kp N2             &kp N3              &none           &none      &kp PG_UP     &kp HOME      &kp END        &kp PG_DN          &SkKeyPress LSHFT
+&none  &none                  &kp N1             &kp N2             &kp N3              &none           &kp LC(C)  &none         &kp HOME      &kp END        &kp LC(V)          &SkKeyPress LSHFT
 &to 0  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &SkKeyPress LCTRL  &none
-&none  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &none      &select_left  &select_line  &select_right  &none              &none
+&none  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP  &select_left  &select_line  &select_right  &kp PG_DN          &none
                                                  &kp N0             &mo 6               &kp TAB         &kp ENTER  &kp SPACE     &none
             >;
 
