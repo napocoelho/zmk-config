@@ -159,7 +159,7 @@
             label = "CAPSFRASE";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SPACE TILDE CARET GRAVE SINGLE_QUOTE BACKSPACE>;
+            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SPACE TILDE CARET GRAVE SINGLE_QUOTE BACKSPACE UNDERSCORE>;
         };
 
         CapsPalavra: CapsPalavra {
@@ -167,7 +167,7 @@
             label = "CAPSPALAVRA";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z TILDE CARET GRAVE SINGLE_QUOTE BACKSPACE>;
+            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z TILDE CARET GRAVE SINGLE_QUOTE BACKSPACE UNDERSCORE>;
         };
 
         DanceCapsLetterWordFrase: DanceCapsLetterWordFrase {
