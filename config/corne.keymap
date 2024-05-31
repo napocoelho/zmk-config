@@ -39,6 +39,8 @@
             #binding-cells = <0>;
             bindings = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
             label = "DOWN5X";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         Up5x: Up5x {
@@ -46,6 +48,8 @@
             #binding-cells = <0>;
             bindings = <&kp UP &kp UP &kp UP &kp UP &kp UP>;
             label = "UP5X";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         Enter_Abaixo: Enter_Abaixo {
@@ -53,6 +57,8 @@
             #binding-cells = <0>;
             bindings = <&kp END &kp ENTER>;
             label = "ENTER_ABAIXO";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         Enter_Acima: Enter_Acima {
@@ -60,6 +66,8 @@
             #binding-cells = <0>;
             bindings = <&kp HOME &kp ENTER &kp UP_ARROW>;
             label = "ENTER_ACIMA";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         Left5x: Left5x {
@@ -67,6 +75,8 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
             label = "LEFT5X";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         Right5x: Right5x {
@@ -74,6 +84,8 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
             label = "RIGHT5X";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
@@ -150,13 +162,21 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        CapsShift: CapsShift {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPSSHIFT";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         Capslock {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&CapsShift>;
             key-positions = <16 19>;
             layers = <0 8>;
             require-prior-idle-ms = <300>;
@@ -353,7 +373,7 @@
             label = "NavRight";
         };
 
-        Numbers {
+        nao_utilizado_Numbers {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -372,7 +392,7 @@
 
         Functions {
             bindings = <
-&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none    &ext_power EP_OFF  &soft_off          &morph_teste  &none         &none         &kp INS
+&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none    &ext_power EP_OFF  &none              &morph_teste  &none         &none         &kp INS
 &to 0              &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none    &none              &SkKeyPress LSHFT  &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
 &kp C_VOLUME_DOWN  &kp F1        &kp F2   &kp F3       &mt LCTRL F4  &none    &bt BT_CLR         &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                           &none        &none         &none    &kp LSHFT          &none              &none
