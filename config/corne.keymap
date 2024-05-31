@@ -140,6 +140,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        ToTap: To_Tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "To/Tap";
+            bindings = <&to>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -297,7 +307,7 @@
 
             bindings = <
 &to 3    &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkKeyPress LSHIFT
-&kp ESC  &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
+&kp ESC  &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 5 SINGLE_QUOTE
 &to 1    &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &SkLayer 4
                                                         &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB              &mt LSHFT ENTER     &lt 1 SPACE             &lt 5 TILDE
             >;
