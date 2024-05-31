@@ -118,9 +118,9 @@
             hold-trigger-on-release;
         };
 
-        SkKeyPress: SkKeyPress {
+        StickyKp: StickyKp {
             compatible = "zmk,behavior-sticky-key";
-            label = "SKKEYPRESS";
+            label = "STICKYKP";
             bindings = <&kp>;
             #binding-cells = <1>;
             release-after-ms = <500>;
@@ -174,7 +174,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DANCECAPSLETTERWORDFRASE";
             #binding-cells = <0>;
-            bindings = <&SkKeyPress LSHIFT>, <&CapsPalavra>, <&CapsFrase>;
+            bindings = <&StickyKp LSHIFT>, <&CapsPalavra>, <&CapsFrase>;
         };
     };
 
@@ -182,7 +182,7 @@
         compatible = "zmk,combos";
 
         Capslock {
-            bindings = <&CapsFrase>;
+            bindings = <&kp CAPSLOCK>;
             key-positions = <16 19>;
             layers = <0 8>;
             require-prior-idle-ms = <300>;
@@ -370,9 +370,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none                  &kp N1             &kp N2             &kp N3              &none           &kp LC(C)  &none         &kp HOME      &kp END        &kp LC(V)          &SkKeyPress LSHFT
-&to 0  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &SkKeyPress LCTRL  &none
-&none  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP  &select_left  &select_line  &select_right  &kp PG_DN          &none
+&none  &none                  &kp N1             &kp N2             &kp N3              &none           &kp LC(C)  &none         &kp HOME      &kp END        &kp LC(V)        &StickyKp LSHFT
+&to 0  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
+&none  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP  &select_left  &select_line  &select_right  &kp PG_DN        &none
                                                  &kp N0             &mo 6               &kp TAB         &kp ENTER  &kp SPACE     &none
             >;
 
@@ -387,10 +387,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&SkKeyPress LCTRL  &kp N1        &kp N2       &kp N3       &none       &none       &none         &kp N7                &kp N8                  &kp N9              &kp PERCENT       &SkKeyPress LSHFT
-&to 0              &mt LCTRL N4  &mt LGUI N5  &mt LALT N6  &kp LSHIFT  &none       &kp ASTERISK  &HoldRight LSHIFT N4  &HoldRight LEFT_ALT N5  &HoldRight LGUI N6  &kp LEFT_CONTROL  &none
-&kp DEL            &kp N7        &kp N8       &kp N9       &kp LCTRL   &none       &kp SLASH     &kp N1                &kp N2                  &kp N3              &none             &kp BACKSPACE
-                                              &kp MINUS    &kp N0      &kp PLUS    &kp PLUS      &kp N0                &kp MINUS
+&StickyKp LCTRL  &kp N1        &kp N2       &kp N3       &none       &none       &none         &kp N7                &kp N8                  &kp N9              &kp PERCENT       &StickyKp LSHFT
+&to 0            &mt LCTRL N4  &mt LGUI N5  &mt LALT N6  &kp LSHIFT  &none       &kp ASTERISK  &HoldRight LSHIFT N4  &HoldRight LEFT_ALT N5  &HoldRight LGUI N6  &kp LEFT_CONTROL  &none
+&kp DEL          &kp N7        &kp N8       &kp N9       &kp LCTRL   &none       &kp SLASH     &kp N1                &kp N2                  &kp N3              &none             &kp BACKSPACE
+                                            &kp MINUS    &kp N0      &kp PLUS    &kp PLUS      &kp N0                &kp MINUS
             >;
 
             label = "Num";
@@ -398,10 +398,10 @@
 
         Functions {
             bindings = <
-&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none    &ext_power EP_OFF  &none              &none         &none         &none         &kp INS
-&to 0              &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none    &none              &SkKeyPress LSHFT  &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
-&kp C_VOLUME_DOWN  &kp F1        &kp F2   &kp F3       &mt LCTRL F4  &none    &bt BT_CLR         &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                                          &none        &none         &none    &kp LSHFT          &none              &none
+&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none    &ext_power EP_OFF  &none            &none         &none         &none         &kp INS
+&to 0              &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none    &none              &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
+&kp C_VOLUME_DOWN  &kp F1        &kp F2   &kp F3       &mt LCTRL F4  &none    &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                          &none        &none         &none    &kp LSHFT          &none            &none
             >;
 
             label = "Func";
@@ -420,10 +420,10 @@
 
         NavLeft {
             bindings = <
-&none    &kp F3             &kp PG_UP            &kp UP               &mt F2 PG_DN            &none      &none      &kp N7               &kp N8              &kp N9              &none                  &none
-&to 0    &SkKeyPress LCTRL  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none      &kp MINUS  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL PLUS  &none
-&kp DEL  &DanceUndoRedo     &none                &none                &mt LC(C) LC(V)         &none      &kp FSLH   &kp N1               &kp N2              &kp N3              &kp ASTERISK           &kp BACKSPACE
-                                                 &none                &kp SPACE               &kp TAB    &kp ENTER  &kp SPACE            &kp N0
+&none    &kp F3           &kp PG_UP            &kp UP               &mt F2 PG_DN            &none      &none      &kp N7               &kp N8              &kp N9              &none                  &none
+&to 0    &StickyKp LCTRL  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none      &kp MINUS  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL PLUS  &none
+&kp DEL  &DanceUndoRedo   &none                &none                &mt LC(C) LC(V)         &none      &kp FSLH   &kp N1               &kp N2              &kp N3              &kp ASTERISK           &kp BACKSPACE
+                                               &none                &kp SPACE               &kp TAB    &kp ENTER  &kp SPACE            &kp N0
             >;
 
             label = "NavLeft";
@@ -442,7 +442,7 @@
         X_Home {
             label = "Home";
             bindings = <
-&mt LC(C) LC(V)  &none             &kp PG_UP      &kp UP         &mt F2 PG_DN     &to 8      &none      &kp N7        &kp N8       &kp N9       &none           &SkKeyPress LSHFT
+&mt LC(C) LC(V)  &none             &kp PG_UP      &kp UP         &mt F2 PG_DN     &to 8      &none      &kp N7        &kp N8       &kp N9       &none           &StickyKp LSHFT
 &kp HOME         &kp LEFT_CONTROL  &mt LWIN LEFT  &mt LALT DOWN  &mt LSHFT RIGHT  &kp END    &kp MINUS  &mt LSHFT N4  &mt LALT N5  &mt LWIN N6  &mt LCTRL PLUS  &none
 &kp DEL          &DanceUndoRedo    &none          &none          &kp LCTRL        &none      &kp SLASH  &kp N1        &kp N2       &kp N3       &kp ASTERISK    &kp BACKSPACE
                                                   &none          &kp SPACE        &kp TAB    &none      &kp N0        &none
@@ -452,7 +452,7 @@
         X_Typing {
             label = "Typing";
             bindings = <
-&to 7      &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkKeyPress LSHIFT
+&to 7      &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &StickyKp LSHIFT
 &lt 2 ESC  &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 2 SINGLE_QUOTE
 &kp DEL    &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &kp BACKSPACE
                                                           &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB              &mt LSHFT ENTER     &lt 1 SPACE             &lt 3 TILDE
