@@ -293,6 +293,21 @@
             bindings = <&kp RPAR>;
             key-positions = <10 22>;
         };
+
+        RepeatLeft {
+            bindings = <&key_repeat>;
+            key-positions = <13 16>;
+        };
+
+        RepeatRight {
+            bindings = <&key_repeat>;
+            key-positions = <19 22>;
+        };
+
+        Insert {
+            bindings = <&kp INSERT>;
+            key-positions = <23 18>;
+        };
     };
 
     keymap {
