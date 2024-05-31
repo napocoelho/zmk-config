@@ -419,7 +419,7 @@
         Symbols {
             bindings = <
 &none       &kp EXCLAMATION  &kp AT_SIGN     &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LPAR          &kp RPAR       &none
-&kp ESCAPE  &none            &kp UNDERSCORE  &kp EQUAL  &kp COLON   &none          &none      &kp LBKT       &kp LBRC       &kp RBRC          &kp RBKT       &kp GRAVE
+&kp ESCAPE  &kp MINUS        &kp UNDERSCORE  &kp EQUAL  &kp PLUS    &kp COLON      &none      &kp LBKT       &kp LBRC       &kp RBRC          &kp RBKT       &kp GRAVE
 &none       &kp PIPE         &kp MINUS       &kp PLUS   &none       &none          &none      &none          &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &none
                                              &none      &none       &none          &none      &none          &none
             >;
