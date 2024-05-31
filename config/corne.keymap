@@ -369,10 +369,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&DanceCapsLetterWordFrase  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &DanceCapsLetterWordFrase
+&DanceLayers               &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &DanceCapsLetterWordFrase
 &kp ESC                    &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 5 SINGLE_QUOTE
-&DanceLayers               &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &none
-                                                                          &lt 3 CARET           &lt 5 TAB           &SkLayer 4             &mt LSHFT ENTER     &lt 1 SPACE             &lt 5 TILDE
+&DanceCapsLetterWordFrase  &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &DanceCapsLetterWordFrase
+                                                                          &lt 3 CARET           &lt 5 TAB           &SkLayer 4             &lt 5 ENTER         &lt 1 SPACE             &lt 5 TILDE
             >;
 
             label = "Base";
@@ -386,10 +386,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none                  &kp N1             &kp N2             &kp N3              &none           &kp LC(C)  &none         &kp HOME      &kp END        &kp LC(V)        &StickyKp LSHFT
+&none  &kp N0                 &kp N1             &kp N2             &kp N3              &none           &kp LC(C)  &none         &kp HOME      &kp END        &kp LC(V)        &none
 &to 0  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
-&none  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP  &select_left  &select_line  &select_right  &kp PG_DN        &none
-                                                 &kp N0             &mo 6               &kp TAB         &kp ENTER  &kp SPACE     &none
+&none  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP  &select_left  &select_line  &select_right  &kp PG_DN        &StickyKp LSHFT
+                                                 &kp N0             &lt 6 TAB           &none           &kp ENTER  &kp SPACE     &none
             >;
 
             label = "NavRight";
@@ -414,10 +414,10 @@
 
         Functions {
             bindings = <
-&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none      &ext_power EP_OFF  &none            &none         &none         &none         &kp INS
-&to 0              &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none      &none              &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
-&kp C_VOLUME_DOWN  &kp F1        &kp F2   &kp F3       &mt LCTRL F4  &none      &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                                          &none        &none         &kp TAB    &mt LSHFT ENTER    &none            &none
+&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none    &ext_power EP_OFF  &none            &none         &none         &none         &kp INS
+&to 0              &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none    &none              &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
+&kp C_VOLUME_DOWN  &kp F1        &kp F2   &kp F3       &mt LCTRL F4  &none    &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                          &none        &kp TAB       &none    &mt LSHFT ENTER    &none            &none
             >;
 
             label = "Func";
@@ -436,10 +436,10 @@
 
         NavLeft {
             bindings = <
-&none    &kp F3               &kp PG_UP            &kp UP               &mt F2 PG_DN            &none            &none      &kp N7               &kp N8              &kp N9              &kp N0                 &none
-&to 0    &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp MINUS  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL PLUS  &none
-&kp DEL  &DanceUndoRedo       &none                &none                &mt LC(C) LC(V)         &none            &kp FSLH   &kp N1               &kp N2              &kp N3              &kp ASTERISK           &kp BACKSPACE
-                                                   &none                &kp SPACE               &kp TAB          &kp ENTER  &kp SPACE            &kp N0
+&none  &kp F3               &kp PG_UP            &kp UP               &mt F2 PG_DN            &none            &none      &kp N7               &kp N8              &kp N9              &kp N0                 &none
+&to 0  &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp MINUS  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL PLUS  &none
+&none  &DanceUndoRedo       &none                &none                &mt LC(C) LC(V)         &none            &kp FSLH   &kp N1               &kp N2              &kp N3              &kp ASTERISK           &none
+                                                 &none                &kp TAB                 &none            &kp ENTER  &kp SPACE            &kp N0
             >;
 
             label = "NavLeft";
