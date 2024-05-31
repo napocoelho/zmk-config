@@ -163,12 +163,20 @@
             flavor = "tap-preferred";
         };
 
-        CapsShift: CapsShift {
+        CapsFrase: CapsFrase {
             compatible = "zmk,behavior-caps-word";
-            label = "CAPSSHIFT";
+            label = "CAPSFRASE";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SPACE TILDE CARET GRAVE SINGLE_QUOTE BACKSPACE>;
+        };
+
+        CapsPalavra: CapsPalavra {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPSPALAVRA";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z TILDE CARET GRAVE SINGLE_QUOTE BACKSPACE>;
         };
     };
 
@@ -176,7 +184,7 @@
         compatible = "zmk,combos";
 
         Capslock {
-            bindings = <&CapsShift>;
+            bindings = <&CapsFrase>;
             key-positions = <16 19>;
             layers = <0 8>;
             require-prior-idle-ms = <300>;
