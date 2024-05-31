@@ -309,7 +309,7 @@
         };
 
         combo_yh {
-            bindings = <&kp LCTRL>;
+            bindings = <&kp CARET>;
             key-positions = <6 18>;
         };
 
