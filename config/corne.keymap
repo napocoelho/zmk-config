@@ -364,7 +364,7 @@
             bindings = <
 &DanceLayers  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &DanceCapsLetterWordFrase
 &kp ESC       &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 5 SINGLE_QUOTE
-&kp DEL       &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &SkLayer 4
+&none         &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &SkLayer 4
                                                              &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB              &mt LSHFT ENTER     &lt 1 SPACE             &lt 5 TILDE
             >;
 
@@ -379,8 +379,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0  &none                  &kp N1             &kp N2             &kp N3              &none           &kp LC(C)  &none         &kp HOME      &kp END        &kp LC(V)        &StickyKp LSHFT
-&none  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
+&none  &none                  &kp N1             &kp N2             &kp N3              &none           &kp LC(C)  &none         &kp HOME      &kp END        &kp LC(V)        &StickyKp LSHFT
+&to 0  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
 &none  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP  &select_left  &select_line  &select_right  &kp PG_DN        &none
                                                  &kp N0             &mo 6               &kp TAB         &kp ENTER  &kp SPACE     &none
             >;
@@ -407,8 +407,8 @@
 
         Functions {
             bindings = <
-&to 0              &kp F9        &kp F10  &kp F11      &kp F12       &none      &ext_power EP_OFF  &none            &none         &none         &none         &kp INS
-&kp C_VOLUME_UP    &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none      &none              &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
+&kp C_VOLUME_UP    &kp F9        &kp F10  &kp F11      &kp F12       &none      &ext_power EP_OFF  &none            &none         &none         &none         &kp INS
+&to 0              &mt LCTRL F5  &kp F6   &mt LALT F7  &mt LSHFT F8  &none      &none              &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN      &kp LCTRL     &out OUT_TOG
 &kp C_VOLUME_DOWN  &kp F1        &kp F2   &kp F3       &mt LCTRL F4  &none      &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                           &none        &none         &kp TAB    &mt LSHFT ENTER    &none            &none
             >;
@@ -429,8 +429,8 @@
 
         NavLeft {
             bindings = <
-&to 0    &kp F3           &kp PG_UP            &kp UP               &mt F2 PG_DN            &none      &none      &kp N7               &kp N8              &kp N9              &none                  &none
-&none    &StickyKp LCTRL  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none      &kp MINUS  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL PLUS  &none
+&none    &kp F3           &kp PG_UP            &kp UP               &mt F2 PG_DN            &none      &none      &kp N7               &kp N8              &kp N9              &none                  &none
+&to 0    &StickyKp LCTRL  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none      &kp MINUS  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL PLUS  &none
 &kp DEL  &DanceUndoRedo   &none                &none                &mt LC(C) LC(V)         &none      &kp FSLH   &kp N1               &kp N2              &kp N3              &kp ASTERISK           &kp BACKSPACE
                                                &none                &kp SPACE               &kp TAB    &kp ENTER  &kp SPACE            &kp N0
             >;
