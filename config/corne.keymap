@@ -195,7 +195,7 @@
             label = "CAPSNUMBER";
             #binding-cells = <0>;
             mods = <(MOD_LGUI|MOD_LCTL|MOD_LSFT)>;
-            continue-list = <NUMBER_0 NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 DOT COMMA SPACE>;
+            continue-list = <DOT COMMA SPACE M U I O J K L P>;
         };
     };
 
