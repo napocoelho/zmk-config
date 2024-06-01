@@ -456,7 +456,7 @@
 &none       &kp EXCLAMATION       &kp AT_SIGN     &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LPAR          &kp RPAR       &none
 &kp ESCAPE  &HoldLeft LCTRL PLUS  &kp UNDERSCORE  &kp EQUAL  &kp MINUS   &kp COLON      &none      &kp LBKT       &kp LBRC       &kp RBRC          &kp RBKT       &kp GRAVE
 &none       &kp PIPE              &kp MINUS       &kp PLUS   &none       &none          &none      &none          &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &none
-                                                  &none      &none       &none          &kp PIPE   &kp AMPERSAND  &kp EQUAL
+                                                  &none      &none       &none          &kp PIPE   &kp SPACE      &kp AMPERSAND
             >;
 
             label = "Symb";
