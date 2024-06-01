@@ -357,6 +357,13 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
+
+        Espaco {
+            bindings = <&kp SPACE>;
+            key-positions = <26 27>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
+        };
     };
 
     keymap {
