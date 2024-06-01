@@ -176,9 +176,9 @@
             continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z TILDE CARET GRAVE SINGLE_QUOTE BACKSPACE UNDERSCORE>;
         };
 
-        DanceCapsLetterWordFrase: DanceCapsLetterWordFrase {
+        DanceCaps: DanceCaps {
             compatible = "zmk,behavior-tap-dance";
-            label = "DANCECAPSLETTERWORDFRASE";
+            label = "DANCECAPS";
             #binding-cells = <0>;
             bindings = <&StickyKp LSHIFT>, <&CapsPalavra>, <&CapsFrase>;
         };
@@ -369,10 +369,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&DanceLayers               &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &DanceCapsLetterWordFrase
-&kp ESC                    &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 5 SINGLE_QUOTE
-&DanceCapsLetterWordFrase  &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &DanceCapsLetterWordFrase
-                                                                          &lt 3 CARET           &lt 5 TAB           &SkLayer 4             &mt LSHFT ENTER     &lt 1 SPACE             &lt 5 TILDE
+&DanceLayers  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &none
+&kp ESC       &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 5 SINGLE_QUOTE
+&DanceCaps    &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &DanceCaps
+                                                             &lt 3 CARET           &lt 5 TAB           &SkLayer 4             &mt LSHFT ENTER     &lt 1 SPACE             &lt 5 TILDE
             >;
 
             label = "Base";
