@@ -93,6 +93,42 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+
+        PureCaret: PureCaret {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp SPACE>;
+            label = "PURECARET";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        PureSqt: PureSqt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp SPACE>;
+            label = "PURESQT";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        PureQuot: PureQuot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
+            label = "PUREQUOT";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        PureGrave: PureGrave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp SPACE>;
+            label = "PUREGRAVE";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
     };
 
     behaviors {
@@ -420,7 +456,7 @@
 &none       &kp EXCLAMATION  &kp AT_SIGN     &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LPAR          &kp RPAR       &none
 &kp ESCAPE  &kp PLUS         &kp UNDERSCORE  &kp EQUAL  &kp MINUS   &kp COLON      &none      &kp LBKT       &kp LBRC       &kp RBRC          &kp RBKT       &kp GRAVE
 &none       &kp PIPE         &kp MINUS       &kp PLUS   &none       &none          &none      &none          &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &none
-                                             &none      &none       &none          &none      &none          &none
+                                             &none      &none       &none          &kp PIPE   &kp AMPERSAND  &PureQuot
             >;
 
             label = "Symb";
