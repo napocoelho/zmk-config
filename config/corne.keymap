@@ -370,7 +370,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&DanceLayers  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &CapsNumber
+&DanceLayers  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &none
 &ToTap 1 ESC  &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 5 SINGLE_QUOTE
 &DanceCaps    &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &DanceCaps
                                                              &lt 3 CARET           &lt 5 TAB           &SkLayer 4             &mt LSHFT ENTER     &lt 1 SPACE             &lt 5 TILDE
