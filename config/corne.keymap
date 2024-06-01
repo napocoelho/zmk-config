@@ -181,6 +181,8 @@
             label = "DANCECAPS";
             #binding-cells = <0>;
             bindings = <&StickyKp LSHIFT>, <&CapsPalavra>, <&CapsFrase>;
+
+            tapping-term-ms = <300>;
         };
 
         DanceLayers: DanceLayers {
@@ -188,14 +190,8 @@
             label = "DANCELAYERS";
             #binding-cells = <0>;
             bindings = <&to 3>, <&to 5>, <&to 1>;
-        };
 
-        CapsNumber: CapsNumber {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPSNUMBER";
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI|MOD_LCTL|MOD_LSFT)>;
-            continue-list = <DOT COMMA SPACE M U I O J K L P W E R S D F X C V TAB>;
+            tapping-term-ms = <300>;
         };
 
         DanceEscOrToBase: DanceEscOrToBase {
