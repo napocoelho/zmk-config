@@ -263,6 +263,7 @@
             key-positions = <20 21>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
+            layers = <0 1 2 3 5 6>;
         };
 
         EnterLeft {
@@ -284,6 +285,7 @@
             key-positions = <8 9>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
+            layers = <0 1 2 3 5 6>;
         };
 
         combo_qa {
@@ -383,6 +385,7 @@
             key-positions = <32 33>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
+            layers = <0 1 2 3 5 6>;
         };
     };
 
