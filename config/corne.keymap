@@ -339,12 +339,9 @@
 
         Espaco1 {
             bindings = <&kp SPACE>;
-            key-positions = <13 16>;
-        };
-
-        Espaco2 {
-            bindings = <&kp SPACE>;
-            key-positions = <19 22>;
+            key-positions = <26 27>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
     };
 
