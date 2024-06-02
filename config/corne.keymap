@@ -420,7 +420,7 @@
 &none              &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(C)  &none         &kp HOME      &kp END        &kp LC(V)        &none
 &DanceEscOrToBase  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
 &DanceCaps         &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP  &select_left  &select_line  &select_right  &kp PG_DN        &DanceCaps
-                                                             &kp TAB            &lt 6 N0            &none           &kp ENTER  &kp SPACE     &none
+                                                             &kp EQUAL          &lt 6 N0            &kp ENTER       &kp ENTER  &kp SPACE     &none
             >;
 
             label = "NavRight";
@@ -467,10 +467,10 @@
 
         NavLeft {
             bindings = <
-&none              &kp F3               &kp PG_UP            &kp UP               &mt F2 PG_DN            &none            &kp PERCENT  &kp N7               &kp N8              &kp N9              &kp N0                 &none
-&DanceEscOrToBase  &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp MINUS    &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL PLUS  &none
-&none              &DanceUndoRedo       &none                &none                &mt LC(C) LC(V)         &none            &kp FSLH     &kp N1               &kp N2              &kp N3              &kp ASTERISK           &none
-                                                             &none                &kp TAB                 &none            &kp ENTER    &kp N0               &kp SPACE
+&none              &kp F3               &kp PG_UP            &kp UP               &mt F2 PG_DN            &none            &kp PERCENT   &kp N7               &kp N8              &kp N9              &kp N0                  &none
+&DanceEscOrToBase  &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS      &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL MINUS  &none
+&none              &DanceUndoRedo       &none                &none                &mt LC(C) LC(V)         &none            &kp ASTERISK  &kp N1               &kp N2              &kp N3              &kp FSLH                &none
+                                                             &none                &kp TAB                 &none            &kp ENTER     &kp N0               &kp EQUAL
             >;
 
             label = "NavLeft";
