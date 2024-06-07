@@ -648,7 +648,7 @@
             bindings = <
 &to 0  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &kp B    &none  &none  &none  &none  &none  &none
                      &none  &none  &none    &none  &none  &none
             >;
 
