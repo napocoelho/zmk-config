@@ -386,6 +386,12 @@
             require-prior-idle-ms = <300>;
             layers = <0 1 2 3 5 6>;
         };
+
+        ToLayerConfig {
+            bindings = <&to 9>;
+            key-positions = <0 11>;
+            layers = <0>;
+        };
     };
 
     keymap {
