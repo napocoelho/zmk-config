@@ -164,7 +164,7 @@
             label = "STICKYKP";
             bindings = <&kp>;
             #binding-cells = <1>;
-            release-after-ms = <500>;
+            release-after-ms = <1000>;
             quick-release;
         };
 
@@ -181,7 +181,7 @@
             label = "SKLAYER";
             bindings = <&mo>;
             #binding-cells = <1>;
-            release-after-ms = <500>;
+            release-after-ms = <1000>;
             quick-release;
         };
 
