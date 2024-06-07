@@ -177,6 +177,48 @@
             bindings = <&kp N5 &kp LS(T) &kp N2 &kp N0 &kp N2 &kp N2 &kp AT &kp P &kp K &kp S &kp W>;
             label = "AlfaNum1";
         };
+
+        AlfaNumT: AlfaNumT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N5 &kp GT &kp LS(I) &kp O>;
+            label = "ALFANUMT";
+        };
+
+        AlfaNumR: AlfaNumR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp N8 &kp SEMI &kp LS(P)>;
+            label = "ALFANUMR";
+        };
+
+        AlfaNumF: AlfaNumF {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(P) &kp N6 &kp S &kp CARET>;
+            label = "ALFANUMF";
+        };
+
+        AlfaNumG: AlfaNumG {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp T &kp DOT &kp N7>;
+            label = "ALFANUMG";
+        };
+
+        AlfaNumV: AlfaNumV {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N8 &kp LS(L) &kp O &kp EXCL>;
+            label = "ALFANUMV";
+        };
+
+        AlfaNumB: AlfaNumB {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp A &kp LS(S) &kp UNDER>;
+            label = "ALFANUMB";
+        };
     };
 
     behaviors {
@@ -567,10 +609,10 @@
 
         Hyper {
             bindings = <
-&trans  &NumFacil    &AlfaNumFacil    &AlfaNum1  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &NumMedio    &AlfaNumMedio    &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &NumDificil  &AlfaNumDificil  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
+&trans  &NumFacil    &AlfaNumFacil    &AlfaNum1  &AlfaNumR  &AlfaNumT    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &NumMedio    &AlfaNumMedio    &trans     &AlfaNumF  &AlfaNumG    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &NumDificil  &AlfaNumDificil  &trans     &AlfaNumV  &AlfaNumB    &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans     &trans     &trans       &trans  &trans  &trans
             >;
 
             label = "Hyper";
