@@ -341,7 +341,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DANCELAYERS";
             #binding-cells = <0>;
-            bindings = <&to 3>, <&to 5>, <&to 1>;
+            bindings = <&to 2>, <&to 4>, <&to 1>;
 
             tapping-term-ms = <300>;
         };
@@ -402,7 +402,7 @@
             key-positions = <20 21>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 3 5 6>;
+            layers = <0 1 2 4 5>;
         };
 
         EnterLeft {
@@ -424,7 +424,7 @@
             key-positions = <8 9>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 3 5 6>;
+            layers = <0 1 2 4 5>;
         };
 
         combo_qa {
@@ -524,11 +524,11 @@
             key-positions = <32 33>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 3 5 6>;
+            layers = <0 1 2 4 5>;
         };
 
         ToLayerConfig {
-            bindings = <&to 7>;
+            bindings = <&to 6>;
             key-positions = <0 11>;
             timeout-ms = <400>;
             require-prior-idle-ms = <250>;
@@ -546,10 +546,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&DanceLayers  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkLayer 3
-&to 1         &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &HoldLayer 10 G        &HoldLayer 8 H      &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 5 SINGLE_QUOTE
-&kp ESC       &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &HoldLayer 9 M          &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
-                                                             &lt 3 CARET           &lt 5 TAB           &SkLayer 4             &DanceCaps          &lt 1 SPACE             &lt 5 TILDE
+&DanceLayers  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkLayer 2
+&to 1         &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &HoldLayer 9 G         &HoldLayer 7 H      &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 4 SINGLE_QUOTE
+&kp ESC       &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &HoldLayer 8 M          &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
+                                                             &lt 2 CARET           &lt 4 TAB           &SkLayer 3             &DanceCaps          &lt 1 SPACE             &lt 4 TILDE
             >;
 
             label = "Normal";
@@ -566,27 +566,10 @@
 &none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(C)   &none         &kp HOME      &kp END        &kp LC(V)        &none
 &none       &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
 &EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left  &select_line  &select_right  &kp PG_DN        &kp ENTER
-                                                      &kp EQUAL          &lt 6 N0            &kp ENTER       &DanceCaps  &kp SPACE     &none
+                                                      &kp EQUAL          &lt 5 N0            &kp ENTER       &DanceCaps  &kp SPACE     &none
             >;
 
             label = "NavRight";
-        };
-
-        nao_utilizado_Numbers {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&to 0       &kp N1        &kp N2       &kp N3       &none       &none       &none         &kp N7                &kp N8                  &kp N9              &kp PERCENT       &StickyKp LSHFT
-&none       &mt LCTRL N4  &mt LGUI N5  &mt LALT N6  &kp LSHIFT  &none       &kp ASTERISK  &HoldRight LSHIFT N4  &HoldRight LEFT_ALT N5  &HoldRight LGUI N6  &kp LEFT_CONTROL  &none
-&EscOrBase  &kp N7        &kp N8       &kp N9       &kp LCTRL   &none       &kp SLASH     &kp N1                &kp N2                  &kp N3              &none             &kp BACKSPACE
-                                       &kp MINUS    &kp N0      &kp PLUS    &kp PLUS      &kp N0                &kp MINUS
-            >;
-
-            label = "Num";
         };
 
         Functions {
@@ -634,10 +617,10 @@
 
         Config {
             bindings = <
-&out OUT_BLE  &out OUT_USB  &none         &none         &none         &none           &trans       &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans       &trans  &trans  &trans  &trans  &trans
-&EscOrBase    &none         &trans        &trans        &trans        &bootloader     &bootloader  &trans  &trans  &trans  &trans  &trans
-                                          &trans        &trans        &trans          &trans       &trans  &trans
+&out OUT_BLE  &out OUT_USB  &none         &none         &none         &none           &none        &none  &none  &none  &none  &none
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none        &none  &none  &none  &none  &none
+&EscOrBase    &none         &none         &none         &none         &bootloader     &bootloader  &none  &none  &none  &none  &none
+                                          &none         &none         &none           &none        &none  &none
             >;
 
             label = "CFG";
