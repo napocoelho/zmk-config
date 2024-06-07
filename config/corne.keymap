@@ -405,10 +405,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&DanceLayers  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkLayer 3
-&to 1         &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 5 SINGLE_QUOTE
-&kp ESC       &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
-                                                             &lt 3 CARET           &lt 5 TAB           &SkLayer 4             &DanceCaps          &lt 1 SPACE             &lt 5 TILDE
+&DanceLayers  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y       &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkLayer 3
+&to 1         &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &mt LS(LA(LG(LCTRL))) H  &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 5 SINGLE_QUOTE
+&kp ESC       &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N                    &mt LS(LA(LCTRL)) M     &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
+                                                             &lt 3 CARET           &lt 5 TAB           &SkLayer 4             &DanceCaps               &lt 1 SPACE             &lt 5 TILDE
             >;
 
             label = "Base";
