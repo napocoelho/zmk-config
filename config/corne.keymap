@@ -242,8 +242,8 @@
             #binding-cells = <0>;
             bindings = <&kp N0 &kp A &kp LS(S) &kp UNDER>;
             label = "ALFANUMB";
-            wait-ms = <10>;
-            tap-ms = <30>;
+            wait-ms = <40>;
+            tap-ms = <10>;
         };
     };
 
