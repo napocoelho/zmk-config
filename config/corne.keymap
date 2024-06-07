@@ -547,7 +547,7 @@
 
             bindings = <
 &DanceLayers  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &SkLayer 2
-&to 1         &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &HoldLayer 9 G         &HoldLayer 7 H      &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 4 SINGLE_QUOTE
+&to 8         &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &HoldLayer 9 G         &HoldLayer 7 H      &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 4 SINGLE_QUOTE
 &kp ESC       &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &HoldLayer 8 M          &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
                                                              &lt 2 CARET           &lt 4 TAB           &SkLayer 3             &DanceCaps          &lt 1 SPACE             &lt 4 TILDE
             >;
