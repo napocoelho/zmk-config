@@ -504,5 +504,16 @@
                                                           &lt 3 CARET           &lt 5 SPACE         &lt 4 TAB              &mt LSHFT ENTER     &lt 1 SPACE             &lt 3 TILDE
             >;
         };
+
+        Config {
+            bindings = <
+&to 0         &none         &none         &none         &none         &none           &trans       &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans       &trans  &trans  &trans  &trans  &trans
+&out OUT_BLE  &out OUT_USB  &trans        &trans        &trans        &bootloader     &bootloader  &trans  &trans  &trans  &trans  &trans
+                                          &trans        &trans        &trans          &trans       &trans  &trans
+            >;
+
+            label = "CFG";
+        };
     };
 };
