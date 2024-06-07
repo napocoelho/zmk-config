@@ -560,10 +560,10 @@
 
         Hyper {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &NumFacil    &AlfaNumFacil    &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &NumMedio    &AlfaNumMedio    &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &NumDificil  &AlfaNumDificil  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "Hyper";
