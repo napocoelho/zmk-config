@@ -635,10 +635,10 @@
 
         Hyper {
             bindings = <
-&to 0   &NumFacil    &AlfaNumFacil    &AlfaNum1  &AlfaNumR  &AlfaNumT    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &NumMedio    &AlfaNumMedio    &trans     &AlfaNumF  &AlfaNumG    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &NumDificil  &AlfaNumDificil  &trans     &AlfaNumV  &AlfaNumB    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans     &trans     &trans       &trans  &trans  &trans
+&to 0  &NumFacil    &AlfaNumFacil    &AlfaNum1  &AlfaNumR  &AlfaNumT    &none  &none  &none  &none  &none  &none
+&none  &NumMedio    &AlfaNumMedio    &none      &AlfaNumF  &AlfaNumG    &none  &none  &none  &none  &none  &none
+&none  &NumDificil  &AlfaNumDificil  &none      &AlfaNumV  &AlfaNumB    &none  &none  &none  &none  &none  &none
+                                     &none      &none      &none        &none  &none  &none
             >;
 
             label = "Hyper";
@@ -646,10 +646,10 @@
 
         Meh {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&to 0  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
 
             label = "Meh";
