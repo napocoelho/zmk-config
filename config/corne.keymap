@@ -170,6 +170,13 @@
             bindings = <&kp N2 &kp N5 &kp GT &kp LS(I) &kp GT &kp LBRC &kp LT &kp RBRC &kp R &kp N6>;
             label = "ALFANUMDIFICIL";
         };
+
+        AlfaNum1: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N5 &kp LS(T) &kp N2 &kp N0 &kp N2 &kp N2 &kp AT &kp P &kp K &kp S &kp W>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -560,10 +567,10 @@
 
         Hyper {
             bindings = <
-&trans  &NumFacil    &AlfaNumFacil    &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &NumMedio    &AlfaNumMedio    &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &NumDificil  &AlfaNumDificil  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &NumFacil    &AlfaNumFacil    &AlfaNum1  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &NumMedio    &AlfaNumMedio    &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &NumDificil  &AlfaNumDificil  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "Hyper";
