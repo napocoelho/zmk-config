@@ -575,10 +575,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(C)   &none         &kp HOME      &kp END        &kp LC(V)        &none
-&none       &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
-&EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left  &select_line  &select_right  &kp PG_DN        &kp ENTER
-                                                      &kp EQUAL          &lt 5 N0            &kp ENTER       &DanceCaps  &kp SPACE     &none
+&none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(C)   &DanceUndoRedo  &kp HOME      &kp END        &kp LC(V)        &none
+&none       &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN        &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
+&EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left    &select_line  &select_right  &kp PG_DN        &kp ENTER
+                                                      &kp EQUAL          &lt 5 N0            &kp ENTER       &DanceCaps  &kp SPACE       &none
             >;
 
             label = "NavRight";
@@ -620,10 +620,10 @@
         NavTurbo {
             label = "NavTurbo";
             bindings = <
-&none    &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &none    &none    &none         &kp HOME      &kp END        &none      &none
-&kp ESC  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none    &Left5x  &Down5x       &Up5x         &Right5x       &kt LCTRL  &none
-&none    &none      &none         &none          &none       &none    &none    &select_left  &select_line  &select_right  &none      &none
-                                  &none          &none       &none    &none    &none         &none
+&none    &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &none    &none             &none             &kp HOME              &kp END            &none      &none
+&kp ESC  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none    &kp LS(LC(LEFT))  &kp LS(LC(DOWN))  &kp LS(LC(UP_ARROW))  &kp LS(LC(RIGHT))  &kt LCTRL  &none
+&none    &none      &none         &none          &none       &none    &none             &select_left      &select_line          &select_right      &none      &none
+                                  &none          &none       &none    &none             &none             &none
             >;
         };
 
