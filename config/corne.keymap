@@ -538,7 +538,7 @@
 
         ToLayerMeh {
             bindings = <&mo 8>;
-            key-positions = <31 32>;
+            key-positions = <31 30>;
         };
 
         ToLayerHyper {
