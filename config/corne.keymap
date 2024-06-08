@@ -652,10 +652,10 @@
 
         Meh {
             bindings = <
-&none       &none  &none  &none  &none  &none    &none       &none  &none  &none  &none  &none
-&none       &none  &none  &none  &none  &none    &none       &none  &none  &none  &none  &none
-&EscOrBase  &none  &none  &none  &none  &kp B    &none       &none  &none  &none  &none  &none
-                          &none  &none  &none    &kp LSHIFT  &none  &none
+&none       &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none       &none  &none  &none  &none  &none
+&none       &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
+&EscOrBase  &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
+                                    &none       &none       &none         &kp LSHIFT  &none  &none
             >;
 
             label = "Meh";
