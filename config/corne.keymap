@@ -346,11 +346,11 @@
             tapping-term-ms = <300>;
         };
 
-        Dance2or1: Dance2or1 {
+        Dance1or2: Dance1or2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "DANCE2OR1";
+            label = "DANCE1OR2";
             #binding-cells = <0>;
-            bindings = <&to 2>, <&to 1>;
+            bindings = <&to 1>, <&to 2>;
 
             tapping-term-ms = <300>;
         };
@@ -559,8 +559,8 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&Dance2or1  &kp Q              &kp W                 &kp E                 &kp R               &kp T         &kp Y       &kp U                &kp I                  &kp O                  &kp P                       &Dance1or4
-&to 1       &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G         &kp H       &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &HoldOrTap 4 SINGLE_QUOTE
+&Dance1or2  &kp Q              &kp W                 &kp E                 &kp R               &kp T         &kp Y       &kp U                &kp I                  &kp O                  &kp P                       &Dance1or4
+&to 4       &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G         &kp H       &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &kp SQT
 &kp ESC     &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B         &kp N       &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
                                                      &lt 2 CARET           &lt 4 TAB           &SkLayer 3    &DanceCaps  &lt 1 SPACE          &lt 4 TILDE
             >;
