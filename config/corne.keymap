@@ -598,10 +598,10 @@
 
         Symbols {
             bindings = <
-&none       &kp PLUS         &kp UNDERSCORE  &none     &kp MINUS   &none          &kp LBKT    &kp LBRC       &kp LPAR       &kp RPAR          &kp RBRC       &kp RBKT
-&none       &kp EXCLAMATION  &kp AT          &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPERSAND  &kp ASTERISK   &kp EQUAL         &kp COLON      &kp GRAVE
-&EscOrBase  &none            &none           &none     &none       &none          &none       &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
-                                             &none     &none       &none          &PureCaret  &PureGrave     &PureTilde
+&none       &none            &kp PLUS  &kp UNDERSCORE  &kp MINUS   &none          &kp LBKT    &kp LBRC       &kp LPAR       &kp RPAR          &kp RBRC       &kp RBKT
+&none       &kp EXCLAMATION  &kp AT    &kp HASH        &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPERSAND  &kp ASTERISK   &kp EQUAL         &kp COLON      &kp GRAVE
+&EscOrBase  &none            &none     &none           &none       &none          &none       &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
+                                       &none           &none       &none          &PureCaret  &PureGrave     &PureTilde
             >;
 
             label = "Symb";
