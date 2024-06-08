@@ -302,9 +302,9 @@
             quick-release;
         };
 
-        ToTap: To_Tap {
+        HoldOrTap: HoldOrTap {
             compatible = "zmk,behavior-hold-tap";
-            label = "To/Tap";
+            label = "HOLDORTAP";
             bindings = <&to>, <&kp>;
 
             #binding-cells = <2>;
@@ -551,7 +551,7 @@
 
             bindings = <
 &Dance2or1  &HoldLeft EXCLAMATION Q  &HoldLeft AT_SIGN W   &HoldLeft HASH E      &HoldLeft DOLLAR R  &HoldLeft PERCENT T    &HoldRight CARET Y  &HoldRight AMPERSAND U  &HoldRight ASTERISK I  &HoldRight LPAR O      &HoldRight RPAR P           &Dance1or4
-&to 1       &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &ToTap 4 SINGLE_QUOTE
+&to 1       &HoldLeft LCTRL A        &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G                  &kp H               &HoldRight LSHIFT J     &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &HoldOrTap 4 SINGLE_QUOTE
 &kp ESC     &kp Z                    &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B                  &kp N               &kp M                   &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
                                                            &lt 2 CARET           &lt 4 TAB           &SkLayer 3             &DanceCaps          &lt 1 SPACE             &lt 4 TILDE
             >;
