@@ -559,8 +559,8 @@
 
             bindings = <
 &Dance4or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T    &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P             &Dance1or4
-&SkLayer 2  &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &kp SQT
-&kp ESC     &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
+&kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &kp ENTER
+&SkLayer 2  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp SQT
                                                      &lt 2 CARET           &lt 4 TAB           &SkLayer 3        &DanceCaps       &lt 1 SPACE          &lt 4 TILDE
             >;
 
@@ -576,7 +576,7 @@
 
             bindings = <
 &none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(C)   &DanceUndoRedo  &kp HOME      &kp END        &kp LC(V)        &none
-&none       &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN        &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
+&EscOrBase  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN        &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
 &EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left    &select_line  &select_right  &kp PG_DN        &kp ENTER
                                                       &kp EQUAL          &lt 5 N0            &kp ENTER       &DanceCaps  &kp SPACE       &none
             >;
@@ -587,8 +587,8 @@
         Functions {
             bindings = <
 &kp C_VOLUME_UP    &StickyKp LEFT_ALT  &kp F7  &kp F8  &kp F9   &kp F12    &none       &none            &none         &none     &none      &none
-&kp C_VOLUME_DOWN  &StickyKp LCTRL     &kp F4  &kp F5  &kp F6   &kp F11    &none       &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
-&EscOrBase         &StickyKp LSHFT     &kp F1  &kp F2  &kp F3   &kp F10    &none       &none            &none         &none     &none      &kp ENTER
+&EscOrBase         &StickyKp LCTRL     &kp F4  &kp F5  &kp F6   &kp F11    &none       &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
+&kp C_VOLUME_DOWN  &StickyKp LSHFT     &kp F1  &kp F2  &kp F3   &kp F10    &none       &none            &none         &none     &none      &kp ENTER
                                                &none   &kp TAB  &none      &DanceCaps  &none            &none
             >;
 
@@ -598,7 +598,7 @@
         Symbols {
             bindings = <
 &none       &none            &kp PLUS  &kp UNDERSCORE  &kp MINUS   &none          &kp LBKT    &kp LBRC       &kp LPAR       &kp RPAR          &kp RBRC       &kp RBKT
-&none       &kp EXCLAMATION  &kp AT    &kp HASH        &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPERSAND  &kp ASTERISK   &kp EQUAL         &kp COLON      &kp GRAVE
+&EscOrBase  &kp EXCLAMATION  &kp AT    &kp HASH        &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPERSAND  &kp ASTERISK   &kp EQUAL         &kp COLON      &kp GRAVE
 &EscOrBase  &none            &none     &none           &none       &none          &none       &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
                                        &none           &none       &none          &PureCaret  &PureGrave     &PureTilde
             >;
@@ -609,7 +609,7 @@
         NavLeft {
             bindings = <
 &none       &kp F3               &kp PG_UP            &kp UP               &mt F2 PG_DN            &none            &kp PERCENT   &kp N7               &kp N8              &kp N9              &kp N0                  &none
-&none       &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS      &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL MINUS  &none
+&EscOrBase  &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS      &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL MINUS  &none
 &EscOrBase  &DanceUndoRedo       &none                &none                &mt LC(C) LC(V)         &none            &kp ASTERISK  &kp N1               &kp N2              &kp N3              &kp FSLH                &kp ENTER
                                                       &none                &kp TAB                 &none            &DanceCaps    &kp N0               &kp EQUAL
             >;
@@ -629,8 +629,8 @@
 
         Config {
             bindings = <
-&out OUT_BLE  &out OUT_USB  &none         &none         &none         &none           &none        &none  &none  &none  &none  &none
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none        &none  &none  &none  &none  &none
+&out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &none           &none        &none  &none  &none  &none  &none
+&EscOrBase    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none        &none  &none  &none  &none  &none
 &EscOrBase    &none         &none         &none         &none         &bootloader     &bootloader  &none  &none  &none  &none  &none
                                           &none         &none         &none           &none        &none  &none
             >;
@@ -641,7 +641,7 @@
         Hyper {
             bindings = <
 &none       &NumFacil    &AlfaNumFacil    &AlfaNum1  &AlfaNumR  &AlfaNumT    &none  &none  &none  &none  &none  &none
-&none       &NumMedio    &AlfaNumMedio    &none      &AlfaNumF  &AlfaNumG    &none  &none  &none  &none  &none  &none
+&EscOrBase  &NumMedio    &AlfaNumMedio    &none      &AlfaNumF  &AlfaNumG    &none  &none  &none  &none  &none  &none
 &EscOrBase  &NumDificil  &AlfaNumDificil  &none      &AlfaNumV  &AlfaNumB    &none  &none  &none  &none  &none  &none
                                           &none      &none      &none        &none  &none  &none
             >;
@@ -652,7 +652,7 @@
         Meh {
             bindings = <
 &none       &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none       &none  &none  &none  &none  &none
-&none       &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
+&EscOrBase  &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
 &EscOrBase  &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
                                     &none       &none       &none         &kp LSHIFT  &none  &none
             >;
@@ -663,7 +663,7 @@
         Atalhos {
             bindings = <
 &none       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&EscOrBase  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
 &EscOrBase  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
                           &none  &none  &none    &none  &none  &none
             >;
