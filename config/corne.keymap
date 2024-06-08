@@ -98,8 +98,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp SPACE>;
             label = "PURECARET";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         PureSqt: PureSqt {
@@ -107,8 +107,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp SPACE>;
             label = "PURESQT";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         PureQuot: PureQuot {
@@ -117,7 +117,7 @@
             bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
             label = "PUREQUOT";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         PureGrave: PureGrave {
@@ -135,7 +135,7 @@
             bindings = <&kp N3 &kp N5 &kp N1 &kp N9>;
             label = "EASY4NUMBERS";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         NumMedio: NumbersMedium {
@@ -144,7 +144,7 @@
             bindings = <&kp N9 &kp N1 &kp N3 &kp N7 &kp N4 &kp N5>;
             label = "NUMBERSMEDIUM";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         NumDificil: NumbersHard {
@@ -153,7 +153,7 @@
             bindings = <&kp N1 &kp N3 &kp N5 &kp N9 &kp N7 &kp N5 &kp N6 &kp N4>;
             label = "NUMBERSHARD";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         AlfaNumFacil: AlfaNumFacil {
@@ -162,7 +162,7 @@
             bindings = <&kp LS(Z) &kp J &kp GRAVE &kp N6 &kp N1 &kp N9>;
             label = "ALFANUMFACIL";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         AlfaNumMedio: AlfaNumMedio {
@@ -171,7 +171,7 @@
             bindings = <&kp Y &kp N1 &kp S &kp LS(A) &kp N1 &kp PRCNT &kp N9 &kp N8>;
             label = "ALFANUMMEDIO";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         AlfaNumDificil: AlfaNumDificil {
@@ -180,7 +180,7 @@
             bindings = <&kp N2 &kp N5 &kp GT &kp LS(I) &kp GT &kp LBRC &kp LT &kp RBRC &kp R &kp N6>;
             label = "ALFANUMDIFICIL";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         AlfaNum1: AlfaNum1 {
@@ -189,7 +189,7 @@
             bindings = <&kp N5 &kp LS(T) &kp N2 &kp N0 &kp N2 &kp N2 &kp AT &kp P &kp K &kp S &kp W>;
             label = "AlfaNum1";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         AlfaNumT: AlfaNumT {
@@ -198,7 +198,7 @@
             bindings = <&kp N5 &kp GT &kp LS(I) &kp O>;
             label = "ALFANUMT";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         AlfaNumR: AlfaNumR {
@@ -207,7 +207,7 @@
             bindings = <&kp U &kp N8 &kp SEMI &kp LS(P)>;
             label = "ALFANUMR";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         AlfaNumF: AlfaNumF {
@@ -216,7 +216,7 @@
             bindings = <&kp LS(P) &kp N6 &kp S &kp CARET>;
             label = "ALFANUMF";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         AlfaNumG: AlfaNumG {
@@ -225,7 +225,7 @@
             bindings = <&kp LS(I) &kp T &kp DOT &kp N7>;
             label = "ALFANUMG";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         AlfaNumV: AlfaNumV {
@@ -234,7 +234,7 @@
             bindings = <&kp N8 &kp LS(L) &kp O &kp EXCL>;
             label = "ALFANUMV";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <10>;
         };
 
         AlfaNumB: AlfaNumB {
@@ -242,7 +242,16 @@
             #binding-cells = <0>;
             bindings = <&kp N0 &kp A &kp LS(S) &kp UNDER>;
             label = "ALFANUMB";
-            wait-ms = <40>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+
+        PureTilde: PureTilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp SPACE>;
+            label = "PURETILDE";
+            wait-ms = <10>;
             tap-ms = <10>;
         };
     };
@@ -589,10 +598,10 @@
 
         Symbols {
             bindings = <
-&none       &kp PLUS         &kp UNDERSCORE  &kp EQUAL  &kp MINUS   &kp COLON      &none      &kp LBKT       &kp LBRC       &kp RBRC          &kp RBKT       &none
-&none       &kp EXCLAMATION  &kp AT          &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp LPAR          &kp RPAR       &kp GRAVE
-&EscOrBase  &none            &none           &none      &none       &none          &none      &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
-                                             &none      &none       &none          &none      &kp SPACE      &none
+&none       &kp PLUS         &kp UNDERSCORE  &kp EQUAL  &kp MINUS   &kp COLON      &none       &kp LBKT       &kp LBRC       &kp RBRC          &kp RBKT       &none
+&none       &kp EXCLAMATION  &kp AT          &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPERSAND  &kp ASTERISK   &kp LPAR          &kp RPAR       &kp GRAVE
+&EscOrBase  &none            &none           &none      &none       &none          &PureGrave  &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
+                                             &none      &none       &none          &PureCaret  &kp SPACE      &PureTilde
             >;
 
             label = "Symb";
