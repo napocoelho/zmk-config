@@ -547,12 +547,12 @@
         };
 
         PolEnter {
-            bindings = <&kp ENTER>;
+            bindings = <&lt 8 ENTER>;
             key-positions = <39 40>;
         };
 
         PolTab {
-            bindings = <&kp TAB>;
+            bindings = <&lt 2 TAB>;
             key-positions = <38 37>;
         };
     };
@@ -571,7 +571,7 @@
 &Dance4or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T    &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P             &Dance1or4
 &kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &kp SQT
 &SkLayer 2  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ESC
-                                                     &lt 2 CARET           &lt 4 TAB           &SkLayer 3        &DanceCaps       &lt 1 SPACE          &lt 4 TILDE
+                                                     &lt 10 CARET          &lt 4 TAB           &SkLayer 3        &DanceCaps       &lt 1 SPACE          &lt 4 TILDE
             >;
 
             label = "Normal";
@@ -648,7 +648,7 @@
             label = "CFG";
         };
 
-        Hyper {
+        PSS {
             bindings = <
 &none       &NumFacil    &AlfaNumFacil    &AlfaNum1  &AlfaNumR  &AlfaNumT    &none  &none  &none  &none  &none  &none
 &EscOrBase  &NumMedio    &AlfaNumMedio    &none      &AlfaNumF  &AlfaNumG    &none  &none  &none  &none  &none  &none
@@ -656,10 +656,10 @@
                                           &none      &none      &none        &none  &none  &none
             >;
 
-            label = "Hyper";
+            label = "PSS";
         };
 
-        Meh {
+        Atalhos {
             bindings = <
 &none       &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none       &none  &none  &none  &none  &none
 &EscOrBase  &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
@@ -667,10 +667,10 @@
                                     &none       &none       &none         &kp LSHIFT  &none  &none
             >;
 
-            label = "Meh";
+            label = "Atalhos";
         };
 
-        Atalhos {
+        Meh {
             bindings = <
 &none       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
 &EscOrBase  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
@@ -678,7 +678,18 @@
                           &none  &none  &none    &none  &none  &none
             >;
 
-            label = "Atalhos";
+            label = "Meh";
+        };
+
+        Hyper {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
+            >;
+
+            label = "Hyper";
         };
     };
 };
