@@ -555,6 +555,30 @@
             bindings = <&lt 2 TAB>;
             key-positions = <38 37>;
         };
+
+        ComboCaretHN {
+            bindings = <&kp CARET>;
+            key-positions = <30 18>;
+        };
+
+        ComboTildeGB {
+            bindings = <&kp TILDE>;
+            key-positions = <17 29>;
+        };
+
+        CmbRenameER {
+            bindings = <&kp F2>;
+            key-positions = <4 3>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
+        };
+
+        CmbNextWE {
+            bindings = <&kp F3>;
+            key-positions = <3 2>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
+        };
     };
 
     keymap {
@@ -683,10 +707,10 @@
 
         Hyper {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none    &none  &none  &none
+&none       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&EscOrBase  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&EscOrBase  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                          &none  &none  &none    &none  &none  &none
             >;
 
             label = "Hyper";
