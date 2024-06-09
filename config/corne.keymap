@@ -607,9 +607,9 @@
 
         Symbols {
             bindings = <
-&none       &none            &kp PLUS  &kp UNDERSCORE  &kp MINUS   &none          &kp LBKT    &kp LBRC       &kp LPAR       &kp RPAR          &kp RBRC       &kp RBKT
+&none       &none            &kp PLUS  &kp UNDERSCORE  &kp MINUS   &kp LBKT       &kp RBKT    &kp LBRC       &kp LPAR       &kp RPAR          &kp RBRC       &none
 &EscOrBase  &kp EXCLAMATION  &kp AT    &kp HASH        &kp DOLLAR  &kp PERCENT    &kp CARET   &kp AMPERSAND  &kp ASTERISK   &kp EQUAL         &kp COLON      &kp GRAVE
-&EscOrBase  &none            &none     &none           &none       &none          &none       &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
+&EscOrBase  &none            &none     &none           &none       &kp LBRC       &kp RBRC    &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
                                        &none           &none       &none          &PureCaret  &PureGrave     &PureTilde
             >;
 
