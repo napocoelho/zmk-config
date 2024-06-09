@@ -573,9 +573,23 @@
             require-prior-idle-ms = <300>;
         };
 
-        CmbNextWE {
+        CmbNextUI {
             bindings = <&kp F3>;
-            key-positions = <3 2>;
+            key-positions = <7 8>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
+        };
+
+        CmbPgUp {
+            bindings = <&kp PG_UP>;
+            key-positions = <4 5>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
+        };
+
+        CmbPgDn {
+            bindings = <&kp PG_DN>;
+            key-positions = <28 29>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
