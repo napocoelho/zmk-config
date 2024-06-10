@@ -189,7 +189,7 @@
             bindings = <&kp N5 &kp LS(T) &kp N2 &kp N0 &kp N2 &kp N2 &kp AT &kp P &kp K &kp S &kp W>;
             label = "AlfaNum1";
             wait-ms = <10>;
-            tap-ms = <30>;
+            tap-ms = <5>;
         };
 
         AlfaNumT: AlfaNumT {
