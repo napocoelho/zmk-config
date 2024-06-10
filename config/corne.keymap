@@ -260,9 +260,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
+                <&macro_tap>,
                 <&kp LS(F16) &kp S &kp A &kp I &kp U>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
+                <&macro_tap>,
                 <&kp E &kp N &kp T &kp R &kp O &kp U &kp LS(F15)>;
 
             label = "XXX";
