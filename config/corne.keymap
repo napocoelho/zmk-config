@@ -734,19 +734,10 @@
         Func2 {
             label = "Func2";
             bindings = <
-&kp C_VOLUME_UP    &kp F5               &kp F4              &kp F3             &kp F2               &kp F1       &none   &none            &none         &none     &none      &none
-&EscOrBase         &HoldLeft RCTRL F11  &HoldLeft LWIN F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7       &none   &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
-&kp C_VOLUME_DOWN  &StickyKp LSHFT      &none               &none              &HoldLeft LCTRL F12  &kp F6       &none   &none            &none         &none     &none      &kp ENTER
-                                                            &none              &kp TAB              &xxx 12 C    &kp F2  &kp LS(F3)       &kp F3
-            >;
-        };
-
-        layer_12 {
-            bindings = <
-&none       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&EscOrBase  &none  &none  &none  &none  &none    &none  &none  &kp K  &none  &none  &none
-&none       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                          &none  &none  &none    &none  &none  &none
+&kp C_VOLUME_UP    &kp F5               &kp F4              &kp F3             &kp F2               &kp F1    &none   &none            &none         &none     &none      &none
+&EscOrBase         &HoldLeft RCTRL F11  &HoldLeft LWIN F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
+&kp C_VOLUME_DOWN  &StickyKp LSHFT      &none               &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none         &none     &none      &kp ENTER
+                                                            &none              &kp TAB              &none     &kp F2  &kp LS(F3)       &kp F3
             >;
         };
     };
