@@ -427,7 +427,7 @@
             key-positions = <20 21>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 5>;
+            layers = <0 1 2 6>;
         };
 
         EnterLeft {
@@ -449,7 +449,7 @@
             key-positions = <8 9>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 5>;
+            layers = <0 1 2 6>;
         };
 
         combo_qa {
@@ -574,7 +574,7 @@
         };
 
         PolTab {
-            bindings = <&SkLayer 4>;
+            bindings = <&SkLayer 3>;
             key-positions = <38 37>;
         };
 
@@ -615,9 +615,9 @@
 
             bindings = <
 &Dance4or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T    &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P             &Dance1or4
-&kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 4 APOSTROPHE
-&to 4       &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
-                                                     &lt 1 CARET           &lt 2 TAB           &SkLayer 3        &DanceCaps       &lt 1 SPACE          &lt 2 TILDE
+&kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 3 APOSTROPHE
+&to 3       &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
+                                                     &lt 1 CARET           &lt 2 TAB           &SkLayer 5        &DanceCaps       &lt 1 SPACE          &lt 2 TILDE
             >;
 
             label = "Normal";
@@ -634,7 +634,7 @@
 &none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(C)   &DanceUndoRedo  &kp HOME      &kp END        &kp LC(V)        &none
 &EscOrBase  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN        &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
 &EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left    &select_line  &select_right  &kp PG_DN        &kp ENTER
-                                                      &kp EQUAL          &lt 5 N0            &kp ENTER       &DanceCaps  &kp SPACE       &none
+                                                      &kp EQUAL          &lt 6 N0            &kp ENTER       &DanceCaps  &kp SPACE       &none
             >;
 
             label = "NavRight";
@@ -651,6 +651,16 @@
             label = "NavLeft";
         };
 
+        Functions {
+            label = "Functions";
+            bindings = <
+&kp C_VOLUME_UP    &kp F5               &kp F4              &kp F3             &kp F2               &kp F1    &none   &none            &none         &none     &none      &none
+&EscOrBase         &HoldLeft RCTRL F11  &HoldLeft LWIN F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
+&kp C_VOLUME_DOWN  &StickyKp LSHFT      &none               &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none         &none     &none      &kp ENTER
+                                                            &none              &kp TAB              &none     &kp F2  &kp LS(F3)       &kp F3
+            >;
+        };
+
         Symbols {
             bindings = <
 &none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT          &kp CARET        &kp AMPS   &kp LPAR       &kp RPAR          &none          &none
@@ -660,16 +670,6 @@
             >;
 
             label = "Symb";
-        };
-
-        Functions {
-            label = "Functions";
-            bindings = <
-&kp C_VOLUME_UP    &kp F5               &kp F4              &kp F3             &kp F2               &kp F1    &none   &none            &none         &none     &none      &none
-&EscOrBase         &HoldLeft RCTRL F11  &HoldLeft LWIN F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
-&kp C_VOLUME_DOWN  &StickyKp LSHFT      &none               &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none         &none     &none      &kp ENTER
-                                                            &none              &kp TAB              &none     &kp F2  &kp LS(F3)       &kp F3
-            >;
         };
 
         NavTurbo {
