@@ -368,9 +368,9 @@
             tapping-term-ms = <300>;
         };
 
-        Dance4or1: Dance4or1 {
+        Dance2or1: Dance2or1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "DANCE4OR1";
+            label = "DANCE2OR1";
             #binding-cells = <0>;
             bindings = <&to 2>, <&to 1>;
 
@@ -395,9 +395,9 @@
             tapping-term-ms = <300>;
         };
 
-        Dance1or4: Dance1or4 {
+        Dance1or2: Dance1or2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "DANCE1OR4";
+            label = "DANCE1OR2";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&to 1>, <&to 2>;
@@ -427,7 +427,7 @@
             key-positions = <20 21>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 6>;
+            layers = <0 1 2 5>;
         };
 
         EnterLeft {
@@ -449,7 +449,7 @@
             key-positions = <8 9>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 6>;
+            layers = <0 1 2 5>;
         };
 
         combo_qa {
@@ -552,29 +552,29 @@
         };
 
         ToLayerConfig {
-            bindings = <&mo 6>;
+            bindings = <&mo 5>;
             key-positions = <35 34>;
             timeout-ms = <400>;
             require-prior-idle-ms = <250>;
         };
 
-        ToLayerMeh {
-            bindings = <&mo 8>;
-            key-positions = <31 30>;
-        };
-
-        ToLayerHyper {
+        ToLayerAtalhos {
             bindings = <&mo 7>;
             key-positions = <18 19>;
         };
 
-        PolEnter {
-            bindings = <&SkLayer 8>;
+        ToLayerKeys {
+            bindings = <&mo 6>;
+            key-positions = <30 31>;
+        };
+
+        ToLayerHyper {
+            bindings = <&SkLayer 9>;
             key-positions = <39 40>;
         };
 
-        PolTab {
-            bindings = <&SkLayer 3>;
+        ToLayerMeh {
+            bindings = <&SkLayer 8>;
             key-positions = <38 37>;
         };
 
@@ -614,10 +614,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&Dance4or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T    &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P             &Dance1or4
+&Dance2or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T    &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P             &Dance1or2
 &kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 3 APOSTROPHE
 &to 3       &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
-                                                     &lt 1 CARET           &lt 2 TAB           &SkLayer 5        &DanceCaps       &lt 1 SPACE          &lt 2 TILDE
+                                                     &lt 1 CARET           &lt 2 TAB           &SkLayer 4        &DanceCaps       &lt 1 SPACE          &lt 2 TILDE
             >;
 
             label = "Normal";
@@ -634,7 +634,7 @@
 &none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(C)   &DanceUndoRedo  &kp HOME      &kp END        &kp LC(V)        &none
 &EscOrBase  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN        &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
 &EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left    &select_line  &select_right  &kp PG_DN        &kp ENTER
-                                                      &kp EQUAL          &lt 6 N0            &kp ENTER       &DanceCaps  &kp SPACE       &none
+                                                      &kp EQUAL          &kp N0              &kp ENTER       &DanceCaps  &kp SPACE       &none
             >;
 
             label = "NavRight";
@@ -672,16 +672,6 @@
             label = "Symb";
         };
 
-        NavTurbo {
-            label = "NavTurbo";
-            bindings = <
-&none    &none      &kp PG_UP     &kp PAGE_DOWN  &kp F2      &none    &none             &none             &kp HOME              &kp END            &none      &none
-&kp ESC  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT   &kp LSHIFT  &none    &kp LS(LC(LEFT))  &kp LS(LC(DOWN))  &kp LS(LC(UP_ARROW))  &kp LS(LC(RIGHT))  &kt LCTRL  &none
-&none    &none      &none         &none          &none       &none    &none             &select_left      &select_line          &select_right      &none      &none
-                                  &none          &none       &none    &none             &none             &none
-            >;
-        };
-
         Config {
             bindings = <
 &out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &none           &none        &none  &none  &none  &none  &none
@@ -693,7 +683,7 @@
             label = "CFG";
         };
 
-        RAND {
+        Keys {
             bindings = <
 &none       &NumFacil    &AlfaNumFacil    &AlfaNum1  &AlfaNumR  &AlfaNumT    &none  &none  &none  &none  &none  &none
 &EscOrBase  &NumMedio    &AlfaNumMedio    &none      &AlfaNumF  &AlfaNumG    &none  &none  &none  &none  &none  &none
@@ -701,7 +691,7 @@
                                           &none      &none      &none        &none  &none  &none
             >;
 
-            label = "RAND";
+            label = "Keys";
         };
 
         Atalhos {
