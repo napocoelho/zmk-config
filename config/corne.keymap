@@ -372,7 +372,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DANCE4OR1";
             #binding-cells = <0>;
-            bindings = <&to 4>, <&to 1>;
+            bindings = <&to 2>, <&to 1>;
 
             tapping-term-ms = <300>;
         };
@@ -400,7 +400,7 @@
             label = "DANCE1OR4";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&to 1>, <&to 4>;
+            bindings = <&to 1>, <&to 2>;
         };
     };
 
@@ -427,7 +427,7 @@
             key-positions = <20 21>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 4 5>;
+            layers = <0 1 2 5>;
         };
 
         EnterLeft {
@@ -449,7 +449,7 @@
             key-positions = <8 9>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 4 5>;
+            layers = <0 1 2 5>;
         };
 
         combo_qa {
@@ -574,7 +574,7 @@
         };
 
         PolTab {
-            bindings = <&SkLayer 11>;
+            bindings = <&SkLayer 4>;
             key-positions = <38 37>;
         };
 
@@ -615,9 +615,9 @@
 
             bindings = <
 &Dance4or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T    &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P             &Dance1or4
-&kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 11 APOSTROPHE
-&to 11      &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
-                                                     &lt 1 CARET           &lt 4 TAB           &SkLayer 3        &DanceCaps       &lt 1 SPACE          &lt 4 TILDE
+&kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 4 APOSTROPHE
+&to 4       &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
+                                                     &lt 1 CARET           &lt 2 TAB           &SkLayer 3        &DanceCaps       &lt 1 SPACE          &lt 2 TILDE
             >;
 
             label = "Normal";
@@ -640,15 +640,15 @@
             label = "NavRight";
         };
 
-        Functions {
+        NavLeft {
             bindings = <
-&kp C_VOLUME_UP    &StickyKp LEFT_ALT  &kp F7  &kp F8  &kp F9   &kp F12    &none       &none            &none         &none     &none      &none
-&EscOrBase         &StickyKp LCTRL     &kp F4  &kp F5  &kp F6   &kp F11    &none       &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
-&kp C_VOLUME_DOWN  &StickyKp LSHFT     &kp F1  &kp F2  &kp F3   &kp F10    &none       &none            &none         &none     &none      &kp ENTER
-                                               &none   &kp TAB  &none      &DanceCaps  &none            &none
+&none       &kp F3               &kp PG_UP            &kp UP               &mt F2 PG_DN            &none            &kp PERCENT   &kp N7               &kp N8              &kp N9              &kp N0                  &none
+&EscOrBase  &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS      &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL MINUS  &none
+&EscOrBase  &DanceUndoRedo       &none                &none                &mt LC(C) LC(V)         &none            &kp ASTERISK  &kp N1               &kp N2              &kp N3              &kp FSLH                &kp ENTER
+                                                      &none                &kp TAB                 &none            &DanceCaps    &kp N0               &kp EQUAL
             >;
 
-            label = "Func";
+            label = "NavLeft";
         };
 
         Symbols {
@@ -662,15 +662,14 @@
             label = "Symb";
         };
 
-        NavLeft {
+        Functions {
+            label = "Functions";
             bindings = <
-&none       &kp F3               &kp PG_UP            &kp UP               &mt F2 PG_DN            &none            &kp PERCENT   &kp N7               &kp N8              &kp N9              &kp N0                  &none
-&EscOrBase  &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS      &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL MINUS  &none
-&EscOrBase  &DanceUndoRedo       &none                &none                &mt LC(C) LC(V)         &none            &kp ASTERISK  &kp N1               &kp N2              &kp N3              &kp FSLH                &kp ENTER
-                                                      &none                &kp TAB                 &none            &DanceCaps    &kp N0               &kp EQUAL
+&kp C_VOLUME_UP    &kp F5               &kp F4              &kp F3             &kp F2               &kp F1    &none   &none            &none         &none     &none      &none
+&EscOrBase         &HoldLeft RCTRL F11  &HoldLeft LWIN F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
+&kp C_VOLUME_DOWN  &StickyKp LSHFT      &none               &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none         &none     &none      &kp ENTER
+                                                            &none              &kp TAB              &none     &kp F2  &kp LS(F3)       &kp F3
             >;
-
-            label = "NavLeft";
         };
 
         NavTurbo {
@@ -736,16 +735,6 @@
             >;
 
             label = "Hyper";
-        };
-
-        Func2 {
-            label = "Func2";
-            bindings = <
-&kp C_VOLUME_UP    &kp F5               &kp F4              &kp F3             &kp F2               &kp F1    &none   &none            &none         &none     &none      &none
-&EscOrBase         &HoldLeft RCTRL F11  &HoldLeft LWIN F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
-&kp C_VOLUME_DOWN  &StickyKp LSHFT      &none               &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none         &none     &none      &kp ENTER
-                                                            &none              &kp TAB              &none     &kp F2  &kp LS(F3)       &kp F3
-            >;
         };
     };
 };
