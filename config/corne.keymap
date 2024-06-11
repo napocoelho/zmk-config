@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
 / {
@@ -644,7 +645,7 @@
             bindings = <
 &none       &kp F3               &kp PG_UP            &kp UP               &mt F2 PG_DN            &none            &kp PERCENT   &kp N7               &kp N8              &kp N9              &kp N0                  &none
 &EscOrBase  &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS      &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL MINUS  &none
-&EscOrBase  &DanceUndoRedo       &none                &none                &mt LC(C) LC(V)         &none            &kp ASTERISK  &kp N1               &kp N2              &kp N3              &kp FSLH                &kp ENTER
+&EscOrBase  &DanceUndoRedo       &mkp LCLK            &mkp RCLK            &mt LC(C) LC(V)         &none            &kp ASTERISK  &kp N1               &kp N2              &kp N3              &kp FSLH                &kp ENTER
                                                       &none                &kp TAB                 &none            &DanceCaps    &kp N0               &kp EQUAL
             >;
 
@@ -696,8 +697,8 @@
 
         Atalhos {
             bindings = <
-&none       &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none       &none  &none  &none  &none  &none
-&EscOrBase  &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
+&none       &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
+&EscOrBase  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none       &none  &none  &none  &none  &none
 &EscOrBase  &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
                                     &none       &none       &none         &kp LSHIFT  &none  &none
             >;
