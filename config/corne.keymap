@@ -633,7 +633,7 @@
             bindings = <
 &Dance2or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T    &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P             &Dance1or2
 &kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 3 APOSTROPHE
-&to 3       &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
+&SkLayer 3  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
                                                      &lt 1 CARET           &lt 2 TAB           &SkLayer 4        &DanceCaps       &lt 1 SPACE          &lt 2 TILDE
             >;
 
@@ -674,7 +674,7 @@
 &kp C_VOLUME_UP    &kp F5               &kp F4              &kp F3             &kp F2               &kp F1    &none   &none            &none         &none     &none      &none
 &EscOrBase         &HoldLeft RCTRL F11  &HoldLeft LWIN F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
 &kp C_VOLUME_DOWN  &StickyKp LSHFT      &none               &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none         &none     &none      &kp ENTER
-                                                            &none              &none                &none     &kp F2  &kp LS(F3)       &kp F3
+                                                            &kp LS(F3)         &kp F3               &kp F2    &kp F2  &kp LS(F3)       &kp F3
             >;
         };
 
