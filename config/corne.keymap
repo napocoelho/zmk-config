@@ -277,6 +277,13 @@
             bindings = <&kp GRAVE &kp A>;
             label = "A_CRASE";
         };
+
+        A_Crase_Upper: A_Crase_Upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp LS(A)>;
+            label = "A_CRASE_UPPER";
+        };
     };
 
     behaviors {
@@ -402,6 +409,15 @@
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&to 1>, <&to 2>;
+        };
+
+        Mf_A_Crase: Mf_A_Crase {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MF_A_CRASE";
+            bindings = <&A_Crase>, <&A_Crase_Upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -664,10 +680,10 @@
 
         Symbols {
             bindings = <
-&none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT          &kp CARET        &kp AMPS   &kp LPAR       &kp RPAR          &none          &none
-&EscOrBase  &kp LEFT_BRACKET  &kp PLUS    &kp UNDER   &kp MINUS   &kp RIGHT_BRACKET    &kp ASTERISK     &kp EQUAL  &kp LBRC       &kp RBRC          &kp COLON      &kp GRAVE
-&EscOrBase  &PureCaret        &PureGrave  &PureTilde  &PureSqt    &PureQuot            &none            &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
-                                          &none       &A_Crase    &none                &kp EXCLAMATION  &kt SPACE  &none
+&none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR   &kp PERCENT          &kp CARET        &kp AMPS   &kp LPAR       &kp RPAR          &none          &none
+&EscOrBase  &kp LEFT_BRACKET  &kp PLUS    &kp UNDER   &kp MINUS    &kp RIGHT_BRACKET    &kp ASTERISK     &kp EQUAL  &kp LBRC       &kp RBRC          &kp COLON      &kp GRAVE
+&EscOrBase  &PureCaret        &PureGrave  &PureTilde  &PureSqt     &PureQuot            &none            &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
+                                          &none       &Mf_A_Crase  &none                &kp EXCLAMATION  &kt SPACE  &none
             >;
 
             label = "Symb";
