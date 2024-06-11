@@ -269,6 +269,13 @@
 
             label = "XXX";
         };
+
+        A_Crase: A_Crase {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp A>;
+            label = "A_CRASE";
+        };
     };
 
     behaviors {
@@ -649,7 +656,7 @@
 &none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT          &kp CARET     &kp AMPS   &kp LPAR       &kp RPAR          &none          &none
 &EscOrBase  &kp LEFT_BRACKET  &kp PLUS    &kp UNDER   &kp MINUS   &kp RIGHT_BRACKET    &kp ASTERISK  &kp EQUAL  &kp LBRC       &kp RBRC          &kp COLON      &kp GRAVE
 &EscOrBase  &PureCaret        &PureGrave  &PureTilde  &PureSqt    &PureQuot            &none         &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
-                                          &none       &none       &none                &none         &kt SPACE  &none
+                                          &none       &A_Crase    &none                &none         &kt SPACE  &none
             >;
 
             label = "Symb";
