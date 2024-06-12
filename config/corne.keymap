@@ -517,15 +517,15 @@
         };
 
         Backspace2 {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp LC(BACKSPACE)>;
             key-positions = <19 20>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
 
         Delete2 {
-            bindings = <&kp DEL>;
-            key-positions = <21 22>;
+            bindings = <&kp LC(DEL)>;
+            key-positions = <22 21>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
@@ -599,7 +599,7 @@
             bindings = <
 &Dance2or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T    &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P              &Dance1or2
 &kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL APOSTROPHE  &lt 3 ENTER
-&SkLayer 3  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &Virgula_PontoVirgula  &Ponto_DoisPontos      &Interrogacao_Exclamacao     &kp ENTER
+&SkLayer 3  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &Virgula_PontoVirgula  &Ponto_DoisPontos      &Interrogacao_Exclamacao     &none
                                                      &lt 1 CARET           &lt 2 TAB           &SkLayer 4        &DanceCaps       &lt 1 SPACE          &lt 2 TILDE
             >;
 
@@ -615,8 +615,8 @@
 
             bindings = <
 &none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(C)   &DanceUndoRedo  &kp HOME      &kp END        &kp LC(V)        &none
-&EscOrBase  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN        &kp UP        &kp RIGHT      &StickyKp LCTRL  &none
-&EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left    &select_line  &select_right  &kp PG_DN        &kp ENTER
+&EscOrBase  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN        &kp UP        &kp RIGHT      &StickyKp LCTRL  &kp ENTER
+&EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left    &select_line  &select_right  &kp PG_DN        &none
                                                       &kp EQUAL          &kp SPACE           &kp N0          &DanceCaps  &kp SPACE       &none
             >;
 
@@ -626,8 +626,8 @@
         NavLeft {
             bindings = <
 &none       &kp F3               &kp PG_UP            &kp UP               &mt F2 PG_DN            &none            &kp PERCENT   &kp N7               &kp N8              &kp N9              &kp N0                  &none
-&EscOrBase  &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS      &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL MINUS  &none
-&EscOrBase  &DanceUndoRedo       &mkp LCLK            &mkp RCLK            &mt LC(C) LC(V)         &none            &kp ASTERISK  &kp N1               &kp N2              &kp N3              &kp FSLH                &kp ENTER
+&EscOrBase  &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS      &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL MINUS  &kp ENTER
+&EscOrBase  &DanceUndoRedo       &mkp LCLK            &mkp RCLK            &mt LC(C) LC(V)         &none            &kp ASTERISK  &kp N1               &kp N2              &kp N3              &kp FSLH                &none
                                                       &none                &kp TAB                 &none            &kp N0        &kp SPACE            &kp EQUAL
             >;
 
@@ -638,8 +638,8 @@
             label = "Functions";
             bindings = <
 &kp C_VOLUME_UP    &kp F5               &kp F4              &kp F3             &kp F2               &kp F1    &none   &none            &none         &none     &none      &none
-&EscOrBase         &HoldLeft RCTRL F11  &HoldLeft LWIN F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &none
-&kp C_VOLUME_DOWN  &StickyKp LSHFT      &none               &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none         &none     &none      &kp ENTER
+&EscOrBase         &HoldLeft RCTRL F11  &HoldLeft LWIN F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LEFT_ALT  &kp LWIN  &kp LCTRL  &kp ENTER
+&kp C_VOLUME_DOWN  &StickyKp LSHFT      &none               &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none         &none     &none      &none
                                                             &kp LS(F3)         &kp F3               &kp F2    &kp F2  &kp LS(F3)       &kp F3
             >;
         };
