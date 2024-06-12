@@ -517,14 +517,14 @@
         };
 
         Backspace2 {
-            bindings = <&kp LC(BACKSPACE)>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
 
         Delete2 {
-            bindings = <&kp LC(DEL)>;
+            bindings = <&kp DEL>;
             key-positions = <22 21>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
