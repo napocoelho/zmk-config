@@ -495,56 +495,6 @@
             layers = <0 1 2 5>;
         };
 
-        combo_qa {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <1 13>;
-        };
-
-        combo_ws {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
-        };
-
-        combo_ed {
-            bindings = <&kp HASH>;
-            key-positions = <3 15>;
-        };
-
-        combo_rf {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        combo_tg {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-        };
-
-        combo_yh {
-            bindings = <&kp CARET>;
-            key-positions = <6 18>;
-        };
-
-        combo_uj {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <7 19>;
-        };
-
-        combo_ik {
-            bindings = <&kp ASTERISK>;
-            key-positions = <8 20>;
-        };
-
-        combo_ol {
-            bindings = <&kp LPAR>;
-            key-positions = <21 9>;
-        };
-
-        combo_pcolon {
-            bindings = <&kp RPAR>;
-            key-positions = <10 22>;
-        };
-
         Insert {
             bindings = <&kp INSERT>;
             key-positions = <23 18>;
@@ -619,16 +569,6 @@
         ToLayerMeh {
             bindings = <&SkLayer 8>;
             key-positions = <38 37>;
-        };
-
-        ComboCaretHN {
-            bindings = <&kp CARET>;
-            key-positions = <30 18>;
-        };
-
-        ComboTildeGB {
-            bindings = <&kp TILDE>;
-            key-positions = <17 29>;
         };
 
         CmbPgUp {
