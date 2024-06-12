@@ -411,13 +411,40 @@
             bindings = <&to 1>, <&to 2>;
         };
 
-        Mf_A_Crase: Mf_A_Crase {
+        Morf_A_Crase: Morf_A_Crase {
             compatible = "zmk,behavior-mod-morph";
-            label = "MF_A_CRASE";
+            label = "MORF_A_CRASE";
             bindings = <&A_Crase>, <&A_Crase_Upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        Virgula_PontoVirgula: Virgula_PontoVirgula {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIRGULA_PONTOVIRGULA";
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        Ponto_DoisPontos: Ponto_DoisPontos {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PONTO_DOISPONTOS";
+            bindings = <&kp PERIOD>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        Interrogacao_Exclamacao: Interrogacao_Exclamacao {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INTERROGACAO_EXCLAMACAO";
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -631,9 +658,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&Dance2or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T    &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P             &Dance1or2
-&kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 3 APOSTROPHE
-&SkLayer 3  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp DOT                &kp FSLH                    &kp ENTER
+&Dance2or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T    &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P              &Dance1or2
+&kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &kp G             &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL APOSTROPHE  &lt 3 ENTER
+&SkLayer 3  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &Virgula_PontoVirgula  &Ponto_DoisPontos      &Interrogacao_Exclamacao     &kp ENTER
                                                      &lt 1 CARET           &lt 2 TAB           &SkLayer 4        &DanceCaps       &lt 1 SPACE          &lt 2 TILDE
             >;
 
@@ -680,10 +707,10 @@
 
         Symbols {
             bindings = <
-&none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR   &kp PERCENT          &kp CARET        &kp AMPS   &kp LPAR       &kp RPAR          &none          &none
-&EscOrBase  &kp LEFT_BRACKET  &kp PLUS    &kp UNDER   &kp MINUS    &kp RIGHT_BRACKET    &kp ASTERISK     &kp EQUAL  &kp LBRC       &kp RBRC          &kp COLON      &kp GRAVE
-&EscOrBase  &PureCaret        &PureGrave  &PureTilde  &PureSqt     &PureQuot            &none            &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
-                                          &none       &Mf_A_Crase  &none                &kp EXCLAMATION  &kt SPACE  &none
+&none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR     &kp PERCENT          &kp CARET        &kp AMPS   &kp LPAR       &kp RPAR          &none          &none
+&EscOrBase  &kp LEFT_BRACKET  &kp PLUS    &kp UNDER   &kp MINUS      &kp RIGHT_BRACKET    &kp ASTERISK     &kp EQUAL  &kp LBRC       &kp RBRC          &kp COLON      &kp GRAVE
+&EscOrBase  &PureCaret        &PureGrave  &PureTilde  &PureSqt       &PureQuot            &none            &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp ENTER
+                                          &none       &Morf_A_Crase  &none                &kp EXCLAMATION  &kt SPACE  &none
             >;
 
             label = "Symb";
