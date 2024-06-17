@@ -630,8 +630,8 @@
             bindings = <
 &none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(C)   &DanceUndoRedo  &kp HOME      &kp END        &kp LC(V)        &none
 &EscOrBase  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN        &kp UP        &kp RIGHT      &StickyKp LCTRL  &kp ENTER
-&EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left    &select_line  &select_right  &kp PG_DN        &none
-                                                      &kp EQUAL          &kp SPACE           &kp N0          &DanceCaps  &kp SPACE       &none
+&EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left    &select_line  &select_right  &kp PG_DN        &kp ENTER
+                                                      &kp EQUAL          &kp N0              &none           &DanceCaps  &kp SPACE       &none
             >;
 
             label = "NavRight";
@@ -641,8 +641,8 @@
             bindings = <
 &none       &kp F3               &kp PG_UP            &kp UP               &mt F2 PG_DN            &none            &kp PERCENT   &kp N7               &kp N8              &kp N9              &kp N0                  &none
 &EscOrBase  &mt LCTRL LC(PG_UP)  &HoldLeft LWIN LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS      &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LWIN N6  &HoldRight LCTRL MINUS  &kp ENTER
-&EscOrBase  &DanceUndoRedo       &mkp LCLK            &mkp RCLK            &mt LC(C) LC(V)         &none            &kp ASTERISK  &kp N1               &kp N2              &kp N3              &kp FSLH                &none
-                                                      &none                &kp TAB                 &none            &kp N0        &kp SPACE            &kp EQUAL
+&EscOrBase  &DanceUndoRedo       &mkp LCLK            &mkp RCLK            &mt LC(C) LC(V)         &none            &kp ASTERISK  &kp N1               &kp N2              &kp N3              &kp FSLH                &kp ENTER
+                                                      &none                &kp TAB                 &none            &none         &kp N0               &kp EQUAL
             >;
 
             label = "NavLeft";
