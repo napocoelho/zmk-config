@@ -17,8 +17,8 @@
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
             label = "SELECT_LINE";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         select_left: select_left {
@@ -26,8 +26,8 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LEFT) &kp LC(LEFT) &kp LC(LS(RIGHT))>;
             label = "SELECT_LEFT";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         select_right: select_right {
@@ -35,8 +35,8 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RIGHT) &kp LC(RIGHT) &kp LC(LS(LEFT))>;
             label = "SELECT_RIGHT";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         Enter_Abaixo: Enter_Abaixo {
