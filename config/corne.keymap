@@ -39,24 +39,6 @@
             tap-ms = <1>;
         };
 
-        Down5x: Down5x {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
-            label = "DOWN5X";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        Up5x: Up5x {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp UP &kp UP &kp UP &kp UP &kp UP>;
-            label = "UP5X";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
         Enter_Abaixo: Enter_Abaixo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -71,24 +53,6 @@
             #binding-cells = <0>;
             bindings = <&kp HOME &kp ENTER &kp UP_ARROW>;
             label = "ENTER_ACIMA";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        Left5x: Left5x {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
-            label = "LEFT5X";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        Right5x: Right5x {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
-            label = "RIGHT5X";
             wait-ms = <1>;
             tap-ms = <1>;
         };
@@ -446,9 +410,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        LayerOrTap: LayerOrTap {
+        HoldLayer: HoldLayer {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYERORTAP";
+            label = "HOLDLAYER";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -611,10 +575,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&Dance2or1  &HoldLeft N1 Q     &HoldLeft N2 W        &HoldLeft N3 E        &HoldLeft N4 R      &HoldLeft N5 T     &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P             &Dance1or2
-&kp ESC     &HoldLeft LCTRL A  &HoldLeft LEFT_GUI S  &HoldLeft LEFT_ALT D  &HoldLeft LSHIFT F  &LayerOrTap 3 G    &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 3 APOSTROPHE
-&SkLayer 3  &kp Z              &kp X                 &kp C                 &HoldLeft LCTRL V   &kp B              &kp N            &kp M                &kp COMMA              &kp PERIOD             &kp SLASH                   &kp ENTER
-                                                     &lt 1 CARET           &lt 2 TAB           &DanceCaps         &SkLayer 4       &lt 1 SPACE          &lt 2 TILDE
+&Dance2or1  &kp Q           &HoldLeft LWIN W  &kp E              &kp R               &kp T             &HoldRight N6 Y  &HoldRight N7 U      &HoldRight N8 I        &HoldRight N9 O        &HoldRight N0 P             &Dance1or2
+&kp ESC     &HoldLayer 1 A  &HoldLeft LALT S  &HoldLeft LCTRL D  &HoldLeft LSHIFT F  &HoldLayer 3 G    &kp H            &HoldRight LSHIFT J  &HoldRight LEFT_ALT K  &HoldRight LEFT_GUI L  &HoldRight LCTRL SEMICOLON  &lt 3 APOSTROPHE
+&SkLayer 3  &kp Z           &kp X             &kp C              &HoldLeft LCTRL V   &kp B             &kp N            &kp M                &kp COMMA              &kp PERIOD             &kp SLASH                   &kp ENTER
+                                              &lt 1 CARET        &lt 2 TAB           &DanceCaps        &SkLayer 4       &lt 1 SPACE          &lt 2 TILDE
             >;
 
             label = "Normal";
@@ -628,10 +592,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(Y)   &kp LC(C)     &kp HOME      &kp END        &kp LC(V)        &kp LC(Z)
-&EscOrBase  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &kp ENTER
-&EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left  &select_line  &select_right  &kp PG_DN        &kp ENTER
-                                                      &kp EQUAL          &kp N0              &none           &DanceCaps  &kp SPACE     &none
+&none       &none                  &kp N1             &kp N2              &kp N3              &kp EQUAL                  &kp LC(Y)   &kp LC(C)     &kp HOME      &kp END        &kp LC(V)        &kp LC(Z)
+&EscOrBase  &HoldLeft LCTRL MINUS  &HoldLeft LALT N4  &HoldLeft LCTRL N5  &HoldLeft LSHFT N6  &kp PLUS                   &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &kp ENTER
+&EscOrBase  &none                  &kp N7             &kp N8              &kp N9              &kp MINUS                  &kp PG_UP   &select_left  &select_line  &select_right  &kp PG_DN        &kp ENTER
+                                                      &kp SLASH           &kp N0              &HoldLeft LWIN ASTERISK    &DanceCaps  &kp SPACE     &none
             >;
 
             label = "NavRight";
