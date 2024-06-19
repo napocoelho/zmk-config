@@ -24,7 +24,7 @@
         select_left: select_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LEFT) &kp LC(LS(RIGHT))>;
+            bindings = <&kp LC(LEFT) &kp LC(LEFT) &kp LC(LS(RIGHT))>;
             label = "SELECT_LEFT";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -33,7 +33,7 @@
         select_right: select_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(RIGHT) &kp LC(LS(LEFT))>;
+            bindings = <&kp LC(RIGHT) &kp LC(RIGHT) &kp LC(LS(LEFT))>;
             label = "SELECT_RIGHT";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -628,10 +628,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(C)   &DanceUndoRedo  &kp HOME      &kp END        &kp LC(V)        &none
-&EscOrBase  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN        &kp UP        &kp RIGHT      &StickyKp LCTRL  &kp ENTER
-&EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left    &select_line  &select_right  &kp PG_DN        &kp ENTER
-                                                      &kp EQUAL          &kp N0              &none           &DanceCaps  &kp SPACE       &none
+&none       &kp N0                 &kp N1             &kp N2             &kp N3              &kp PERCENT     &kp LC(Y)   &kp LC(C)     &kp HOME      &kp END        &kp LC(V)        &kp LC(Z)
+&EscOrBase  &HoldLeft LCTRL MINUS  &HoldLeft LWIN N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS        &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &kp ENTER
+&EscOrBase  &kp SLASH              &kp N7             &kp N8             &kp N9              &kp ASTERISK    &kp PG_UP   &select_left  &select_line  &select_right  &kp PG_DN        &kp ENTER
+                                                      &kp EQUAL          &kp N0              &none           &DanceCaps  &kp SPACE     &none
             >;
 
             label = "NavRight";
