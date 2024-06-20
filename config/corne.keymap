@@ -621,14 +621,14 @@
         SelectWordToLeft {
             bindings = <&SelectLeft_Turbo>;
             key-positions = <26 27>;
-            timeout-ms = <50>;
+            timeout-ms = <200>;
             require-prior-idle-ms = <300>;
         };
 
         SelectWordToRight {
             bindings = <&SelectRight_Turbo>;
             key-positions = <32 33>;
-            timeout-ms = <50>;
+            timeout-ms = <200>;
             require-prior-idle-ms = <300>;
         };
     };
