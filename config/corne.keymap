@@ -608,27 +608,17 @@
             require-prior-idle-ms = <300>;
         };
 
-        BootloaderLeft {
-            bindings = <&bootloader>;
-            key-positions = <24 26 27 29>;
-        };
-
-        BootloaderRight {
-            bindings = <&bootloader>;
-            key-positions = <30 32 33 35>;
-        };
-
         SelectWordToLeft {
             bindings = <&SelectLeft_Turbo>;
-            key-positions = <26 27>;
-            timeout-ms = <200>;
+            key-positions = <25 28>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
 
         SelectWordToRight {
             bindings = <&SelectRight_Turbo>;
-            key-positions = <32 33>;
-            timeout-ms = <200>;
+            key-positions = <31 34>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
     };
