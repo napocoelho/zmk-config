@@ -253,6 +253,8 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LEFT) &kp LC(LEFT) &kp LC(LEFT) &select_left>;
             label = "TURBOLEFT";
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
 
         TurboRight: TurboRight {
@@ -260,6 +262,8 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RIGHT) &kp LC(RIGHT) &kp LC(RIGHT) &select_right>;
             label = "TURBORIGHT";
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
     };
 
