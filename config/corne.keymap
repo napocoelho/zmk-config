@@ -247,24 +247,6 @@
             bindings = <&kp GRAVE &kp LS(A)>;
             label = "A_CRASE_UPPER";
         };
-
-        TurboLeft: TurboLeft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LEFT) &kp LC(LEFT) &kp LC(LEFT) &select_left>;
-            label = "TURBOLEFT";
-            wait-ms = <30>;
-            tap-ms = <30>;
-        };
-
-        TurboRight: TurboRight {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(RIGHT) &kp LC(RIGHT) &kp LC(RIGHT) &select_right>;
-            label = "TURBORIGHT";
-            wait-ms = <30>;
-            tap-ms = <30>;
-        };
     };
 
     behaviors {
@@ -450,24 +432,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        SelectLeft_Turbo: SelectLeft_Turbo {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SELECTLEFT_TURBO";
-            bindings = <&select_left>, <&TurboLeft>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        SelectRight_Turbo: SelectRight_Turbo {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SELECTRIGHT_TURBO";
-            bindings = <&select_right>, <&TurboRight>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
     };
 
     combos {
@@ -604,20 +568,6 @@
         CmbPgDn {
             bindings = <&kp PG_DN>;
             key-positions = <28 27>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <300>;
-        };
-
-        SelectWordToLeft {
-            bindings = <&SelectLeft_Turbo>;
-            key-positions = <25 28>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <300>;
-        };
-
-        SelectWordToRight {
-            bindings = <&SelectRight_Turbo>;
-            key-positions = <31 34>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
