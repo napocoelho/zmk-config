@@ -247,6 +247,20 @@
             bindings = <&kp GRAVE &kp LS(A)>;
             label = "A_CRASE_UPPER";
         };
+
+        TurboLeft: TurboLeft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT) &kp LC(LEFT) &kp LC(LEFT) &select_left>;
+            label = "TURBOLEFT";
+        };
+
+        TurboRight: TurboRight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RIGHT) &kp LC(RIGHT) &kp LC(RIGHT) &select_right>;
+            label = "TURBORIGHT";
+        };
     };
 
     behaviors {
@@ -432,6 +446,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        SelectLeft_Turbo: SelectLeft_Turbo {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SELECTLEFT_TURBO";
+            bindings = <&select_left>, <&TurboLeft>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        SelectRight_Turbo: SelectRight_Turbo {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SELECTRIGHT_TURBO";
+            bindings = <&select_right>, <&TurboRight>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     combos {
@@ -452,17 +484,17 @@
             require-prior-idle-ms = <300>;
         };
 
-        EnterRight {
+        Enter1 {
             bindings = <&kp ENTER>;
-            key-positions = <20 21>;
+            key-positions = <14 15>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
             layers = <0 1 2 5>;
         };
 
-        EnterLeft {
+        Enter2 {
             bindings = <&kp ENTER>;
-            key-positions = <14 15>;
+            key-positions = <20 21>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
@@ -496,6 +528,13 @@
             require-prior-idle-ms = <300>;
         };
 
+        Delete2 {
+            bindings = <&kp DELETE>;
+            key-positions = <21 22>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
+        };
+
         Backspace1 {
             bindings = <&kp BACKSPACE>;
             key-positions = <13 14>;
@@ -510,23 +549,16 @@
             require-prior-idle-ms = <300>;
         };
 
-        Delete2 {
-            bindings = <&kp DEL>;
-            key-positions = <22 21>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <300>;
-        };
-
         Espaco1 {
             bindings = <&kp SPACE>;
-            key-positions = <26 27>;
+            key-positions = <13 16>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
 
         Espaco2 {
             bindings = <&kp SPACE>;
-            key-positions = <32 33>;
+            key-positions = <19 22>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
@@ -580,6 +612,20 @@
         BootloaderRight {
             bindings = <&bootloader>;
             key-positions = <30 32 33 35>;
+        };
+
+        SelectWordToLeft {
+            bindings = <&SelectLeft_Turbo>;
+            key-positions = <26 27>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
+        };
+
+        SelectWordToRight {
+            bindings = <&SelectRight_Turbo>;
+            key-positions = <32 33>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
     };
 
