@@ -624,10 +624,10 @@
 
         Symbols {
             bindings = <
-&none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR       &kp PERCENT          &kp CARET      &kp AMPS   &kp LPAR         &kp RPAR          &none      &none
-&EscOrBase  &kp LEFT_BRACKET  &kp PLUS    &kp UNDER   &kp MINUS        &kp RIGHT_BRACKET    &kp ASTERISK   &kp EQUAL  &kp LBRC         &kp RBRC          &kp COLON  &kp GRAVE
-&EscOrBase  &PureCaret        &PureGrave  &PureTilde  &PureSqt         &PureQuot            &kp BACKSLASH  &kp PIPE   &kp LESS_THAN    &kp GREATER_THAN  &kp SLASH  &kp ENTER
-                                          &none       &kp EXCLAMATION  &Morf_A_Crase        &Morf_A_Crase  &kp SPACE  &kp EXCLAMATION
+&none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT          &kp CARET      &kp AMPS   &kp LPAR       &kp RPAR          &none      &none
+&EscOrBase  &kp LEFT_BRACKET  &kp PLUS    &kp UNDER   &kp MINUS   &kp RIGHT_BRACKET    &kp ASTERISK   &kp EQUAL  &kp LBRC       &kp RBRC          &kp COLON  &kp ENTER
+&EscOrBase  &PureCaret        &PureGrave  &PureTilde  &PureSqt    &PureQuot            &kp BACKSLASH  &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH  &none
+                                          &none       &none       &kp EXCLAMATION      &Morf_A_Crase  &kp GRAVE  &none
             >;
 
             label = "Symb";
