@@ -437,14 +437,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Capslock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <16 19>;
-            layers = <0>;
-            require-prior-idle-ms = <300>;
-            timeout-ms = <50>;
-        };
-
         PrintScreen {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <12 17>;
