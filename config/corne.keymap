@@ -432,6 +432,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        Morf_E_Agudo: Morf_E_Agudo {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORF_E_AGUDO";
+            bindings = <&kp E>, <&kp LS(E)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -568,6 +577,16 @@
             bindings = <&kp ESC>;
             key-positions = <14 16>;
         };
+
+        CmbACrase {
+            bindings = <&Morf_A_Crase>;
+            key-positions = <12 24>;
+        };
+
+        Cmb_E_Agudo {
+            bindings = <&Morf_E_Agudo>;
+            key-positions = <3 15>;
+        };
     };
 
     keymap {
@@ -598,10 +617,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none       &none  &kp N1              &kp N2             &kp N3              &kp EQUAL                  &kp LC(Y)   &kp LC(C)     &kp HOME      &kp END        &kp LC(V)        &kp LC(Z)
-&EscOrBase  &none  &HoldLeft LCTRL N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS                   &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT      &StickyKp LCTRL  &kp ENTER
-&EscOrBase  &none  &kp N7              &kp N8             &kp N9              &kp MINUS                  &kp PG_UP   &select_left  &select_line  &select_right  &kp PG_DN        &kp ENTER
-                                       &kp SLASH          &kp N0              &HoldLeft LWIN ASTERISK    &DanceCaps  &kp SPACE     &none
+&none       &none         &kp N1              &kp N2             &kp N3              &kp EQUAL               &kp LC(Z)     &kp HOME      &kp UP        &kp END        &kp LC(V)      &kp LC(Y)
+&EscOrBase  &kp ASTERISK  &HoldLeft LCTRL N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS                &select_left  &kp LEFT      &kp DOWN      &kp RIGHT      &select_right  &kp ENTER
+&EscOrBase  &kp SLASH     &kp N7              &kp N8             &kp N9              &kp MINUS               &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
+                                              &kp DOT            &kp N0              &HoldLeft LWIN COMMA    &DanceCaps    &kp SPACE     &none
             >;
 
             label = "NavRight";
@@ -609,10 +628,10 @@
 
         NavLeft {
             bindings = <
-&none       &none          &kp PG_UP             &kp UP               &kp PG_DN               &none            &kp EQUAL                 &kp N7               &kp N8              &kp N9               &none  &none
-&EscOrBase  &kp LC(PG_UP)  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS                  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &none  &kp ENTER
-&EscOrBase  &none          &kp LC(X)             &kp LC(C)            &kp LC(V)               &none            &kp MINUS                 &kp N1               &kp N2              &kp N3               &none  &kp ENTER
-                                                 &mkp LCLK            &kp TAB                 &mkp RCLK        &HoldRight LWIN ASTERISK  &kp N0               &kp SLASH
+&none       &none          &kp PG_UP             &kp UP               &kp PG_DN               &none            &kp EQUAL              &kp N7               &kp N8              &kp N9               &none         &none
+&EscOrBase  &kp LC(PG_UP)  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS               &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &kp ASTERISK  &kp ENTER
+&EscOrBase  &none          &kp LC(X)             &kp LC(C)            &kp LC(V)               &none            &kp MINUS              &kp N1               &kp N2              &kp N3               &kp SLASH     &kp ENTER
+                                                 &mkp LCLK            &kp TAB                 &mkp RCLK        &HoldRight LWIN COMMA  &kp N0               &kp DOT
             >;
 
             label = "NavLeft";
