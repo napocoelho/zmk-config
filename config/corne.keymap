@@ -571,6 +571,11 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
+
+        Esc1 {
+            bindings = <&kp ESC>;
+            key-positions = <14 16>;
+        };
     };
 
     keymap {
