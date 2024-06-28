@@ -247,6 +247,13 @@
             bindings = <&kp GRAVE &kp LS(A)>;
             label = "A_CRASE_UPPER";
         };
+
+        vnc: vnc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp N0 &kp N7 &kp V &kp G &kp LS(Z) &kp AT &kp N &kp LS(G) &kp LS(W) &kp LBKT &kp LS(E) &kp K &kp EXCL>;
+            label = "VNC";
+        };
     };
 
     behaviors {
@@ -672,7 +679,7 @@
         Keys {
             bindings = <
 &none       &NumFacil    &AlfaNumFacil    &AlfaNum1  &AlfaNumR  &AlfaNumT    &none  &none  &none  &none  &none  &none
-&EscOrBase  &NumMedio    &AlfaNumMedio    &none      &AlfaNumF  &AlfaNumG    &none  &none  &none  &none  &none  &none
+&EscOrBase  &NumMedio    &AlfaNumMedio    &vnc       &AlfaNumF  &AlfaNumG    &none  &none  &none  &none  &none  &none
 &EscOrBase  &NumDificil  &AlfaNumDificil  &none      &AlfaNumV  &AlfaNumB    &none  &none  &none  &none  &none  &none
                                           &none      &none      &none        &none  &none  &none
             >;
