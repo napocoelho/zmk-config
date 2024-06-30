@@ -592,7 +592,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_e_agudo: Morf_e_agudo {
@@ -602,7 +601,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_e_fechado: Morf_e_fechado {
@@ -612,7 +610,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_a_agudo: Morf_a_agudo {
@@ -622,7 +619,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_a_crase: Morf_a_crase {
@@ -632,7 +628,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_a_til: Morf_a_til {
@@ -642,7 +637,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_a_fechado: Morf_a_fechado {
@@ -652,7 +646,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_o_agudo: Morf_o_agudo {
@@ -662,7 +655,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_o_fechado: Morf_o_fechado {
@@ -672,7 +664,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_o_til: Morf_o_til {
@@ -682,7 +673,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_u_agudo: Morf_u_agudo {
@@ -692,7 +682,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         Morf_i_agudo: Morf_i_agudo {
@@ -702,7 +691,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
     };
 
