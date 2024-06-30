@@ -268,6 +268,20 @@
             bindings = <&kp SQT &kp LS(C) &SkLayer 10>;
             label = "CEDILHA_UPPER";
         };
+
+        e_agudo_lower: e_agudo_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp E>;
+            label = "E_AGUDO_LOWER";
+        };
+
+        e_agudo_upper: e_agudo_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp LS(E)>;
+            label = "E_AGUDO_UPPER";
+        };
     };
 
     behaviors {
@@ -454,15 +468,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        Morf_E_Agudo: Morf_E_Agudo {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_E_AGUDO";
-            bindings = <&kp E>, <&kp LS(E)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         MorfCedilha: MorfCedilha {
             compatible = "zmk,behavior-mod-morph";
             label = "MORFCEDILHA";
@@ -470,6 +475,17 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        Morf_e_agudo: Morf_e_agudo {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORF_E_AGUDO";
+            bindings = <&e_agudo_lower>, <&e_agudo_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
         };
     };
 
