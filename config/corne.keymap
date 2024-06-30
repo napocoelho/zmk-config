@@ -234,20 +234,6 @@
             label = "XXX";
         };
 
-        A_Crase: A_Crase {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp A>;
-            label = "A_CRASE";
-        };
-
-        A_Crase_Upper: A_Crase_Upper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp LS(A)>;
-            label = "A_CRASE_UPPER";
-        };
-
         vnc: vnc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -295,6 +281,62 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(E)>;
             label = "E_FECHADO_UPPER";
+        };
+
+        a_agudo_lower: a_agudo_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp A>;
+            label = "A_AGUDO_LOWER";
+        };
+
+        a_agudo_upper: a_agudo_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp LS(A)>;
+            label = "A_AGUDO_UPPER";
+        };
+
+        a_crase_lower: a_crase_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp A>;
+            label = "A_CRASE_LOWER";
+        };
+
+        a_crase_upper: a_crase_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp LS(A)>;
+            label = "A_CRASE_UPPER";
+        };
+
+        a_til_lower: a_til_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp A>;
+            label = "A_TIL_LOWER";
+        };
+
+        a_til_upper: a_til_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp LS(A)>;
+            label = "A_TIL_UPPER";
+        };
+
+        a_fechado_lower: a_fechado_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp A>;
+            label = "A_FECHADO_LOWER";
+        };
+
+        a_fechado_upper: a_fechado_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp LS(A)>;
+            label = "A_FECHADO_UPPER";
         };
     };
 
@@ -423,15 +465,6 @@
             bindings = <&to 1>, <&to 2>;
         };
 
-        Morf_A_Crase: Morf_A_Crase {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_A_CRASE";
-            bindings = <&A_Crase>, <&A_Crase_Upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         Virgula_PontoVirgula: Virgula_PontoVirgula {
             compatible = "zmk,behavior-mod-morph";
             label = "VIRGULA_PONTOVIRGULA";
@@ -506,6 +539,46 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MORF_E_FECHADO";
             bindings = <&e_fechado_lower>, <&e_fechado_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        Morf_a_agudo: Morf_a_agudo {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORF_A_AGUDO";
+            bindings = <&a_agudo_lower>, <&a_agudo_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        Morf_a_crase: Morf_a_crase {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORF_A_CRASE";
+            bindings = <&a_crase_lower>, <&a_crase_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        Morf_a_til: Morf_a_til {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORF_A_TIL";
+            bindings = <&a_til_upper>, <&a_til_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        Morf_a_fechado: Morf_a_fechado {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORF_A_FECHADO";
+            bindings = <&a_fechado_lower>, <&a_fechado_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -717,7 +790,7 @@
 &none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT          &kp CARET      &kp AMPS   &kp LPAR       &kp RPAR          &none      &none
 &EscOrBase  &kp LEFT_BRACKET  &kp PLUS    &kp UNDER   &kp MINUS   &kp RIGHT_BRACKET    &kp ASTERISK   &kp EQUAL  &kp LBRC       &kp RBRC          &kp COLON  &kp ENTER
 &EscOrBase  &PureCaret        &PureGrave  &PureTilde  &PureSqt    &PureQuot            &kp BACKSLASH  &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH  &none
-                                          &none       &none       &kp EXCLAMATION      &Morf_A_Crase  &kp GRAVE  &none
+                                          &none       &none       &kp EXCLAMATION      &none          &kp GRAVE  &none
             >;
 
             label = "Symb";
@@ -780,10 +853,10 @@
 
         Acentos {
             bindings = <
-&none  &none  &none  &Morf_e_agudo  &Morf_e_fechado  &none    &none  &kp U  &kp I  &kp O  &none  &none
-&none  &kp A  &kp O  &none          &none            &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &MorfCedilha   &none            &none    &none  &none  &none  &none  &none  &none
-                     &none          &none            &none    &none  &none  &none
+&none  &none            &none          &Morf_e_agudo  &Morf_e_fechado  &none    &none  &kp U  &kp I  &kp O  &none  &none
+&none  &kp A            &Morf_a_agudo  &Morf_a_crase  &none            &none    &none  &none  &none  &none  &none  &none
+&none  &Morf_a_fechado  &Morf_a_til    &MorfCedilha   &none            &none    &none  &none  &none  &none  &none  &none
+                                       &none          &none            &none    &none  &none  &none
             >;
         };
     };
