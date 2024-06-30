@@ -962,9 +962,9 @@
         Acentos {
             bindings = <
 &none  &Morf_a_crase  &none            &kp E          &Morf_e_fechado  &none         &none  &kp U          &kp I          &kp O          &Morf_o_fechado  &none
-&to 0  &kp A          &Morf_a_fechado  &Morf_e_agudo  &kp LSHFT        &none         &none  &Morf_u_agudo  &Morf_i_agudo  &Morf_o_agudo  &Morf_o_til      &none
+&to 0  &kp A          &Morf_a_fechado  &Morf_e_agudo  &kp LSHFT        &none         &none  &Morf_u_agudo  &Morf_i_agudo  &Morf_o_agudo  &Morf_o_til      &kp ENTER
 &none  &Morf_a_agudo  &Morf_a_til      &Morf_Cedilha  &none            &none         &none  &none          &none          &none          &none            &none
-                                       &none          &none            &DanceCaps    &none  &none          &none
+                                       &none          &kp TAB          &DanceCaps    &none  &kp SPACE      &none
             >;
         };
     };
