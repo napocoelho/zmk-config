@@ -261,6 +261,13 @@
             bindings = <&kp SQT &kp C>;
             label = "CEDILHA";
         };
+
+        cedilha_sticky: cedilha_sticky {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C &SkLayer 10>;
+            label = "CEDILHA_STICKY";
+        };
     };
 
     behaviors {
@@ -592,14 +599,9 @@
             key-positions = <14 16>;
         };
 
-        CmbACrase {
-            bindings = <&Morf_A_Crase>;
-            key-positions = <12 24>;
-        };
-
-        Cmb_E_Agudo {
-            bindings = <&Morf_E_Agudo>;
-            key-positions = <3 15>;
+        AtivarAcentos {
+            bindings = <&SkLayer 10>;
+            key-positions = <4 16>;
         };
     };
 
@@ -729,10 +731,10 @@
 
         Acentos {
             bindings = <
-&none  &none  &none  &kp E     &none  &none    &none  &kp U  &kp I  &kp O  &none  &none
-&none  &kp A  &none  &none     &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &cedilha  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none     &none  &none    &none  &none  &none
+&none  &none  &none  &kp E            &none  &none    &none  &kp U  &kp I  &kp O  &none  &none
+&none  &kp A  &none  &none            &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &cedilha_sticky  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none            &none  &none    &none  &none  &none
             >;
         };
     };
