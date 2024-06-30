@@ -254,6 +254,13 @@
             bindings = <&kp LS(K) &kp N0 &kp N7 &kp V &kp G &kp LS(Z) &kp AT &kp N &kp LS(G) &kp LS(W) &kp LBKT &kp LS(E) &kp K &kp EXCL>;
             label = "VNC";
         };
+
+        cedilha: cedilha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C>;
+            label = "CEDILHA";
+        };
     };
 
     behaviors {
@@ -718,6 +725,15 @@
             >;
 
             label = "Hyper";
+        };
+
+        Acentos {
+            bindings = <
+&none  &none  &none  &kp E     &none  &none    &none  &kp U  &kp I  &kp O  &none  &none
+&none  &kp A  &none  &none     &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &cedilha  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none     &none  &none    &none  &none  &none
+            >;
         };
     };
 };
