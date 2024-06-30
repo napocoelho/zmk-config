@@ -633,7 +633,7 @@
         Morf_a_til: Morf_a_til {
             compatible = "zmk,behavior-mod-morph";
             label = "MORF_A_TIL";
-            bindings = <&a_til_upper>, <&a_til_upper>;
+            bindings = <&a_til_lower>, <&a_til_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -961,10 +961,10 @@
 
         Acentos {
             bindings = <
-&none  &Morf_a_crase  &none            &kp E          &Morf_e_fechado  &none    &none  &kp U          &kp I          &kp O          &Morf_o_fechado  &none
-&to 0  &kp A          &Morf_a_fechado  &Morf_e_agudo  &none            &none    &none  &Morf_u_agudo  &Morf_i_agudo  &Morf_o_agudo  &Morf_o_til      &none
-&none  &Morf_a_agudo  &Morf_a_til      &Morf_Cedilha  &none            &none    &none  &none          &none          &none          &none            &none
-                                       &none          &none            &none    &none  &none          &none
+&none  &Morf_a_crase  &none            &kp E          &Morf_e_fechado  &none         &none  &kp U          &kp I          &kp O          &Morf_o_fechado  &none
+&to 0  &kp A          &Morf_a_fechado  &Morf_e_agudo  &kp LSHFT        &none         &none  &Morf_u_agudo  &Morf_i_agudo  &Morf_o_agudo  &Morf_o_til      &none
+&none  &Morf_a_agudo  &Morf_a_til      &Morf_Cedilha  &none            &none         &none  &none          &none          &none          &none            &none
+                                       &none          &none            &DanceCaps    &none  &none          &none
             >;
         };
     };
