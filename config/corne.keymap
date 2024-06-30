@@ -756,10 +756,10 @@
 
         Acentos {
             bindings = <
-&none  &none  &none  &kp E         &none  &none    &none  &kp U  &kp I  &kp O  &none  &none
-&none  &kp A  &kp O  &none         &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &MorfCedilha  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none         &none  &none    &none  &none  &none
+&none  &none  &none  &Morf_e_agudo  &none  &none    &none  &kp U  &kp I  &kp O  &none  &none
+&none  &kp A  &kp O  &none          &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &MorfCedilha   &none  &none    &none  &none  &none  &none  &none  &none
+                     &none          &none  &none    &none  &none  &none
             >;
         };
     };
