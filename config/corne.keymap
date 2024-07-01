@@ -246,6 +246,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp C>;
             label = "CEDILHA_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         cedilha_upper: cedilha_upper {
@@ -253,6 +255,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp LS(C)>;
             label = "CEDILHA_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         e_agudo_lower: e_agudo_lower {
@@ -260,6 +264,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp E>;
             label = "E_AGUDO_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         e_agudo_upper: e_agudo_upper {
@@ -267,6 +273,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp LS(E)>;
             label = "E_AGUDO_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         e_fechado_lower: e_fechado_lower {
@@ -274,6 +282,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp E>;
             label = "E_FECHADO_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         e_fechado_upper: e_fechado_upper {
@@ -281,6 +291,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(E)>;
             label = "E_FECHADO_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         a_agudo_lower: a_agudo_lower {
@@ -288,6 +300,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp A>;
             label = "A_AGUDO_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         a_agudo_upper: a_agudo_upper {
@@ -295,6 +309,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp LS(A)>;
             label = "A_AGUDO_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         a_crase_lower: a_crase_lower {
@@ -302,6 +318,8 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp A>;
             label = "A_CRASE_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         a_crase_upper: a_crase_upper {
@@ -309,6 +327,8 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(A)>;
             label = "A_CRASE_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         a_til_lower: a_til_lower {
@@ -316,6 +336,8 @@
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp A>;
             label = "A_TIL_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         a_til_upper: a_til_upper {
@@ -323,6 +345,8 @@
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp LS(A)>;
             label = "A_TIL_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         a_fechado_lower: a_fechado_lower {
@@ -330,6 +354,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp A>;
             label = "A_FECHADO_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         a_fechado_upper: a_fechado_upper {
@@ -337,6 +363,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(A)>;
             label = "A_FECHADO_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         o_agudo_lower: new_macro {
@@ -344,6 +372,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp O>;
             label = "NEW_MACRO";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         o_agudo_upper: o_agudo_upper {
@@ -351,6 +381,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp LS(O)>;
             label = "O_AGUDO_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         o_fechado_lower: o_fechado_lower {
@@ -358,6 +390,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp O>;
             label = "O_FECHADO_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         o_fechado_upper: o_fechado_upper {
@@ -365,6 +399,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(O)>;
             label = "O_FECHADO_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         o_til_lower: o_til_lower {
@@ -372,6 +408,8 @@
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp O>;
             label = "O_TIL_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         o_til_upper: o_til_upper {
@@ -379,6 +417,8 @@
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp LS(O)>;
             label = "O_TIL_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         u_agudo_lower: u_agudo_lower {
@@ -386,6 +426,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp U>;
             label = "U_AGUDO_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         u_agudo_upper: u_agudo_upper {
@@ -393,6 +435,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp LS(U)>;
             label = "U_AGUDO_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         i_agudo_lower: i_agudo_lower {
@@ -400,6 +444,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp I>;
             label = "I_AGUDO_LOWER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         i_agudo_upper: i_agudo_upper {
@@ -407,6 +453,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp LS(I)>;
             label = "I_AGUDO_UPPER";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
     };
 
