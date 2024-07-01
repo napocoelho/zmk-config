@@ -244,14 +244,14 @@
         cedilha_lower: cedilha_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp C &SkLayer 10>;
+            bindings = <&kp SQT &kp C>;
             label = "CEDILHA_LOWER";
         };
 
         cedilha_upper: cedilha_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp LS(C) &SkLayer 10>;
+            bindings = <&kp SQT &kp LS(C)>;
             label = "CEDILHA_UPPER";
         };
 
