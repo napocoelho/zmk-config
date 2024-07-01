@@ -970,10 +970,10 @@
 
         Acentos {
             bindings = <
-&none  &Morf_a_crase  &none            &Morf_e_agudo  &Morf_e_fechado  &none         &none  &Morf_u_agudo  &Morf_i_agudo  &Morf_o_agudo  &Morf_o_fechado  &none
-&to 0  &Morf_a_agudo  &Morf_a_fechado  &none          &kp LSHFT        &none         &none  &kp LSHIFT     &none          &Morf_o_til    &none            &kp ENTER
-&none  &Morf_a_til    &none            &Morf_Cedilha  &none            &none         &none  &none          &none          &none          &none            &none
-                                       &none          &kp TAB          &DanceCaps    &none  &kp SPACE      &none
+&none  &none          &none        &Morf_e_agudo  &Morf_e_fechado  &none         &none  &Morf_u_agudo  &Morf_i_agudo  &Morf_o_agudo  &none            &none
+&to 0  &Morf_a_agudo  &Morf_a_til  &Morf_a_crase  &Morf_a_fechado  &none         &none  &kp LSHIFT     &none          &Morf_o_til    &Morf_o_fechado  &kp ENTER
+&none  &none          &none        &Morf_Cedilha  &none            &none         &none  &none          &none          &none          &none            &none
+                                   &none          &kp TAB          &DanceCaps    &none  &kp SPACE      &none
             >;
         };
 
