@@ -903,10 +903,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&to 11     &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                   &HoldRight LWIN O   &kp P                     &SkLayer 10
-&kp ESC    &HoldLayer 1 A  &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 3 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K       &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
-&kp MINUS  &kp Z           &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula   &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                              &lt 1 CARET       &lt 2 TAB           &DanceCaps        &SkLayer 4      &lt 1 SPACE          &NumericoOuAcento 2 10
+&to 11     &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
+&kp ESC    &HoldLayer 1 A  &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 3 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
+&kp MINUS  &kp Z           &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
+                                              &lt 1 CARET       &lt 2 TAB           &DanceCaps        &SkLayer 4      &lt 1 SPACE          &SkLayer 11
             >;
 
             label = "Alfa1";
@@ -1019,7 +1019,7 @@
         Acentos {
             bindings = <
 &none    &none          &none        &Morf_e_agudo  &Morf_e_fechado  &none         &none  &Morf_u_agudo  &Morf_i_agudo  &Morf_o_agudo  &none            &none
-&kp ESC  &Morf_a_agudo  &Morf_a_til  &Morf_a_crase  &Morf_a_fechado  &none         &none  &kp LSHIFT     &none          &Morf_o_til    &Morf_o_fechado  &kp ENTER
+&kp ESC  &Morf_a_agudo  &Morf_a_til  &Morf_a_crase  &Morf_a_fechado  &none         &none  &none          &none          &Morf_o_til    &Morf_o_fechado  &kp ENTER
 &none    &none          &none        &Morf_Cedilha  &none            &none         &none  &none          &none          &none          &none            &none
                                      &none          &kp TAB          &DanceCaps    &none  &kp SPACE      &none
             >;
