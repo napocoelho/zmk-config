@@ -879,26 +879,31 @@
         EnterLarge1 {
             bindings = <&kp ENTER>;
             key-positions = <13 14 15 16>;
+            timeout-ms = <50>;
         };
 
         EnterLarge2 {
             bindings = <&kp ENTER>;
             key-positions = <19 20 21 22>;
+            timeout-ms = <50>;
         };
 
         DelLarge {
             bindings = <&kp DEL>;
             key-positions = <14 15 16>;
+            timeout-ms = <50>;
         };
 
         BackspaceLarge {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20 21>;
+            timeout-ms = <50>;
         };
 
         EscLarge {
             bindings = <&EscOrBase>;
             key-positions = <13 16>;
+            timeout-ms = <50>;
         };
     };
 
