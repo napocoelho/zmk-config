@@ -763,7 +763,7 @@
         Enter1 {
             bindings = <&kp ENTER>;
             key-positions = <14 15>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <300>;
             layers = <0 1 2 5>;
         };
@@ -771,7 +771,7 @@
         Enter2 {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <300>;
             layers = <0 1 2 5>;
         };
@@ -779,7 +779,7 @@
         EnterUp {
             bindings = <&Enter_Acima>;
             key-positions = <2 3>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <300>;
             layers = <0 2 1 5>;
         };
@@ -787,7 +787,7 @@
         EnterDown {
             bindings = <&Enter_Abaixo>;
             key-positions = <8 9>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
             layers = <0 1 2 5>;
             require-prior-idle-ms = <300>;
         };
@@ -802,14 +802,14 @@
         Delete1 {
             bindings = <&kp DEL>;
             key-positions = <16 15>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
 
         Delete2 {
             bindings = <&kp DELETE>;
             key-positions = <21 22>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
 
@@ -823,7 +823,7 @@
         Backspace2 {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
 
@@ -874,7 +874,8 @@
         EscLarge {
             bindings = <&EscOrBase>;
             key-positions = <13 16>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
         };
 
         PreviousTab {
