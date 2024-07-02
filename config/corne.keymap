@@ -852,14 +852,14 @@
 
         CmbPgUp {
             bindings = <&kp PG_UP>;
-            key-positions = <4 3>;
+            key-positions = <4 1>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
 
         CmbPgDn {
             bindings = <&kp PG_DN>;
-            key-positions = <28 27>;
+            key-positions = <28 25>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
@@ -867,6 +867,18 @@
         EscLarge {
             bindings = <&EscOrBase>;
             key-positions = <13 16>;
+            timeout-ms = <50>;
+        };
+
+        PreviousTab {
+            bindings = <&kp LC(PG_UP)>;
+            key-positions = <4 16>;
+            timeout-ms = <50>;
+        };
+
+        NextTab {
+            bindings = <&kp LC(PG_DN)>;
+            key-positions = <5 17>;
             timeout-ms = <50>;
         };
     };
