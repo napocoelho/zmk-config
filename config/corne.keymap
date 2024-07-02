@@ -777,16 +777,14 @@
 
         EnterUp {
             bindings = <&Enter_Acima>;
-            key-positions = <2 3>;
-            require-prior-idle-ms = <300>;
+            key-positions = <2 3 4 1>;
             timeout-ms = <50>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
-            key-positions = <8 9>;
+            key-positions = <8 9 7 10>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <300>;
             layers = <0 1 2 5>;
         };
 
@@ -864,16 +862,6 @@
             key-positions = <28 27>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
-        };
-
-        Esc1 {
-            bindings = <&kp ESC>;
-            key-positions = <14 16>;
-        };
-
-        AtivarAcentos {
-            bindings = <&SkLayer 10>;
-            key-positions = <4 16>;
         };
 
         EnterLarge1 {
