@@ -924,7 +924,7 @@
 
             bindings = <
 &none       &none         &kp N1              &kp N2             &kp N3              &kp EQUAL          &kp LC(Z)     &kp HOME      &kp UP        &kp END        &kp LC(V)      &kp LC(Y)
-&EscOrBase  &kp ASTERISK  &HoldLeft LCTRL N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS           &select_left  &kp LEFT      &kp DOWN      &kp RIGHT      &select_right  &kp ENTER
+&EscOrBase  &kp ASTERISK  &HoldLeft LCTRL N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS           &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
 &EscOrBase  &kp SLASH     &kp N7              &kp N8             &kp N9              &kp MINUS          &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
                                               &kp DOT            &mt LWIN N0         &mt LSHFT COMMA    &DanceCaps    &kp SPACE     &none
             >;
