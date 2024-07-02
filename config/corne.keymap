@@ -777,13 +777,13 @@
 
         EnterUp {
             bindings = <&Enter_Acima>;
-            key-positions = <2 3 4 1>;
+            key-positions = <2 3>;
             timeout-ms = <50>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
-            key-positions = <8 9 7 10>;
+            key-positions = <8 9>;
             timeout-ms = <50>;
             layers = <0 1 2 5>;
         };
