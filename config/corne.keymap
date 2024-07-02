@@ -830,19 +830,20 @@
         ToLayerConfig {
             bindings = <&mo 5>;
             key-positions = <35 34>;
-            timeout-ms = <400>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <250>;
         };
 
         ToLayerAtalhos {
             bindings = <&mo 7>;
             key-positions = <18 19>;
+            timeout-ms = <30>;
         };
 
         ToLayerKeys {
             bindings = <&mo 6>;
             key-positions = <10 9>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <300>;
             layers = <0>;
         };
@@ -860,14 +861,14 @@
         CmbPgUp {
             bindings = <&kp PG_UP>;
             key-positions = <4 1>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
 
         CmbPgDn {
             bindings = <&kp PG_DN>;
             key-positions = <28 25>;
-            timeout-ms = <75>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
 
@@ -881,14 +882,14 @@
         PreviousTab {
             bindings = <&kp LC(PG_UP)>;
             key-positions = <4 16>;
-            timeout-ms = <100>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
         NextTab {
             bindings = <&kp LC(PG_DN)>;
             key-positions = <5 17>;
-            timeout-ms = <100>;
+            timeout-ms = <30>;
             layers = <0>;
         };
     };
