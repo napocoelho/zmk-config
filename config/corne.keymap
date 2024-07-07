@@ -1036,5 +1036,14 @@
                                                &kp CARET         &lt 2 TAB           &DanceCaps        &SkLayer 4      &lt 1 SPACE          &mo 10
             >;
         };
+
+        Beakl19bis {
+            bindings = <
+&trans  &kp Q  &kp Y     &kp O     &kp U    &kp Z        &kp W   &kp D   &kp N   &kp C  &kp K  &trans
+&trans  &kp H  &kp I     &kp E     &kp A    &kp COMMA    &kp G   &kp T   &kp R   &kp S  &kp P  &kp SEMI
+&trans  &kp J  &kp APOS  &kp FSLH  &kp DOT  &kp X        &kp V   &kp M   &kp L   &kp F  &kp B  &kp ENTER
+                         &trans    &trans   &trans       &trans  &trans  &trans
+            >;
+        };
     };
 };
