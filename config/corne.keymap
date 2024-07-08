@@ -1057,10 +1057,10 @@
 
         Brgram {
             bindings = <
-&trans  &kp B  &kp Q  &kp O   &kp U   &kp APOS     &kp MINUS  &kp L   &kp D   &kp V  &kp W  &kp Z
-&trans  &kp H  &kp I  &kp E   &kp A   &kp COMMA    &kp DOT    &kp R   &kp T   &kp S  &kp C  &kp K
-&trans  &kp G  &kp X  &kp J   &kp Y   &kp FSLH     &kp SEMI   &kp N   &kp M   &kp F  &kp P  &trans
-                      &trans  &trans  &trans       &trans     &trans  &trans
+&kp SPACE  &kp FSLH  &kp Q  &kp O   &kp U   &kp APOS     &kp MINUS  &kp L   &kp D   &kp V  &kp W  &kp Z
+&trans     &kp H     &kp I  &kp E   &kp A   &kp COMMA    &kp DOT    &kp R   &kp T   &kp S  &kp C  &kp K
+&trans     &kp G     &kp X  &kp J   &kp Y   &kp FSLH     &kp SEMI   &kp N   &kp M   &kp F  &kp P  &trans
+                            &trans  &trans  &trans       &trans     &trans  &trans
             >;
         };
     };
