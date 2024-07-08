@@ -905,7 +905,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&to 11     &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
+&to 14     &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
 &kp ESC    &HoldLayer 1 A  &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 3 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
 &kp MINUS  &kp Z           &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
                                               &lt 1 CARET       &lt 2 TAB           &DanceCaps        &SkLayer 4      &lt 1 SPACE          &SkLayer 10
@@ -1057,10 +1057,10 @@
 
         Brgram {
             bindings = <
-&kp SPACE  &kp Y  &kp Q  &kp G   &kp L   &kp APOS     &kp MINUS  &kp T   &kp H   &kp C  &kp W  &kp Z
-&trans     &kp A  &kp I  &kp O   &kp E   &kp COMMA    &kp DOT    &kp U   &kp R   &kp S  &kp N  &kp K
-&trans     &kp J  &kp B  &kp X   &kp V   &kp FSLH     &kp SEMI   &kp D   &kp M   &kp F  &kp P  &trans
-                         &trans  &trans  &trans       &trans     &trans  &trans
+&kp SPACE   &kp Y  &kp Q  &kp G  &kp L  &kp APOS      &kp MINUS  &kp T      &kp H  &kp C  &kp W  &kp Z
+&EscOrBase  &kp A  &kp I  &kp O  &kp E  &kp COMMA     &kp DOT    &kp U      &kp R  &kp S  &kp N  &kp ENTER
+&none       &kp J  &kp B  &kp X  &kp V  &kp FSLH      &kp SEMI   &kp D      &kp M  &kp F  &kp P  &kp K
+                          &none  &none  &DanceCaps    &none      &kp SPACE  &none
             >;
         };
     };
