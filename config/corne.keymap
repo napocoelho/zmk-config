@@ -1045,5 +1045,23 @@
                          &trans    &trans   &trans       &trans  &trans  &trans
             >;
         };
+
+        Engram {
+            bindings = <
+&trans  &kp B  &kp Y  &kp O   &kp U   &kp APOS     &kp MINUS  &kp L   &kp D   &kp W  &kp V  &kp Z
+&trans  &kp C  &kp I  &kp E   &kp A   &kp COMMA    &kp DOT    &kp H   &kp T   &kp S  &kp N  &kp Q
+&trans  &kp G  &kp X  &kp J   &kp K   &kp FSLH     &kp SEMI   &kp R   &kp M   &kp F  &kp P  &trans
+                      &trans  &trans  &trans       &trans     &trans  &trans
+            >;
+        };
+
+        Brgram {
+            bindings = <
+&trans  &kp B  &kp Q  &kp O   &kp U   &kp APOS     &kp MINUS  &kp L   &kp D   &kp V  &kp W  &kp Z
+&trans  &kp H  &kp I  &kp E   &kp A   &kp COMMA    &kp DOT    &kp R   &kp T   &kp S  &kp C  &kp K
+&trans  &kp G  &kp X  &kp J   &kp Y   &kp FSLH     &kp SEMI   &kp N   &kp M   &kp F  &kp P  &trans
+                      &trans  &trans  &trans       &trans     &trans  &trans
+            >;
+        };
     };
 };
