@@ -1058,7 +1058,7 @@
         Brgram {
             bindings = <
 &kp SPACE  &kp Y  &kp Q  &kp B   &kp W   &kp APOS     &kp MINUS  &kp T   &kp H   &kp C  &kp L  &kp Z
-&trans     &kp I  &kp O  &kp E   &kp A   &kp COMMA    &kp DOT    &kp U   &kp R   &kp S  &kp N  &kp K
+&trans     &kp I  &kp O  &kp A   &kp E   &kp COMMA    &kp DOT    &kp U   &kp R   &kp S  &kp N  &kp K
 &trans     &kp G  &kp X  &kp J   &kp D   &kp FSLH     &kp SEMI   &kp M   &kp V   &kp F  &kp P  &trans
                          &trans  &trans  &trans       &trans     &trans  &trans
             >;
