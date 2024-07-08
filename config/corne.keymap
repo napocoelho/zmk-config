@@ -1057,7 +1057,7 @@
 
         Brgram {
             bindings = <
-&none       &kp Y  &kp Q  &kp G  &kp L  &kp APOS      &kp MINUS   &kp T      &kp H  &kp C  &kp W  &kp Z
+&none       &kp Y  &kp L  &kp G  &kp Q  &kp APOS      &kp MINUS   &kp T      &kp H  &kp C  &kp W  &kp Z
 &EscOrBase  &kp A  &kp I  &kp O  &kp E  &kp COMMA     &kp DOT     &kp U      &kp R  &kp S  &kp N  &kp ENTER
 &none       &kp J  &kp B  &kp X  &kp V  &kp FSLH      &kp SEMI    &kp D      &kp M  &kp F  &kp P  &kp K
                           &none  &none  &DanceCaps    &SkLayer 4  &kp SPACE  &none
