@@ -905,7 +905,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&to 14     &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
+&to 13     &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
 &kp ESC    &HoldLayer 1 A  &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 3 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
 &kp MINUS  &kp Z           &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
                                               &lt 1 CARET       &lt 2 TAB           &DanceCaps        &SkLayer 4      &lt 1 SPACE          &SkLayer 10
@@ -989,7 +989,7 @@
             bindings = <
 &none       &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
 &EscOrBase  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none       &none  &none  &none  &none  &none
-&EscOrBase  &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
+&EscOrBase  &to 11      &to 12      &to 13      &to 14      &none         &none       &none  &none  &none  &none  &none
                                     &none       &none       &none         &kp LSHIFT  &none  &none
             >;
 
@@ -1048,10 +1048,10 @@
 
         Engram {
             bindings = <
-&trans  &kp B  &kp Y  &kp O   &kp U   &kp APOS     &kp MINUS  &kp L   &kp D   &kp W  &kp V  &kp Z
-&trans  &kp C  &kp I  &kp E   &kp A   &kp COMMA    &kp DOT    &kp H   &kp T   &kp S  &kp N  &kp Q
-&trans  &kp G  &kp X  &kp J   &kp K   &kp FSLH     &kp SEMI   &kp R   &kp M   &kp F  &kp P  &trans
-                      &trans  &trans  &trans       &trans     &trans  &trans
+&none       &kp B  &kp Y  &kp O  &kp U  &kp APOS      &kp MINUS  &kp L      &kp D  &kp W  &kp V  &kp Z
+&EscOrBase  &kp C  &kp I  &kp E  &kp A  &kp COMMA     &kp DOT    &kp H      &kp T  &kp S  &kp N  &kp ENTER
+&none       &kp G  &kp X  &kp J  &kp K  &kp FSLH      &kp SEMI   &kp R      &kp M  &kp F  &kp P  &kp Q
+                          &none  &none  &DanceCaps    &none      &kp SPACE  &none
             >;
         };
 
