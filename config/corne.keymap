@@ -1042,6 +1042,16 @@
             bindings = <&kp RBKT>;
             key-positions = <32 21>;
         };
+
+        TeclaExclamacao {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <1 13>;
+        };
+
+        TeclaDoisPontos {
+            bindings = <&kp COLON>;
+            key-positions = <10 22>;
+        };
     };
 
     keymap {
