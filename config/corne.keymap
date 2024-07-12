@@ -748,6 +748,42 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        ParenteseEsq: ParenteseEsq {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARENTESEESQ";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        ParenteseDir: ParenteseDir {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARENTESEDIR";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        ChaveEsq: ChaveEsq {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CHAVEESQ";
+            bindings = <&kp LEFT_BRACE>, <&kp LEFT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        ChaveDir: ChaveDir {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CHAVEDIR";
+            bindings = <&kp RIGHT_BRACE>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -891,6 +927,40 @@
             key-positions = <5 17>;
             timeout-ms = <30>;
             layers = <0>;
+        };
+
+        Copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <26 27>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        Paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <27 28>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        AbreParentese {
+            bindings = <&ParenteseEsq>;
+            key-positions = <19 20>;
+        };
+
+        FechaParentese {
+            bindings = <&ParenteseDir>;
+            key-positions = <20 21>;
+        };
+
+        AbreChave {
+            bindings = <&ChaveEsq>;
+            key-positions = <31 32>;
+        };
+
+        FechaChave {
+            bindings = <&ChaveDir>;
+            key-positions = <32 33>;
         };
     };
 
