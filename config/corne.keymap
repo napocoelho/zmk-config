@@ -884,13 +884,6 @@
             layers = <0>;
         };
 
-        EscLarge {
-            bindings = <&EscOrBase>;
-            key-positions = <13 16>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
-        };
-
         PreviousTab {
             bindings = <&kp LC(PG_UP)>;
             key-positions = <3 14>;
@@ -1017,13 +1010,6 @@
             bindings = <&kp GRAVE>;
             key-positions = <26 14>;
             timeout-ms = <30>;
-        };
-
-        TeclaRepeat {
-            bindings = <&key_repeat>;
-            key-positions = <16 14>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
         };
 
         TeclaArroba {
