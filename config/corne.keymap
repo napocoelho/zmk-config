@@ -1051,7 +1051,7 @@
         };
 
         TeclaArroba {
-            bindings = <&kp AT_SIGN>;
+            bindings = <&kp B>;
             key-positions = <14 2>;
             timeout-ms = <50>;
         };
@@ -1063,7 +1063,7 @@
         };
 
         TeclaCifrao {
-            bindings = <&kp DOLLAR>;
+            bindings = <&kp A>;
             key-positions = <4 16>;
             timeout-ms = <50>;
         };
@@ -1100,18 +1100,6 @@
             key-positions = <32 21>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-        };
-
-        Arroba {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <14 2>;
-            timeout-ms = <50>;
-        };
-
-        Cifrao {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-            timeout-ms = <50>;
         };
     };
 
