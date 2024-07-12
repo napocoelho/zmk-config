@@ -1035,12 +1035,12 @@
 
         AbreColchete {
             bindings = <&kp LBKT>;
-            key-positions = <20 31>;
+            key-positions = <19 32>;
         };
 
         FechaColchete {
             bindings = <&kp RBKT>;
-            key-positions = <20 33>;
+            key-positions = <32 21>;
         };
     };
 
@@ -1055,7 +1055,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&to 12     &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
+&to 13     &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
 &kp ESC    &HoldLayer 1 A  &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 3 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
 &kp MINUS  &kp Z           &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
                                               &lt 1 CARET       &lt 2 TAB           &DanceCaps        &SkLayer 4      &lt 1 SPACE          &SkLayer 10
@@ -1196,13 +1196,15 @@
             >;
         };
 
-        Brgram {
+        Napogram {
             bindings = <
-&none       &kp Y  &kp C  &kp M  &kp V  &kp FSLH      &kp SEMI    &kp P      &kp I  &kp Q  &kp K  &kp SQT
-&EscOrBase  &kp A  &kp R  &kp N  &kp S  &kp H         &kp G       &kp T      &kp U  &kp E  &kp O  &kp ENTER
-&none       &kp X  &kp F  &kp L  &kp D  &kp COMMA     &kp DOT     &kp B      &kp W  &kp J  &kp Z  &kp MINUS
-                          &none  &none  &DanceCaps    &SkLayer 4  &kp SPACE  &none
+&none       &kp Y  &kp C  &kp M  &kp V  &kp SQT       &kp LS(SEMI)  &kp P      &kp I  &kp Q  &kp K  &kp MINUS
+&EscOrBase  &kp A  &kp R  &kp N  &kp S  &kp H         &kp G         &kp T      &kp U  &kp E  &kp O  &kp ENTER
+&kp MINUS   &kp X  &kp F  &kp L  &kp D  &kp COMMA     &kp DOT       &kp B      &kp W  &kp J  &kp Z  &kp FSLH
+                          &none  &none  &DanceCaps    &SkLayer 4    &kp SPACE  &none
             >;
+
+            label = "NpGram";
         };
     };
 };
