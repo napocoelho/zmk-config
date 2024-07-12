@@ -814,7 +814,7 @@
 
         EnterUp {
             bindings = <&Enter_Acima>;
-            key-positions = <2 3>;
+            key-positions = <5 4>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
             layers = <0 2 1 5>;
@@ -822,7 +822,7 @@
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
-            key-positions = <8 9>;
+            key-positions = <6 7>;
             timeout-ms = <30>;
             layers = <0 1 2 5>;
             require-prior-idle-ms = <300>;
@@ -858,7 +858,7 @@
 
         Backspace2 {
             bindings = <&kp BACKSPACE>;
-            key-positions = <7 8>;
+            key-positions = <19 20>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
@@ -917,14 +917,14 @@
 
         PreviousTab {
             bindings = <&kp LC(PG_UP)>;
-            key-positions = <4 16>;
+            key-positions = <3 14>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         NextTab {
             bindings = <&kp LC(PG_DN)>;
-            key-positions = <5 17>;
+            key-positions = <3 16>;
             timeout-ms = <30>;
             layers = <0>;
         };
