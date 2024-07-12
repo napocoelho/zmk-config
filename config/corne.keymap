@@ -804,14 +804,6 @@
             layers = <0 1 2 5>;
         };
 
-        Enter2 {
-            bindings = <&kp ENTER>;
-            key-positions = <20 21>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
-            layers = <0 1 2 5>;
-        };
-
         EnterUp {
             bindings = <&Enter_Acima>;
             key-positions = <5 4>;
@@ -838,13 +830,6 @@
         Delete1 {
             bindings = <&kp DEL>;
             key-positions = <16 15>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
-        };
-
-        Delete2 {
-            bindings = <&kp DELETE>;
-            key-positions = <21 22>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
@@ -1049,12 +1034,12 @@
         };
 
         AbreColchete {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LBKT>;
             key-positions = <20 31>;
         };
 
         FechaColchete {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp RBKT>;
             key-positions = <20 33>;
         };
     };
@@ -1072,7 +1057,7 @@
             bindings = <
 &to 13     &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
 &kp ESC    &HoldLayer 1 A  &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 3 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
-&kp MINUS  &kp Z           &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &kp PERIOD          &Interrogacao_Exclamacao  &Barra_BarraInvertida
+&kp MINUS  &kp Z           &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
                                               &lt 1 CARET       &lt 2 TAB           &DanceCaps        &SkLayer 4      &lt 1 SPACE          &SkLayer 10
             >;
 
