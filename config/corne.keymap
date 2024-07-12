@@ -858,7 +858,7 @@
 
         Backspace2 {
             bindings = <&kp BACKSPACE>;
-            key-positions = <19 20>;
+            key-positions = <7 8>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
@@ -945,22 +945,114 @@
 
         AbreParentese {
             bindings = <&ParenteseEsq>;
-            key-positions = <19 20>;
+            key-positions = <7 8>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
         };
 
         FechaParentese {
             bindings = <&ParenteseDir>;
-            key-positions = <20 21>;
+            key-positions = <8 9>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
         };
 
         AbreChave {
             bindings = <&ChaveEsq>;
             key-positions = <31 32>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
         };
 
         FechaChave {
             bindings = <&ChaveDir>;
             key-positions = <32 33>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaMais {
+            bindings = <&kp PLUS>;
+            key-positions = <7 19>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaMenos {
+            bindings = <&kp MINUS>;
+            key-positions = <19 31>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaAsterisco {
+            bindings = <&kp ASTERISK>;
+            key-positions = <8 20>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaBarra {
+            bindings = <&kp SLASH>;
+            key-positions = <20 32>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaUnderline {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <18 30>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaCircunflexo {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaAmpersend {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <9 21>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaPipe {
+            bindings = <&kp PIPE>;
+            key-positions = <21 33>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaTil {
+            bindings = <&kp TILDE>;
+            key-positions = <29 17>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaIgual {
+            bindings = <&kp EQUAL>;
+            key-positions = <28 16>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaBarraInvertida {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <15 27>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        TeclaGrave {
+            bindings = <&kp GRAVE>;
+            key-positions = <26 14>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
         };
     };
 
