@@ -1035,12 +1035,12 @@
 
         AbreColchete {
             bindings = <&kp LBKT>;
-            key-positions = <19 32>;
+            key-positions = <31 20>;
         };
 
         FechaColchete {
             bindings = <&kp RBKT>;
-            key-positions = <32 21>;
+            key-positions = <20 33>;
         };
 
         TeclaExclamacao {
