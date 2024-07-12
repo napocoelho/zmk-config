@@ -1053,7 +1053,7 @@
         TeclaArroba {
             bindings = <&kp AT_SIGN>;
             key-positions = <14 2>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
         };
 
         TeclaTralha {
@@ -1065,7 +1065,7 @@
         TeclaCifrao {
             bindings = <&kp DOLLAR>;
             key-positions = <4 16>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
         };
 
         TeclaPorcento {
