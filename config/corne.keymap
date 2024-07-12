@@ -894,20 +894,6 @@
             key-positions = <38 37>;
         };
 
-        CmbPgUp {
-            bindings = <&kp PG_UP>;
-            key-positions = <4 1>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
-        };
-
-        CmbPgDn {
-            bindings = <&kp PG_DN>;
-            key-positions = <28 25>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
-        };
-
         EscLarge {
             bindings = <&EscOrBase>;
             key-positions = <13 16>;
@@ -1089,15 +1075,11 @@
         AbreColchete {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <19 32>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
         };
 
         FechaColchete {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <32 21>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
         };
 
         teste {
