@@ -884,16 +884,6 @@
             layers = <0>;
         };
 
-        ToLayerHyper {
-            bindings = <&SkLayer 9>;
-            key-positions = <39 40>;
-        };
-
-        ToLayerMeh {
-            bindings = <&SkLayer 8>;
-            key-positions = <38 37>;
-        };
-
         EscLarge {
             bindings = <&EscOrBase>;
             key-positions = <13 16>;
@@ -1074,17 +1064,12 @@
 
         AbreColchete {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <19 32>;
+            key-positions = <20 31>;
         };
 
         FechaColchete {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <32 21>;
-        };
-
-        teste {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <1 13>;
+            key-positions = <20 33>;
         };
     };
 
