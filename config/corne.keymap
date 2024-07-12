@@ -1099,6 +1099,11 @@
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
+
+        teste {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <1 13>;
+        };
     };
 
     keymap {
