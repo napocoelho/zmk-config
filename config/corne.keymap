@@ -784,6 +784,20 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        DanceRightNumNavFunc: DanceRightNumNavFunc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DANCERIGHTNUMNAVFUNC";
+            #binding-cells = <0>;
+            bindings = <&to 2>, <&to 1>, <&to 3>;
+        };
+
+        DanceLeftNumNavFunc: DanceLeftNumNavFunc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DANCELEFTNUMNAVFUNC";
+            #binding-cells = <0>;
+            bindings = <&to 1>, <&to 2>, <&to 5>;
+        };
     };
 
     combos {
@@ -1052,6 +1066,27 @@
             bindings = <&kp COLON>;
             key-positions = <10 22>;
         };
+
+        Cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <25 26>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        Undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <26 15>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
+
+        Redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <15 28>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <300>;
+        };
     };
 
     keymap {
@@ -1065,10 +1100,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&to 13     &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
-&kp ESC    &HoldLayer 1 A  &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 3 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
-&kp MINUS  &kp Z           &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                              &lt 1 CARET       &lt 2 TAB           &DanceCaps        &SkLayer 4      &lt 1 SPACE          &SkLayer 10
+&to 13     &kp Q           &HoldLeft LWIN W   &kp E                 &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
+&kp ESC    &HoldLayer 1 A  &HoldLeft LCTRL S  &HoldLeft LALT D      &HoldLeft LSHIFT F  &HoldLayer 3 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
+&kp MINUS  &kp Z           &kp X              &kp C                 &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
+                                              &DanceLeftNumNavFunc  &lt 2 TAB           &DanceCaps        &SkLayer 10     &lt 1 SPACE          &DanceRightNumNavFunc
             >;
 
             label = "Alfa1";
@@ -1082,7 +1117,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none       &none         &kp N1              &kp N2             &kp N3              &kp EQUAL          &kp LC(Z)     &kp HOME      &kp UP        &kp END        &kp LC(V)      &kp LC(Y)
+&none       &none         &kp N1              &kp N2             &kp N3              &kp EQUAL          &none         &kp HOME      &kp UP        &kp END        &none          &none
 &EscOrBase  &kp ASTERISK  &HoldLeft LCTRL N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS           &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
 &EscOrBase  &kp SLASH     &kp N7              &kp N8             &kp N9              &kp MINUS          &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
                                               &kp DOT            &mt LWIN N0         &mt LSHFT COMMA    &DanceCaps    &kp SPACE     &none
@@ -1093,10 +1128,10 @@
 
         NavLeft {
             bindings = <
-&none       &none          &kp PG_UP             &kp UP               &kp PG_DN               &none            &kp EQUAL              &kp N7               &kp N8              &kp N9               &none         &none
-&EscOrBase  &kp LC(PG_UP)  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &kp LC(PG_DN)    &kp PLUS               &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &kp ASTERISK  &kp ENTER
-&EscOrBase  &none          &kp LC(X)             &kp LC(C)            &kp LC(V)               &none            &kp MINUS              &kp N1               &kp N2              &kp N3               &kp SLASH     &kp ENTER
-                                                 &none                &kp TAB                 &none            &HoldRight LWIN COMMA  &kp N0               &kp DOT
+&none       &none  &kp PG_UP             &kp UP               &kp PG_DN               &none    &none                  &kp N7               &kp N8              &kp N9               &none  &EscOrBase
+&EscOrBase  &none  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none    &none                  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &none  &kp ENTER
+&EscOrBase  &none  &none                 &none                &none                   &none    &none                  &kp N1               &kp N2              &kp N3               &none  &kp ENTER
+                                         &none                &kp TAB                 &none    &HoldRight LWIN COMMA  &kp N0               &kp DOT
             >;
 
             label = "NavLeft";
