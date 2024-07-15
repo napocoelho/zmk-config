@@ -1128,7 +1128,7 @@
 
         NavLeft {
             bindings = <
-&none       &none  &kp PG_UP             &kp UP               &kp PG_DN               &none    &none                  &kp N7               &kp N8              &kp N9               &none  &EscOrBase
+&none       &none  &HoldLeft LWIN PG_UP  &kp UP               &kp PG_DN               &none    &none                  &kp N7               &kp N8              &kp N9               &none  &EscOrBase
 &EscOrBase  &none  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none    &none                  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &none  &kp ENTER
 &EscOrBase  &none  &none                 &none                &none                   &none    &none                  &kp N1               &kp N2              &kp N3               &none  &kp ENTER
                                          &none                &kp TAB                 &none    &HoldRight LWIN COMMA  &kp N0               &kp DOT
