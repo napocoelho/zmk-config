@@ -1117,7 +1117,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none       &none         &kp N1              &kp N2             &kp N3              &kp EQUAL          &none         &kp HOME      &kp UP        &kp END        &none          &none
+&none       &none         &kp N1              &kp N2             &kp N3              &kp EQUAL          &none         &kp HOME      &kp UP        &kp END        &none          &EscOrBase
 &EscOrBase  &kp ASTERISK  &HoldLeft LCTRL N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS           &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
 &EscOrBase  &kp SLASH     &kp N7              &kp N8             &kp N9              &kp MINUS          &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
                                               &kp DOT            &mt LWIN N0         &mt LSHFT COMMA    &DanceCaps    &kp SPACE     &none
@@ -1140,7 +1140,7 @@
         Functions {
             label = "Functions";
             bindings = <
-&kp C_VOLUME_UP    &kp F5           &HoldLeft LWIN F4    &kp F3             &kp F2               &kp F1    &none   &none            &none     &kp LWIN   &none  &none
+&kp C_VOLUME_UP    &kp F5           &HoldLeft LWIN F4    &kp F3             &kp F2               &kp F1    &none   &none            &none     &kp LWIN   &none  &EscOrBase
 &EscOrBase         &kp F11          &HoldLeft LCTRL F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LALT  &kp LCTRL  &none  &kp ENTER
 &kp C_VOLUME_DOWN  &StickyKp LSHFT  &none                &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none     &none      &none  &none
                                                          &kp LS(F3)         &kp F3               &kp F2    &kp F2  &kp LS(F3)       &kp F3
@@ -1160,7 +1160,7 @@
 
         Config {
             bindings = <
-&out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &none           &none        &none  &none  &none  &none  &none
+&out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &none           &none        &none  &none  &none  &none  &EscOrBase
 &EscOrBase    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none        &none  &none  &none  &none  &none
 &EscOrBase    &none         &none         &none         &none         &bootloader     &bootloader  &none  &none  &none  &none  &none
                                           &none         &none         &none           &none        &none  &none
@@ -1215,9 +1215,9 @@
 
         Acentos {
             bindings = <
-&none    &none          &none        &Morf_e_agudo  &Morf_e_fechado  &none         &none  &Morf_u_agudo  &Morf_i_agudo    &Morf_o_agudo  &none  &none
-&kp ESC  &Morf_a_agudo  &Morf_a_til  &Morf_a_crase  &Morf_a_fechado  &none         &none  &none          &Morf_o_fechado  &Morf_o_til    &none  &kp ENTER
-&none    &none          &none        &Morf_Cedilha  &none            &none         &none  &none          &none            &none          &none  &none
+&none    &none          &none        &Morf_e_agudo  &Morf_e_fechado  &none         &none  &Morf_u_agudo  &Morf_i_agudo  &Morf_o_agudo    &none  &EscOrBase
+&kp ESC  &Morf_a_agudo  &Morf_a_til  &Morf_a_crase  &Morf_a_fechado  &none         &none  &none          &none          &Morf_o_til      &none  &kp ENTER
+&none    &none          &none        &Morf_Cedilha  &none            &none         &none  &none          &none          &Morf_o_fechado  &none  &none
                                      &none          &kp TAB          &DanceCaps    &none  &kp SPACE      &none
             >;
         };
