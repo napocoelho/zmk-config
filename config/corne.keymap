@@ -1225,10 +1225,10 @@
         FuncNav {
             label = "FuncNav";
             bindings = <
-&none       &none       &HoldLeft LWIN F7   &kp F8             &kp F9              &kp F10            &none         &kp HOME      &kp UP        &kp END        &none          &EscOrBase
-&EscOrBase  &none       &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &kp F11            &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
-&EscOrBase  &DanceCaps  &kp F1              &kp F2             &kp F3              &kp F12            &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
-                                            &kp DOT            &mt LWIN N0         &mt LSHFT COMMA    &DanceCaps    &kp SPACE     &none
+&none       &none       &HoldLeft LWIN F7   &kp F8             &kp F9              &kp F10    &none         &kp HOME      &kp UP        &kp END        &none          &EscOrBase
+&EscOrBase  &none       &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &kp F11    &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
+&EscOrBase  &DanceCaps  &kp F1              &kp F2             &kp F3              &kp F12    &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
+                                            &kp LS(F3)         &kp F3              &kp F2     &DanceCaps    &kp SPACE     &none
             >;
         };
 
