@@ -1255,7 +1255,7 @@
             bindings = <
 &none       &kp W  &kp H  &kp D  &kp C  &kp FSLH                 &Interrogacao_Exclamacao  &kp L      &kp P  &kp V  &kp K  &kp SINGLE_QUOTE
 &EscOrBase  &kp U  &kp I  &kp A  &kp S  &kp G                    &kp Q                     &kp R      &kp E  &kp O  &kp T  &kp ENTER
-&kp MINUS   &kp W  &kp J  &kp F  &kp D  &Virgula_PontoVirgula    &Ponto_DoisPontos         &kp N      &kp B  &kp Z  &kp X  &Barra_BarraInvertida
+&kp MINUS   &kp Y  &kp F  &kp J  &kp M  &Virgula_PontoVirgula    &Ponto_DoisPontos         &kp N      &kp B  &kp Z  &kp X  &Barra_BarraInvertida
                           &none  &none  &DanceCaps               &SkLayer 4                &kp SPACE  &none
             >;
 
