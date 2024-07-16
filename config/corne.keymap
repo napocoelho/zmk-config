@@ -1215,10 +1215,10 @@
 
         Acentos {
             bindings = <
-&none    &none          &none        &Morf_e_agudo  &Morf_e_fechado  &none         &none  &Morf_u_agudo  &Morf_i_agudo  &Morf_o_agudo    &none  &EscOrBase
-&kp ESC  &Morf_a_agudo  &Morf_a_til  &Morf_a_crase  &Morf_a_fechado  &none         &none  &none          &none          &Morf_o_til      &none  &kp ENTER
-&none    &none          &none        &Morf_Cedilha  &none            &none         &none  &none          &none          &Morf_o_fechado  &none  &none
-                                     &none          &kp TAB          &DanceCaps    &none  &kp SPACE      &none
+&none    &none  &none          &Morf_a_til      &Morf_e_fechado  &none         &none  &none          &Morf_o_til      &none          &none          &EscOrBase
+&kp ESC  &none  &Morf_a_crase  &Morf_a_agudo    &Morf_e_agudo    &none         &none  &Morf_i_agudo  &Morf_o_agudo    &Morf_u_agudo  &Morf_Cedilha  &kp ENTER
+&none    &none  &none          &Morf_a_fechado  &none            &none         &none  &none          &Morf_o_fechado  &none          &none          &none
+                               &none            &kp TAB          &DanceCaps    &none  &kp SPACE      &none
             >;
         };
 
@@ -1251,15 +1251,15 @@
             >;
         };
 
-        Napogram {
+        BRgram {
             bindings = <
-&none       &kp Y  &kp C  &kp M  &kp V  &kp SQT       &kp LS(SEMI)  &kp P      &kp I  &kp Q  &kp K  &kp MINUS
-&EscOrBase  &kp A  &kp R  &kp N  &kp S  &kp H         &kp G         &kp T      &kp U  &kp E  &kp O  &kp ENTER
-&kp MINUS   &kp X  &kp F  &kp L  &kp D  &kp COMMA     &kp DOT       &kp B      &kp W  &kp J  &kp Z  &kp FSLH
-                          &none  &none  &DanceCaps    &SkLayer 4    &kp SPACE  &none
+&none       &kp W  &kp H  &kp D  &kp C  &kp FSLH                 &Interrogacao_Exclamacao  &kp L      &kp P  &kp V  &kp K  &kp SINGLE_QUOTE
+&EscOrBase  &kp U  &kp I  &kp A  &kp S  &kp G                    &kp Q                     &kp R      &kp E  &kp O  &kp T  &kp ENTER
+&kp MINUS   &kp W  &kp J  &kp F  &kp D  &Virgula_PontoVirgula    &Ponto_DoisPontos         &kp N      &kp B  &kp Z  &kp X  &Barra_BarraInvertida
+                          &none  &none  &DanceCaps               &SkLayer 4                &kp SPACE  &none
             >;
 
-            label = "NpGram";
+            label = "BRgram";
         };
     };
 };
