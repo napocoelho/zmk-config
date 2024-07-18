@@ -1090,10 +1090,9 @@
 
         Panic {
             bindings = <&to 0>;
-            key-positions = <1 4>;
+            key-positions = <13 14 15 16>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 5>;
         };
     };
 
