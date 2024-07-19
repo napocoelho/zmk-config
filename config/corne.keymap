@@ -815,7 +815,7 @@
             key-positions = <14 15>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 12 2 3>;
+            layers = <0 12 2 6>;
         };
 
         EnterUp {
@@ -823,14 +823,14 @@
             key-positions = <5 4>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 2 12 3>;
+            layers = <0 2 12 6>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
             key-positions = <6 7>;
             timeout-ms = <30>;
-            layers = <0 12 2 3>;
+            layers = <0 12 2 6>;
             require-prior-idle-ms = <300>;
         };
 
@@ -863,20 +863,20 @@
         };
 
         ToLayerConfig {
-            bindings = <&mo 3>;
+            bindings = <&mo 6>;
             key-positions = <35 34>;
             timeout-ms = <30>;
             require-prior-idle-ms = <250>;
         };
 
         ToLayerAtalhos {
-            bindings = <&mo 5>;
+            bindings = <&mo 4>;
             key-positions = <18 19>;
             timeout-ms = <30>;
         };
 
         ToLayerKeys {
-            bindings = <&mo 4>;
+            bindings = <&mo 6>;
             key-positions = <10 9>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
@@ -1112,10 +1112,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&to 14     &kp Q           &HoldLeft LWIN W   &kp E                 &kp R               &kp T             &kp Y            &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 8
+&to 14     &kp Q           &HoldLeft LWIN W   &kp E                 &kp R               &kp T             &kp Y            &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 5
 &kp ESC    &HoldLayer 2 A  &HoldLeft LCTRL S  &HoldLeft LALT D      &HoldLeft LSHIFT F  &HoldLayer 1 G    &HoldLayer 11 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
 &kp MINUS  &kp Z           &kp X              &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                              &DanceLeftNumNavFunc  &lt 2 TAB           &DanceCaps        &SkLayer 8       &lt 1 SPACE          &DanceRightNumNavFunc
+                                              &DanceLeftNumNavFunc  &lt 4 TAB           &DanceCaps        &SkLayer 3       &lt 1 SPACE          &DanceRightNumNavFunc
             >;
 
             label = "Alfa1";
@@ -1142,6 +1142,26 @@
             label = "NavLeft";
         };
 
+        Acentos {
+            bindings = <
+&none    &none  &none          &Morf_a_til      &Morf_e_fechado  &none         &none  &none          &Morf_o_til      &none          &none          &EscOrBase
+&kp ESC  &none  &Morf_a_crase  &Morf_a_agudo    &Morf_e_agudo    &none         &none  &Morf_i_agudo  &Morf_o_agudo    &Morf_u_agudo  &Morf_Cedilha  &kp ENTER
+&none    &none  &none          &Morf_a_fechado  &none            &none         &none  &none          &Morf_o_fechado  &none          &none          &none
+                               &none            &kp TAB          &DanceCaps    &none  &kp SPACE      &none
+            >;
+        };
+
+        Atalhos {
+            bindings = <
+&none       &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
+&EscOrBase  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none       &none  &none  &none  &none  &none
+&EscOrBase  &to 13      &to 0       &to 13      &to 14      &none         &none       &none  &none  &none  &none  &none
+                                    &none       &none       &none         &kp LSHIFT  &none  &none
+            >;
+
+            label = "Atalhos";
+        };
+
         Config {
             bindings = <
 &out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &none           &none        &none  &none  &none  &none  &EscOrBase
@@ -1164,17 +1184,6 @@
             label = "Keys";
         };
 
-        Atalhos {
-            bindings = <
-&none       &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
-&EscOrBase  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none       &none  &none  &none  &none  &none
-&EscOrBase  &to 13      &to 0       &to 13      &to 14      &none         &none       &none  &none  &none  &none  &none
-                                    &none       &none       &none         &kp LSHIFT  &none  &none
-            >;
-
-            label = "Atalhos";
-        };
-
         Meh {
             bindings = <
 &none       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
@@ -1195,15 +1204,6 @@
             >;
 
             label = "Hyper";
-        };
-
-        Acentos {
-            bindings = <
-&none    &none  &none          &Morf_a_til      &Morf_e_fechado  &none         &none  &none          &Morf_o_til      &none          &none          &EscOrBase
-&kp ESC  &none  &Morf_a_crase  &Morf_a_agudo    &Morf_e_agudo    &none         &none  &Morf_i_agudo  &Morf_o_agudo    &Morf_u_agudo  &Morf_Cedilha  &kp ENTER
-&none    &none  &none          &Morf_a_fechado  &none            &none         &none  &none          &Morf_o_fechado  &none          &none          &none
-                               &none            &kp TAB          &DanceCaps    &none  &kp SPACE      &none
-            >;
         };
 
         Symbols_old {
@@ -1247,10 +1247,10 @@
         ColemakDH {
             label = "CDH";
             bindings = <
-&none       &kp Q            &HoldLeft LWIN W   &kp F             &kp P               &kp B              &kp J            &kp L                &kp U                  &HoldRight LWIN Y   &kp SQT                   &SkLayer 8
+&none       &kp Q            &HoldLeft LWIN W   &kp F             &kp P               &kp B              &kp J            &kp L                &kp U                  &HoldRight LWIN Y   &kp SQT                   &SkLayer 5
 &EscOrBase  &HoldLayer 12 A  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHIFT T  &HoldLayer 11 G    &HoldLayer 11 M  &HoldRight LSHIFT N  &HoldRight LALT E      &HoldRight LCTRL I  &HoldLayer 2 O            &kp ENTER
 &kp MINUS   &kp Z            &kp X              &kp C             &HoldLeft LCTRL D   &kp V              &kp K            &HoldRight LCTRL H   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                                &kp CARET         &lt 2 TAB           &DanceCaps         &SkLayer 10      &lt 12 SPACE         &mo 8
+                                                &kp CARET         &lt 2 TAB           &DanceCaps         &SkLayer 10      &lt 12 SPACE         &mo 5
             >;
         };
 
@@ -1268,7 +1268,7 @@
 &none       &kp W  &kp H  &kp D  &kp P      &Morf_Cedilha            &Interrogacao_Exclamacao  &kp V        &kp C  &kp L  &kp K  &kp SINGLE_QUOTE
 &EscOrBase  &kp U  &kp I  &kp A  &kp S      &kp G                    &kp Q                     &kp R        &kp E  &kp O  &kp T  &kp ENTER
 &kp MINUS   &kp Y  &kp F  &kp J  &kp M      &Virgula_PontoVirgula    &Ponto_DoisPontos         &kp N        &kp B  &kp Z  &kp X  &Barra_BarraInvertida
-                          &none  &lt 2 TAB  &DanceCaps               &SkLayer 8                &lt 1 SPACE  &none
+                          &none  &lt 2 TAB  &DanceCaps               &SkLayer 5                &lt 1 SPACE  &none
             >;
 
             label = "BRgram";
