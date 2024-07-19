@@ -551,7 +551,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DANCE2OR1";
             #binding-cells = <0>;
-            bindings = <&to 2>, <&to 1>;
+            bindings = <&to 2>, <&to 12>;
 
             tapping-term-ms = <300>;
         };
@@ -579,7 +579,7 @@
             label = "DANCE1OR2";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&to 1>, <&to 2>;
+            bindings = <&to 12>, <&to 2>;
         };
 
         Virgula_PontoVirgula: Virgula_PontoVirgula {
@@ -789,14 +789,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DANCERIGHTNUMNAVFUNC";
             #binding-cells = <0>;
-            bindings = <&to 2>, <&to 11>;
+            bindings = <&to 2>, <&to 1>;
         };
 
         DanceLeftNumNavFunc: DanceLeftNumNavFunc {
             compatible = "zmk,behavior-tap-dance";
             label = "DANCELEFTNUMNAVFUNC";
             #binding-cells = <0>;
-            bindings = <&to 11>, <&to 2>;
+            bindings = <&to 1>, <&to 2>;
         };
     };
 
@@ -815,7 +815,7 @@
             key-positions = <14 15>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 5>;
+            layers = <0 12 2 3>;
         };
 
         EnterUp {
@@ -823,14 +823,14 @@
             key-positions = <5 4>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 2 1 5>;
+            layers = <0 2 12 3>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
             key-positions = <6 7>;
             timeout-ms = <30>;
-            layers = <0 1 2 5>;
+            layers = <0 12 2 3>;
             require-prior-idle-ms = <300>;
         };
 
@@ -863,20 +863,20 @@
         };
 
         ToLayerConfig {
-            bindings = <&mo 5>;
+            bindings = <&mo 3>;
             key-positions = <35 34>;
             timeout-ms = <30>;
             require-prior-idle-ms = <250>;
         };
 
         ToLayerAtalhos {
-            bindings = <&mo 7>;
+            bindings = <&mo 5>;
             key-positions = <18 19>;
             timeout-ms = <30>;
         };
 
         ToLayerKeys {
-            bindings = <&mo 6>;
+            bindings = <&mo 4>;
             key-positions = <10 9>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
@@ -1112,30 +1112,23 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&to 14     &kp Q           &HoldLeft LWIN W   &kp E                 &kp R               &kp T              &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
-&kp ESC    &HoldLayer 2 A  &HoldLeft LCTRL S  &HoldLeft LALT D      &HoldLeft LSHIFT F  &HoldLayer 11 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
-&kp MINUS  &kp Z           &kp X              &kp C                 &HoldLeft LCTRL V   &kp B              &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                              &DanceLeftNumNavFunc  &lt 2 TAB           &DanceCaps         &SkLayer 10     &lt 11 SPACE         &DanceRightNumNavFunc
+&to 14     &kp Q           &HoldLeft LWIN W   &kp E                 &kp R               &kp T             &kp Y            &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 8
+&kp ESC    &HoldLayer 2 A  &HoldLeft LCTRL S  &HoldLeft LALT D      &HoldLeft LSHIFT F  &HoldLayer 1 G    &HoldLayer 11 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
+&kp MINUS  &kp Z           &kp X              &kp C                 &HoldLeft LCTRL V   &kp B             &kp N            &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
+                                              &DanceLeftNumNavFunc  &lt 2 TAB           &DanceCaps        &SkLayer 8       &lt 1 SPACE          &DanceRightNumNavFunc
             >;
 
             label = "Alfa1";
         };
 
         NavRight {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&none       &none         &kp N1              &kp N2             &kp N3              &kp EQUAL          &none         &kp HOME      &kp UP        &kp END        &none          &EscOrBase
-&EscOrBase  &kp ASTERISK  &HoldLeft LCTRL N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS           &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
-&EscOrBase  &kp SLASH     &kp N7              &kp N8             &kp N9              &kp MINUS          &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
-                                              &kp DOT            &mt LWIN N0         &mt LSHFT COMMA    &DanceCaps    &kp SPACE     &none
-            >;
-
             label = "NavRight";
+            bindings = <
+&none       &none       &HoldLeft LWIN F7   &kp F8             &kp F9              &kp F10    &none         &kp HOME      &kp UP        &kp END        &none          &EscOrBase
+&EscOrBase  &none       &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &kp F11    &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
+&EscOrBase  &DanceCaps  &kp F1              &kp F2             &kp F3              &kp F12    &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
+                                            &kp LS(F3)         &kp F3              &kp F2     &DanceCaps    &kp SPACE     &none
+            >;
         };
 
         NavLeft {
@@ -1147,27 +1140,6 @@
             >;
 
             label = "NavLeft";
-        };
-
-        Functions {
-            label = "Functions";
-            bindings = <
-&kp C_VOLUME_UP    &kp F5           &HoldLeft LWIN F4    &kp F3             &kp F2               &kp F1    &none   &none            &none     &kp LWIN   &none  &EscOrBase
-&EscOrBase         &kp F11          &HoldLeft LCTRL F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LALT  &kp LCTRL  &none  &kp ENTER
-&kp C_VOLUME_DOWN  &StickyKp LSHFT  &none                &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none     &none      &none  &none
-                                                         &kp LS(F3)         &kp F3               &kp F2    &kp F2  &kp LS(F3)       &kp F3
-            >;
-        };
-
-        Symbols {
-            bindings = <
-&none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT          &kp CARET      &kp AMPS   &kp LPAR       &kp RPAR          &none      &none
-&EscOrBase  &kp LEFT_BRACKET  &kp PLUS    &kp UNDER   &kp MINUS   &kp RIGHT_BRACKET    &kp ASTERISK   &kp EQUAL  &kp LBRC       &kp RBRC          &kp COLON  &kp ENTER
-&EscOrBase  &PureCaret        &PureGrave  &PureTilde  &PureSqt    &PureQuot            &kp BACKSLASH  &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH  &none
-                                          &none       &none       &kp EXCLAMATION      &none          &kp GRAVE  &none
-            >;
-
-            label = "Symb";
         };
 
         Config {
@@ -1196,7 +1168,7 @@
             bindings = <
 &none       &none       &none       &none       &none       &none         &none       &none  &none  &none  &none  &none
 &EscOrBase  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none       &none  &none  &none  &none  &none
-&EscOrBase  &to 12      &to 0       &to 13      &to 14      &none         &none       &none  &none  &none  &none  &none
+&EscOrBase  &to 13      &to 0       &to 13      &to 14      &none         &none       &none  &none  &none  &none  &none
                                     &none       &none       &none         &kp LSHIFT  &none  &none
             >;
 
@@ -1234,23 +1206,51 @@
             >;
         };
 
-        FuncNav {
-            label = "FuncNav";
+        Symbols_old {
             bindings = <
-&none       &none       &HoldLeft LWIN F7   &kp F8             &kp F9              &kp F10    &none         &kp HOME      &kp UP        &kp END        &none          &EscOrBase
-&EscOrBase  &none       &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &kp F11    &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
-&EscOrBase  &DanceCaps  &kp F1              &kp F2             &kp F3              &kp F12    &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
-                                            &kp LS(F3)         &kp F3              &kp F2     &DanceCaps    &kp SPACE     &none
+&none       &kp EXCLAMATION   &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT          &kp CARET      &kp AMPS   &kp LPAR       &kp RPAR          &none      &none
+&EscOrBase  &kp LEFT_BRACKET  &kp PLUS    &kp UNDER   &kp MINUS   &kp RIGHT_BRACKET    &kp ASTERISK   &kp EQUAL  &kp LBRC       &kp RBRC          &kp COLON  &kp ENTER
+&EscOrBase  &PureCaret        &PureGrave  &PureTilde  &PureSqt    &PureQuot            &kp BACKSLASH  &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH  &none
+                                          &none       &none       &kp EXCLAMATION      &none          &kp GRAVE  &none
             >;
+
+            label = "Symb_old";
+        };
+
+        Functions_old {
+            label = "Functions_old";
+            bindings = <
+&kp C_VOLUME_UP    &kp F5           &HoldLeft LWIN F4    &kp F3             &kp F2               &kp F1    &none   &none            &none     &kp LWIN   &none  &EscOrBase
+&EscOrBase         &kp F11          &HoldLeft LCTRL F10  &HoldLeft LALT F9  &HoldLeft LSHIFT F8  &kp F7    &none   &StickyKp LSHFT  &kp LALT  &kp LCTRL  &none  &kp ENTER
+&kp C_VOLUME_DOWN  &StickyKp LSHFT  &none                &none              &HoldLeft LCTRL F12  &kp F6    &none   &none            &none     &none      &none  &none
+                                                         &kp LS(F3)         &kp F3               &kp F2    &kp F2  &kp LS(F3)       &kp F3
+            >;
+        };
+
+        NavRight_old {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+&none       &none         &kp N1              &kp N2             &kp N3              &kp EQUAL          &none         &kp HOME      &kp UP        &kp END        &none          &EscOrBase
+&EscOrBase  &kp ASTERISK  &HoldLeft LCTRL N4  &HoldLeft LALT N5  &HoldLeft LSHFT N6  &kp PLUS           &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
+&EscOrBase  &kp SLASH     &kp N7              &kp N8             &kp N9              &kp MINUS          &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
+                                              &kp DOT            &mt LWIN N0         &mt LSHFT COMMA    &DanceCaps    &kp SPACE     &none
+            >;
+
+            label = "NavRight_old";
         };
 
         ColemakDH {
             label = "CDH";
             bindings = <
-&none       &kp Q           &HoldLeft LWIN W   &kp F             &kp P               &kp B             &kp J           &kp L                &kp U                  &HoldRight LWIN Y   &kp SQT                   &SkLayer 10
-&EscOrBase  &HoldLayer 1 A  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHIFT T  &HoldLayer 3 G    &HoldLayer 3 M  &HoldRight LSHIFT N  &HoldRight LALT E      &HoldRight LCTRL I  &HoldLayer 2 O            &kp ENTER
-&kp MINUS   &kp Z           &kp X              &kp C             &HoldLeft LCTRL D   &kp V             &kp K           &HoldRight LCTRL H   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                               &kp CARET         &lt 2 TAB           &DanceCaps        &SkLayer 4      &lt 1 SPACE          &mo 10
+&none       &kp Q            &HoldLeft LWIN W   &kp F             &kp P               &kp B              &kp J            &kp L                &kp U                  &HoldRight LWIN Y   &kp SQT                   &SkLayer 8
+&EscOrBase  &HoldLayer 12 A  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHIFT T  &HoldLayer 11 G    &HoldLayer 11 M  &HoldRight LSHIFT N  &HoldRight LALT E      &HoldRight LCTRL I  &HoldLayer 2 O            &kp ENTER
+&kp MINUS   &kp Z            &kp X              &kp C             &HoldLeft LCTRL D   &kp V              &kp K            &HoldRight LCTRL H   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
+                                                &kp CARET         &lt 2 TAB           &DanceCaps         &SkLayer 10      &lt 12 SPACE         &mo 8
             >;
         };
 
@@ -1265,10 +1265,10 @@
 
         BRgram {
             bindings = <
-&none       &kp W  &kp H  &kp D  &kp P      &Morf_Cedilha            &Interrogacao_Exclamacao  &kp V         &kp C  &kp L  &kp K  &kp SINGLE_QUOTE
-&EscOrBase  &kp U  &kp I  &kp A  &kp S      &kp G                    &kp Q                     &kp R         &kp E  &kp O  &kp T  &kp ENTER
-&kp MINUS   &kp Y  &kp F  &kp J  &kp M      &Virgula_PontoVirgula    &Ponto_DoisPontos         &kp N         &kp B  &kp Z  &kp X  &Barra_BarraInvertida
-                          &none  &lt 2 TAB  &DanceCaps               &SkLayer 10               &lt 11 SPACE  &none
+&none       &kp W  &kp H  &kp D  &kp P      &Morf_Cedilha            &Interrogacao_Exclamacao  &kp V        &kp C  &kp L  &kp K  &kp SINGLE_QUOTE
+&EscOrBase  &kp U  &kp I  &kp A  &kp S      &kp G                    &kp Q                     &kp R        &kp E  &kp O  &kp T  &kp ENTER
+&kp MINUS   &kp Y  &kp F  &kp J  &kp M      &Virgula_PontoVirgula    &Ponto_DoisPontos         &kp N        &kp B  &kp Z  &kp X  &Barra_BarraInvertida
+                          &none  &lt 2 TAB  &DanceCaps               &SkLayer 8                &lt 1 SPACE  &none
             >;
 
             label = "BRgram";
