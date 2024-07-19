@@ -1094,6 +1094,11 @@
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
+
+        PauseBreak {
+            bindings = <&kp PAUSE_BREAK>;
+            key-positions = <6 11>;
+        };
     };
 
     keymap {
