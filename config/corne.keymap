@@ -1099,6 +1099,20 @@
             bindings = <&kp PAUSE_BREAK>;
             key-positions = <6 11>;
         };
+
+        ClearBT {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <24 25>;
+            require-prior-idle-ms = <300>;
+            timeout-ms = <50>;
+        };
+
+        BT1 {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <12 13>;
+            require-prior-idle-ms = <300>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
