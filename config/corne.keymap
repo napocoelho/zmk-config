@@ -1112,10 +1112,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&to 14     &kp Q           &HoldLeft LWIN W   &kp E                 &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
-&kp ESC    &HoldLayer 1 A  &HoldLeft LCTRL S  &HoldLeft LALT D      &HoldLeft LSHIFT F  &HoldLayer 3 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
-&kp MINUS  &kp Z           &kp X              &kp C                 &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                              &DanceLeftNumNavFunc  &lt 2 TAB           &DanceCaps        &SkLayer 10     &lt 11 SPACE         &DanceRightNumNavFunc
+&to 14     &kp Q           &HoldLeft LWIN W   &kp E                 &kp R               &kp T              &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &SkLayer 10
+&kp ESC    &HoldLayer 2 A  &HoldLeft LCTRL S  &HoldLeft LALT D      &HoldLeft LSHIFT F  &HoldLayer 11 G    &HoldLayer 3 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
+&kp MINUS  &kp Z           &kp X              &kp C                 &HoldLeft LCTRL V   &kp B              &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
+                                              &DanceLeftNumNavFunc  &lt 2 TAB           &DanceCaps         &SkLayer 10     &lt 11 SPACE         &DanceRightNumNavFunc
             >;
 
             label = "Alfa1";
