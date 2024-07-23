@@ -864,15 +864,10 @@
 
         ToLayerConfig {
             bindings = <&mo 6>;
-            key-positions = <35 34>;
+            key-positions = <24 25>;
             timeout-ms = <30>;
             require-prior-idle-ms = <250>;
-        };
-
-        ToLayerAtalhos {
-            bindings = <&mo 4>;
-            key-positions = <18 19>;
-            timeout-ms = <30>;
+            layers = <0>;
         };
 
         ToLayerKeys {
