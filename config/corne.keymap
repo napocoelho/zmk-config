@@ -1074,22 +1074,6 @@
             layers = <0 1 2 9>;
         };
 
-        Undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <26 15>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
-            layers = <0 1 2 9>;
-        };
-
-        Redo {
-            bindings = <&kp LC(Y)>;
-            key-positions = <15 28>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
-            layers = <0 1 2 9>;
-        };
-
         PauseBreak {
             bindings = <&kp PAUSE_BREAK>;
             key-positions = <6 11>;
@@ -1117,6 +1101,16 @@
             bindings = <&bt BT_SEL 2>;
             key-positions = <26 27>;
             layers = <4>;
+        };
+
+        Undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <26 15>;
+        };
+
+        Redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <15 28>;
         };
     };
 
