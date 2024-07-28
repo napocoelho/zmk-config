@@ -504,16 +504,6 @@
             quick-release;
         };
 
-        HoldOrTap: HoldOrTap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLDORTAP";
-            bindings = <&to>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
         CapsFrase: CapsFrase {
             compatible = "zmk,behavior-caps-word";
             label = "CAPSFRASE";
@@ -539,24 +529,6 @@
             tapping-term-ms = <300>;
         };
 
-        Dance2or1: Dance2or1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DANCE2OR1";
-            #binding-cells = <0>;
-            bindings = <&to 2>, <&to 0>;
-
-            tapping-term-ms = <300>;
-        };
-
-        DanceEscOrToBase: DanceEscOrToBase {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DANCEESCORTOBASE";
-            #binding-cells = <0>;
-            bindings = <&kp ESC>, <&to 0>;
-
-            tapping-term-ms = <300>;
-        };
-
         EscOrBase: EscOrBase {
             compatible = "zmk,behavior-tap-dance";
             label = "ESCORBASE";
@@ -564,14 +536,6 @@
             bindings = <&kp ESCAPE>, <&to 0>;
 
             tapping-term-ms = <300>;
-        };
-
-        Dance1or2: Dance1or2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DANCE1OR2";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&to 0>, <&to 2>;
         };
 
         Virgula_PontoVirgula: Virgula_PontoVirgula {
@@ -730,65 +694,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-        };
-
-        NumericoOuAcento: NumericoOuAcento {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NUMERICOOUACENTO";
-            bindings = <&lt>, <&SkLayer>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        ParenteseEsq: ParenteseEsq {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PARENTESEESQ";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        ParenteseDir: ParenteseDir {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PARENTESEDIR";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        ChaveEsq: ChaveEsq {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CHAVEESQ";
-            bindings = <&kp LEFT_BRACE>, <&kp LEFT_BRACKET>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        ChaveDir: ChaveDir {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CHAVEDIR";
-            bindings = <&kp RIGHT_BRACE>, <&kp RIGHT_BRACKET>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        DanceRightNumNavFunc: DanceRightNumNavFunc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DANCERIGHTNUMNAVFUNC";
-            #binding-cells = <0>;
-            bindings = <&to 2>, <&to 1>;
-        };
-
-        DanceLeftNumNavFunc: DanceLeftNumNavFunc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DANCELEFTNUMNAVFUNC";
-            #binding-cells = <0>;
-            bindings = <&to 1>, <&to 2>;
         };
     };
 
