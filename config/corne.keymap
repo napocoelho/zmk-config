@@ -1013,18 +1013,6 @@
             key-positions = <26 27>;
             layers = <4>;
         };
-
-        Undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <26 15>;
-            layers = <0 2 1 3 4>;
-        };
-
-        Redo {
-            bindings = <&kp LC(Y)>;
-            key-positions = <15 28>;
-            layers = <0 1 2 3 4>;
-        };
     };
 
     keymap {
