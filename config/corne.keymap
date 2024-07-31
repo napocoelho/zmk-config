@@ -1130,5 +1130,15 @@
 
             label = "BRgram";
         };
+
+        Gallium_v2 {
+            label = "Gallium_v2";
+            bindings = <
+&none       &kp B  &kp L  &kp D      &kp C      &kp V         &kp J       &kp F        &kp O                  &kp U              &Morf_Cedilha             &kp SINGLE_QUOTE
+&EscOrBase  &kp N  &kp R  &kp T      &kp S      &kp G         &kp Y       &kp H        &kp A                  &kp E              &kp I                     &kp ENTER
+&kp MINUS   &kp X  &kp Q  &kp M      &kp W      &kp Z         &kp K       &kp P        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &Barra_BarraInvertida
+                          &kp CARET  &lt 2 TAB  &DanceCaps    &SkLayer 5  &lt 1 SPACE  &kp TILDE
+            >;
+        };
     };
 };
