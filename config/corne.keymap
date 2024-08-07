@@ -1067,7 +1067,7 @@
 
         Atalhos {
             bindings = <
-&kp LG(N1)  &none          &kp LC(W)          &kp LG(E)          &kp LC(F5)         &kp LG(N4)    &kp C_VOLUME_UP    &kp C_MUTE  &kp C_PREVIOUS  &kp C_NEXT  &kp C_PLAY_PAUSE  &none
+&kp LG(N1)  &kp LA(F4)     &kp LC(W)          &kp LG(E)          &kp LC(F5)         &kp LG(N4)    &kp C_VOLUME_UP    &kp C_MUTE  &kp C_PREVIOUS  &kp C_NEXT  &kp C_PLAY_PAUSE  &none
 &kp LG(N2)  &kp LC(A)      &kp LC(S)          &kp LS(F3)         &kp F3             &kp LG(N5)    &kp C_VOLUME_DOWN  &none       &CtrlKD         &none       &none             &none
 &kp LG(N3)  &td_undo_redo  &kp LC(LS(LA(N)))  &kp LC(LS(LA(Y)))  &kp LC(LA(LS(H)))  &kp LG(N6)    &none              &none       &none           &none       &none             &none
                                               &none              &none              &none         &kp LSHIFT         &kp SPACE   &none
