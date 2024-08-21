@@ -527,9 +527,9 @@
             continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z TILDE CARET GRAVE SINGLE_QUOTE BACKSPACE UNDERSCORE MINUS>;
         };
 
-        DanceCaps: DanceCaps {
+        DncCaps: DncCaps {
             compatible = "zmk,behavior-tap-dance";
-            label = "DANCECAPS";
+            label = "DNCCAPS";
             #binding-cells = <0>;
             bindings = <&StickyKp LSHIFT>, <&CapsPalavra>, <&CapsFrase>;
 
@@ -1042,7 +1042,7 @@
 &mo 5                 &kp Q           &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &to 10
 &HoldFast TAB ESCAPE  &HoldLayer 2 A  &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 1 G    &HoldLayer 0 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
 &kp MINUS             &HoldLayer 1 Z  &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                                         &kp TAB           &lt 4 ENTER         &DanceCaps        &SkLayer 3      &lt 1 SPACE          &DncTilCircunflexo
+                                                         &kp TAB           &lt 4 ENTER         &DncCaps          &SkLayer 3      &lt 1 SPACE          &DncTilCircunflexo
             >;
 
             label = "Alfa1";
@@ -1051,10 +1051,10 @@
         NavRight {
             label = "NavRight";
             bindings = <
-&none       &none       &HoldLeft LWIN F7   &kp F8             &kp F9              &kp F10                  &none         &kp HOME      &kp UP        &kp END        &none          &EscOrBase
-&EscOrBase  &none       &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &kp F11                  &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
-&EscOrBase  &DanceCaps  &kp F1              &kp F2             &kp F3              &HoldFast LC(F12) F12    &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
-                                            &kp LS(F3)         &kp F2              &kp F3                   &DanceCaps    &kp SPACE     &none
+&none       &none     &HoldLeft LWIN F7   &kp F8             &kp F9              &kp F10                  &none         &kp HOME      &kp UP        &kp END        &none          &EscOrBase
+&EscOrBase  &none     &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &kp F11                  &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
+&EscOrBase  &DncCaps  &kp F1              &kp F2             &kp F3              &HoldFast LC(F12) F12    &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
+                                          &kp LS(F3)         &kp F2              &kp F3                   &DncCaps      &kp SPACE     &none
             >;
         };
 
@@ -1071,10 +1071,10 @@
 
         Acentos {
             bindings = <
-&none    &none  &none          &Morf_a_til      &Morf_e_fechado  &none         &none  &none          &Morf_o_til      &none          &none          &EscOrBase
-&kp ESC  &none  &Morf_a_crase  &Morf_a_agudo    &Morf_e_agudo    &none         &none  &Morf_i_agudo  &Morf_o_agudo    &Morf_u_agudo  &Morf_Cedilha  &kp ENTER
-&none    &none  &none          &Morf_a_fechado  &none            &none         &none  &none          &Morf_o_fechado  &none          &none          &none
-                               &none            &kp TAB          &DanceCaps    &none  &kp SPACE      &none
+&none    &none  &none          &Morf_a_til      &Morf_e_fechado  &none       &none  &none          &Morf_o_til      &none          &none          &EscOrBase
+&kp ESC  &none  &Morf_a_crase  &Morf_a_agudo    &Morf_e_agudo    &none       &none  &Morf_i_agudo  &Morf_o_agudo    &Morf_u_agudo  &Morf_Cedilha  &kp ENTER
+&none    &none  &none          &Morf_a_fechado  &none            &none       &none  &none          &Morf_o_fechado  &none          &none          &none
+                               &none            &kp TAB          &DncCaps    &none  &kp SPACE      &none
             >;
         };
 
@@ -1138,7 +1138,7 @@
 &none       &kp W  &kp H  &kp D  &kp P      &Morf_Cedilha            &Interrogacao_Exclamacao  &kp V        &kp C  &kp L  &kp K  &kp SINGLE_QUOTE
 &EscOrBase  &kp U  &kp I  &kp A  &kp S      &kp G                    &kp Q                     &kp R        &kp E  &kp O  &kp T  &kp ENTER
 &kp MINUS   &kp Y  &kp F  &kp J  &kp M      &Virgula_PontoVirgula    &Ponto_DoisPontos         &kp N        &kp B  &kp Z  &kp X  &Barra_BarraInvertida
-                          &none  &lt 2 TAB  &DanceCaps               &SkLayer 5                &lt 1 SPACE  &none
+                          &none  &lt 2 TAB  &DncCaps                 &SkLayer 5                &lt 1 SPACE  &none
             >;
 
             label = "BRgram";
@@ -1147,10 +1147,10 @@
         Gallium_v2 {
             label = "Gallium_v2";
             bindings = <
-&none       &kp B  &kp L  &kp D      &kp C      &kp V         &kp J       &kp F        &kp O                  &kp U              &Morf_Cedilha             &kp SINGLE_QUOTE
-&EscOrBase  &kp N  &kp R  &kp T      &kp S      &kp G         &kp Y       &kp H        &kp A                  &kp E              &kp I                     &kp ENTER
-&kp MINUS   &kp X  &kp Q  &kp M      &kp W      &kp Z         &kp K       &kp P        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                          &kp CARET  &lt 2 TAB  &DanceCaps    &SkLayer 5  &lt 1 SPACE  &kp TILDE
+&none       &kp B  &kp L  &kp D      &kp C      &kp V       &kp J       &kp F        &kp O                  &kp U              &Morf_Cedilha             &kp SINGLE_QUOTE
+&EscOrBase  &kp N  &kp R  &kp T      &kp S      &kp G       &kp Y       &kp H        &kp A                  &kp E              &kp I                     &kp ENTER
+&kp MINUS   &kp X  &kp Q  &kp M      &kp W      &kp Z       &kp K       &kp P        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &Barra_BarraInvertida
+                          &kp CARET  &lt 2 TAB  &DncCaps    &SkLayer 5  &lt 1 SPACE  &kp TILDE
             >;
         };
 
