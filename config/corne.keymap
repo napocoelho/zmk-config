@@ -890,12 +890,6 @@
             timeout-ms = <30>;
         };
 
-        TeclaCircunflexo {
-            bindings = <&kp CARET>;
-            key-positions = <6 18>;
-            timeout-ms = <30>;
-        };
-
         TeclaAmpersend {
             bindings = <&kp AMPERSAND>;
             key-positions = <9 21>;
@@ -905,12 +899,6 @@
         TeclaPipe {
             bindings = <&kp PIPE>;
             key-positions = <21 33>;
-            timeout-ms = <30>;
-        };
-
-        TeclaTil {
-            bindings = <&kp TILDE>;
-            key-positions = <29 17>;
             timeout-ms = <30>;
         };
 
@@ -946,12 +934,6 @@
         TeclaCifrao {
             bindings = <&kp DOLLAR>;
             key-positions = <4 16>;
-        };
-
-        TeclaPorcento {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-            timeout-ms = <30>;
         };
 
         TeclaMenor {
@@ -1025,6 +1007,20 @@
             bindings = <&bt BT_SEL 2>;
             key-positions = <26 27>;
             layers = <4>;
+        };
+
+        TeclaTil {
+            bindings = <&kp TILDE>;
+            key-positions = <5 17>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        TeclaCircunflexo {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
     };
 
