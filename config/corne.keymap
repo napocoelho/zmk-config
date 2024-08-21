@@ -1076,10 +1076,10 @@
 
         Atalhos {
             bindings = <
-&kp LG(N1)  &kp LA(TAB)            &HoldFast LC(F4) LC(W)     &kp LG(E)          &HoldFast LC(F5) F5  &kp LG(N4)               &kp C_VOLUME_UP    &kp C_MUTE  &kp C_PREVIOUS  &kp C_NEXT  &kp C_PLAY_PAUSE  &none
-&kp LG(N2)  &kp LC(A)              &HoldFast LC(LS(S)) LC(S)  &kp LS(F3)         &kp F3               &kp LG(N5)               &kp C_VOLUME_DOWN  &none       &CtrlKD         &none       &none             &none
-&kp LG(N3)  &HoldFast LC(Y) LC(Z)  &kp LC(LS(LA(N)))          &kp LC(LS(LA(Y)))  &kp LC(LA(LS(H)))    &HoldFast LC(F12) F12    &none              &none       &none           &none       &none             &none
-                                                              &none              &none                &none                    &kp LSHIFT         &kp SPACE   &none
+&kp LG(N1)  &kp LA(TAB)            &HoldFast LC(F4) LC(W)     &kp LG(E)          &HoldFast LC(F5) F5  &kp LG(N4)       &kp C_VOLUME_UP    &kp C_MUTE  &kp C_PREVIOUS  &kp C_NEXT  &kp C_PLAY_PAUSE  &none
+&kp LG(N2)  &kp LC(A)              &HoldFast LC(LS(S)) LC(S)  &kp LS(F3)         &kp F3               &kp LG(N5)       &kp C_VOLUME_DOWN  &none       &CtrlKD         &none       &none             &none
+&kp LG(N3)  &HoldFast LC(Y) LC(Z)  &kp LC(LS(LA(N)))          &kp LC(LS(LA(Y)))  &kp LC(LA(LS(H)))    &kp LC(LS(B))    &none              &none       &none           &none       &none             &none
+                                                              &none              &none                &none            &kp LSHIFT         &kp SPACE   &none
             >;
 
             label = "Atalhos";
