@@ -739,7 +739,7 @@
             key-positions = <14 15>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 2 6 1 9>;
+            layers = <0 2 8 1 10>;
         };
 
         EnterUp {
@@ -747,14 +747,14 @@
             key-positions = <5 4>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 2 6>;
+            layers = <0 2 8>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
             key-positions = <6 7>;
             timeout-ms = <30>;
-            layers = <0 2 6>;
+            layers = <0 2 8>;
             require-prior-idle-ms = <300>;
         };
 
@@ -795,7 +795,7 @@
         };
 
         ToLayerKeys {
-            bindings = <&mo 6>;
+            bindings = <&mo 8>;
             key-positions = <10 9>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
@@ -821,7 +821,7 @@
             key-positions = <26 27>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 9>;
+            layers = <0 1 2 10>;
         };
 
         Paste {
@@ -829,7 +829,7 @@
             key-positions = <27 28>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 9>;
+            layers = <0 1 2 10>;
         };
 
         AbreParentese {
@@ -963,13 +963,13 @@
         TeclaExclamacao {
             bindings = <&kp EXCLAMATION>;
             key-positions = <1 13>;
-            layers = <0 1 2 9>;
+            layers = <0 1 2 10>;
         };
 
         TeclaDoisPontos {
             bindings = <&kp COLON>;
             key-positions = <10 22>;
-            layers = <0 1 2 9>;
+            layers = <0 1 2 10>;
         };
 
         Cut {
@@ -977,7 +977,7 @@
             key-positions = <25 26>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 9>;
+            layers = <0 1 2 10>;
         };
 
         PauseBreak {
@@ -1035,10 +1035,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mo 5       &kp Q           &HoldLeft LWIN W   &kp E                &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &to 10
+&mo 5       &kp Q           &HoldLeft LWIN W   &kp E                &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &to 11
 &kp ESCAPE  &HoldLayer 2 A  &HoldLeft LCTRL S  &HoldLeft LALT D     &HoldLeft LSHIFT F  &HoldLayer 1 G    &HoldLayer 1 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
 &kp MINUS   &HoldLayer 1 Z  &kp X              &kp C                &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                               &HoldFast SPACE TAB  &lt 4 ENTER         &DanceCaps        &SkLayer 3      &lt 1 SPACE          &DncTilCircunflexo
+                                               &HoldFast SPACE TAB  &lt 4 ENTER         &DanceCaps        &SkLayer 6      &lt 1 SPACE          &DncTilCircunflexo
             >;
 
             label = "Alfa1";
@@ -1096,6 +1096,17 @@
             label = "CFG";
         };
 
+        Simbolos {
+            bindings = <
+&none  &none            &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET         &kp PLUS   &kp ASTERISK   &kp AMPERSAND     &none      &none
+&none  &kp EXCLAMATION  &kp COLON    &kp BACKSLASH  &kp EQUAL   &none          &none             &kp MINUS  &kp SLASH      &kp PIPE          &kp UNDER  &none
+&none  &kp LBRC         &kp LPAR     &kp RPAR       &kp RBRC    &none          &none             &kp LBKT   &kp LESS_THAN  &kp GREATER_THAN  &kp RBKT   &none
+                                     &none          &none       &kp GRAVE      &kp SINGLE_QUOTE  &none      &none
+            >;
+
+            label = "Simbolos";
+        };
+
         Keys {
             bindings = <
 &none       &NumFacil    &AlfaNumFacil    &AlfaNum1  &AlfaNumR  &AlfaNumT    &none  &none  &none  &none  &none  &none
@@ -1148,17 +1159,6 @@
 &kp MINUS   &kp X  &kp Q  &kp M      &kp W      &kp Z         &kp K       &kp P        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &Barra_BarraInvertida
                           &kp CARET  &lt 2 TAB  &DanceCaps    &SkLayer 5  &lt 1 SPACE  &kp TILDE
             >;
-        };
-
-        Simbolos {
-            bindings = <
-&none  &none            &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET         &kp PLUS   &kp ASTERISK   &kp AMPERSAND     &none      &none
-&none  &kp EXCLAMATION  &kp COLON    &kp BACKSLASH  &kp EQUAL   &none          &none             &kp MINUS  &kp SLASH      &kp PIPE          &kp UNDER  &none
-&none  &kp LBRC         &kp LPAR     &kp RPAR       &kp RBRC    &none          &none             &kp LBKT   &kp LESS_THAN  &kp GREATER_THAN  &kp RBKT   &none
-                                     &none          &none       &kp GRAVE      &kp SINGLE_QUOTE  &none      &none
-            >;
-
-            label = "Simbolos";
         };
     };
 };
