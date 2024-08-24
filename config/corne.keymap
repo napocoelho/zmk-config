@@ -1038,7 +1038,7 @@
 &mo 5       &kp Q           &HoldLeft LWIN W   &kp E                &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &to 11
 &kp ESCAPE  &HoldLayer 2 A  &HoldLeft LCTRL S  &HoldLeft LALT D     &HoldLeft LSHIFT F  &HoldLayer 1 G    &HoldLayer 1 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
 &kp MINUS   &HoldLayer 1 Z  &kp X              &kp C                &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                               &HoldFast SPACE TAB  &lt 4 ENTER         &DanceCaps        &SkLayer 6      &lt 1 SPACE          &DncTilCircunflexo
+                                               &HoldFast SPACE TAB  &lt 4 ENTER         &DanceCaps        &SkLayer 3      &lt 1 SPACE          &DncTilCircunflexo
             >;
 
             label = "Alfa1";
@@ -1065,13 +1065,15 @@
             label = "NavLeft";
         };
 
-        Acentos {
+        Simbolos {
             bindings = <
-&none    &none  &none          &Morf_a_til      &Morf_e_fechado  &none         &none  &none          &Morf_o_til      &none          &none          &EscOrBase
-&kp ESC  &none  &Morf_a_crase  &Morf_a_agudo    &Morf_e_agudo    &none         &none  &Morf_i_agudo  &Morf_o_agudo    &Morf_u_agudo  &Morf_Cedilha  &kp ENTER
-&none    &none  &none          &Morf_a_fechado  &none            &none         &none  &none          &Morf_o_fechado  &none          &none          &none
-                               &none            &kp TAB          &DanceCaps    &none  &kp SPACE      &none
+&none  &none            &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET         &kp PLUS   &kp ASTERISK   &kp AMPERSAND     &none      &none
+&none  &kp EXCLAMATION  &kp COLON    &kp BACKSLASH  &kp EQUAL   &none          &none             &kp MINUS  &kp SLASH      &kp PIPE          &kp UNDER  &none
+&none  &kp LBRC         &kp LPAR     &kp RPAR       &kp RBRC    &none          &none             &kp LBKT   &kp LESS_THAN  &kp GREATER_THAN  &kp RBKT   &none
+                                     &none          &none       &kp GRAVE      &kp SINGLE_QUOTE  &none      &none
             >;
+
+            label = "Simbolos";
         };
 
         Atalhos {
@@ -1096,15 +1098,13 @@
             label = "CFG";
         };
 
-        Simbolos {
+        Acentos {
             bindings = <
-&none  &none            &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET         &kp PLUS   &kp ASTERISK   &kp AMPERSAND     &none      &none
-&none  &kp EXCLAMATION  &kp COLON    &kp BACKSLASH  &kp EQUAL   &none          &none             &kp MINUS  &kp SLASH      &kp PIPE          &kp UNDER  &none
-&none  &kp LBRC         &kp LPAR     &kp RPAR       &kp RBRC    &none          &none             &kp LBKT   &kp LESS_THAN  &kp GREATER_THAN  &kp RBKT   &none
-                                     &none          &none       &kp GRAVE      &kp SINGLE_QUOTE  &none      &none
+&none    &none  &none          &Morf_a_til      &Morf_e_fechado  &none         &none  &none          &Morf_o_til      &none          &none          &EscOrBase
+&kp ESC  &none  &Morf_a_crase  &Morf_a_agudo    &Morf_e_agudo    &none         &none  &Morf_i_agudo  &Morf_o_agudo    &Morf_u_agudo  &Morf_Cedilha  &kp ENTER
+&none    &none  &none          &Morf_a_fechado  &none            &none         &none  &none          &Morf_o_fechado  &none          &none          &none
+                               &none            &kp TAB          &DanceCaps    &none  &kp SPACE      &none
             >;
-
-            label = "Simbolos";
         };
 
         Keys {
