@@ -734,14 +734,6 @@
             require-prior-idle-ms = <300>;
         };
 
-        Enter1 {
-            bindings = <&kp ENTER>;
-            key-positions = <14 15>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
-            layers = <0 2 8 1 10>;
-        };
-
         EnterUp {
             bindings = <&Enter_Acima>;
             key-positions = <5 4>;
