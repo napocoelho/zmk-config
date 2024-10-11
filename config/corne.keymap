@@ -246,6 +246,13 @@
             bindings = <&kp LC(K) &kp LC(D)>;
             label = "M_CTRLKD";
         };
+
+        SelectWord: SelectWord {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RIGHT) &kp LS(LC(LEFT))>;
+            label = "SELECTWORD";
+        };
     };
 
     behaviors {
@@ -379,114 +386,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        Morf_Cedilha: Morf_Cedilha {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_CEDILHA";
-            bindings = <&cedilha_lower>, <&cedilha_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_e_agudo: Morf_e_agudo {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_E_AGUDO";
-            bindings = <&e_agudo_lower>, <&e_agudo_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_e_fechado: Morf_e_fechado {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_E_FECHADO";
-            bindings = <&e_fechado_lower>, <&e_fechado_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_a_agudo: Morf_a_agudo {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_A_AGUDO";
-            bindings = <&a_agudo_lower>, <&a_agudo_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_a_crase: Morf_a_crase {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_A_CRASE";
-            bindings = <&a_crase_lower>, <&a_crase_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_a_til: Morf_a_til {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_A_TIL";
-            bindings = <&a_til_lower>, <&a_til_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_a_fechado: Morf_a_fechado {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_A_FECHADO";
-            bindings = <&a_fechado_lower>, <&a_fechado_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_o_agudo: Morf_o_agudo {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_O_AGUDO";
-            bindings = <&o_agudo_lower>, <&o_agudo_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_o_fechado: Morf_o_fechado {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_O_FECHADO";
-            bindings = <&o_fechado_lower>, <&o_fechado_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_o_til: Morf_o_til {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_O_TIL";
-            bindings = <&o_til_lower>, <&o_til_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_u_agudo: Morf_u_agudo {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_U_AGUDO";
-            bindings = <&u_agudo_lower>, <&u_agudo_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        Morf_i_agudo: Morf_i_agudo {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORF_I_AGUDO";
-            bindings = <&i_agudo_lower>, <&i_agudo_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         HoldFast: HoldFast {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDFAST";
@@ -505,6 +404,14 @@
             label = "DNCTILCIRCUNFLEXO";
             #binding-cells = <0>;
             bindings = <&kp TILDE>, <&kp CARET>, <&kp GRAVE>;
+        };
+
+        SelectWord_SelectLine: SelectWord_SelectLine {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SELECTWORD_SELECTLINE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&SelectWord>, <&select_line>;
         };
     };
 
@@ -670,9 +577,9 @@
         NavRight {
             label = "NavRight";
             bindings = <
-&none       &none       &HoldLeft LWIN F7   &kp F8             &kp F9              &kp F10                  &none         &kp HOME      &kp UP        &kp END        &none          &EscOrBase
-&EscOrBase  &none       &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &kp F11                  &kp LC(LEFT)  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
-&EscOrBase  &DanceCaps  &kp F1              &kp F2             &kp F3              &HoldFast LC(F12) F12    &kp PG_UP     &select_left  &select_line  &select_right  &kp PG_DN      &kp ENTER
+&none       &none       &HoldLeft LWIN F7   &kp F8             &kp F9              &kp F10                  &none         &kp HOME      &kp UP                  &kp END        &none          &EscOrBase
+&EscOrBase  &none       &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &kp F11                  &kp LC(LEFT)  &kp LEFT      &kp DOWN                &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
+&EscOrBase  &DanceCaps  &kp F1              &kp F2             &kp F3              &HoldFast LC(F12) F12    &kp PG_UP     &select_left  &SelectWord_SelectLine  &select_right  &kp PG_DN      &kp ENTER
                                             &kp LS(F3)         &kp F2              &kp F3                   &DanceCaps    &kp SPACE     &none
             >;
         };
@@ -723,10 +630,10 @@
 
         Acentos {
             bindings = <
-&none    &none  &none          &Morf_a_til      &Morf_e_fechado  &none         &none  &none          &Morf_o_til      &none          &none          &EscOrBase
-&kp ESC  &none  &Morf_a_crase  &Morf_a_agudo    &Morf_e_agudo    &none         &none  &Morf_i_agudo  &Morf_o_agudo    &Morf_u_agudo  &Morf_Cedilha  &kp ENTER
-&none    &none  &none          &Morf_a_fechado  &none            &none         &none  &none          &Morf_o_fechado  &none          &none          &none
-                               &none            &kp TAB          &DanceCaps    &none  &kp SPACE      &none
+&none    &none  &none  &none  &none    &none         &none  &none      &none  &none  &none  &EscOrBase
+&kp ESC  &none  &none  &none  &none    &none         &none  &none      &none  &none  &none  &kp ENTER
+&none    &none  &none  &none  &none    &none         &none  &none      &none  &none  &none  &none
+                       &none  &kp TAB  &DanceCaps    &none  &kp SPACE  &none
             >;
         };
 
@@ -765,7 +672,7 @@
 
         BRgram {
             bindings = <
-&none       &kp W  &kp H  &kp D  &kp P      &Morf_Cedilha            &Interrogacao_Exclamacao  &kp V        &kp C  &kp L  &kp K  &kp SINGLE_QUOTE
+&none       &kp W  &kp H  &kp D  &kp P      &none                    &Interrogacao_Exclamacao  &kp V        &kp C  &kp L  &kp K  &kp SINGLE_QUOTE
 &EscOrBase  &kp U  &kp I  &kp A  &kp S      &kp G                    &kp Q                     &kp R        &kp E  &kp O  &kp T  &kp ENTER
 &kp MINUS   &kp Y  &kp F  &kp J  &kp M      &Virgula_PontoVirgula    &Ponto_DoisPontos         &kp N        &kp B  &kp Z  &kp X  &Barra_BarraInvertida
                           &none  &lt 2 TAB  &DanceCaps               &SkLayer 5                &lt 1 SPACE  &none
@@ -777,7 +684,7 @@
         Gallium_v2 {
             label = "Gallium_v2";
             bindings = <
-&none       &kp B  &kp L  &kp D      &kp C      &kp V         &kp J       &kp F        &kp O                  &kp U              &Morf_Cedilha             &kp SINGLE_QUOTE
+&none       &kp B  &kp L  &kp D      &kp C      &kp V         &kp J       &kp F        &kp O                  &kp U              &none                     &kp SINGLE_QUOTE
 &EscOrBase  &kp N  &kp R  &kp T      &kp S      &kp G         &kp Y       &kp H        &kp A                  &kp E              &kp I                     &kp ENTER
 &kp MINUS   &kp X  &kp Q  &kp M      &kp W      &kp Z         &kp K       &kp P        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &Barra_BarraInvertida
                           &kp CARET  &lt 2 TAB  &DanceCaps    &SkLayer 5  &lt 1 SPACE  &kp TILDE
