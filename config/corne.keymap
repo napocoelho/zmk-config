@@ -681,8 +681,8 @@
             label = "BRgram";
         };
 
-        Gallium_v2 {
-            label = "Gallium_v2";
+        Delicius {
+            label = "Delicius";
             bindings = <
 &none       &kp J  &kp F  &kp L      &kp P    &kp Z         &kp MINUS      &kp U        &kp O                  &kp Q              &kp SQT                   &kp BSPC
 &EscOrBase  &kp D  &kp S  &kp N      &kp T    &kp V         &kp K          &kp I        &kp E                  &kp A              &kp H                     &kp ENTER
