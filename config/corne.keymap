@@ -410,7 +410,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SELECTWORD_SELECTLINE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&SelectWord>, <&select_line>;
         };
     };
