@@ -684,10 +684,10 @@
         Gallium_v2 {
             label = "Gallium_v2";
             bindings = <
-&none       &kp B  &kp L  &kp D      &kp C      &kp V         &kp J       &kp F        &kp O                  &kp U              &none                     &kp SINGLE_QUOTE
-&EscOrBase  &kp N  &kp R  &kp T      &kp S      &kp G         &kp Y       &kp H        &kp A                  &kp E              &kp I                     &kp ENTER
-&kp MINUS   &kp X  &kp Q  &kp M      &kp W      &kp Z         &kp K       &kp P        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                          &kp CARET  &lt 2 TAB  &DanceCaps    &SkLayer 5  &lt 1 SPACE  &kp TILDE
+&none       &kp J  &kp F  &kp L      &kp P    &kp Z         &kp MINUS      &kp U        &kp O                  &kp Q              &kp SQT                   &kp BSPC
+&EscOrBase  &kp D  &kp S  &kp N      &kp T    &kp V         &kp K          &kp I        &kp E                  &kp A              &kp H                     &kp ENTER
+&kp MINUS   &kp C  &kp G  &kp M      &kp B    &kp W         &kp LS(QMARK)  &kp Y        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp X
+                          &kp CARET  &lt 4 R  &DanceCaps    &SkLayer 5     &lt 1 SPACE  &kp TILDE
             >;
         };
     };
