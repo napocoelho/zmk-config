@@ -567,7 +567,7 @@
             bindings = <
 &mo 5       &lt 7 Q         &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &none
 &kp ESCAPE  &HoldLayer 2 A  &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 1 G    &HoldLayer 1 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 2 APOSTROPHE   &kp ENTER
-&kp MINUS   &HoldLayer 1 Z  &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
+&kp MINUS   &kp Z           &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
                                                &lt 1 TAB         &lt 4 SINGLE_QUOTE  &DanceCaps        &SkLayer 3      &lt 1 SPACE          &DncTilCircunflexo
             >;
 
