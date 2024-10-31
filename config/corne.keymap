@@ -577,7 +577,7 @@
         NavRight {
             label = "NavRight";
             bindings = <
-&none       &none    &HoldLeft LWIN F7   &kp F8             &kp F9              &kp F10                  &none         &kp HOME      &kp UP                  &kp END        &none          &EscOrBase
+&none       &none    &HoldLeft LWIN F7   &kp F8             &kp F9              &none                    &none         &kp HOME      &kp UP                  &kp END        &none          &EscOrBase
 &EscOrBase  &kp F10  &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &HoldFast LC(F12) F12    &kp LC(LEFT)  &kp LEFT      &kp DOWN                &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
 &EscOrBase  &kp F11  &kp F1              &kp F2             &kp F3              &none                    &kp PG_UP     &select_left  &SelectWord_SelectLine  &select_right  &kp PG_DN      &kp ENTER
                                          &kp LS(F3)         &kp F2              &kp F3                   &DanceCaps    &kp SPACE     &none
