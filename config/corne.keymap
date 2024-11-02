@@ -592,16 +592,16 @@
 &trans  &none    &HoldLeft LWIN F7   &kp F8             &kp F9              &none                    &none         &kp HOME      &kp UP                  &kp END        &none          &EscOrBase
 &trans  &kp F10  &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &HoldFast LC(F12) F12    &kp LC(LEFT)  &kp LEFT      &kp DOWN                &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
 &trans  &kp F11  &kp F1              &kp F2             &kp F3              &none                    &kp PG_UP     &select_left  &SelectWord_SelectLine  &select_right  &kp PG_DN      &kp ENTER
-                                     &kp LS(F3)         &kp F2              &kp F3                   &DanceCaps    &kp SPACE     &none
+                                     &kp LS(F3)         &kp F2              &DanceCaps               &DanceCaps    &kp SPACE     &none
             >;
         };
 
         NavLeft {
             bindings = <
-&trans  &none  &HoldLeft LWIN PG_UP  &kp UP               &kp PG_DN               &none    &none                  &kp N7               &kp N8              &kp N9               &none  &EscOrBase
-&trans  &none  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none    &none                  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &none  &kp ENTER
-&trans  &none  &kp LC(PG_UP)         &none                &kp LC(PG_DN)           &none    &none                  &kp N1               &kp N2              &kp N3               &none  &kp ENTER
-                                     &none                &kp SPACE               &none    &HoldRight LWIN COMMA  &kp N0               &kp DOT
+&trans  &none  &HoldLeft LWIN PG_UP  &kp UP               &kp PG_DN               &none         &none                  &kp N7               &kp N8              &kp N9               &none  &EscOrBase
+&trans  &none  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none         &none                  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &none  &kp ENTER
+&trans  &none  &kp LC(PG_UP)         &none                &kp LC(PG_DN)           &none         &none                  &kp N1               &kp N2              &kp N3               &none  &kp ENTER
+                                     &none                &kp SPACE               &DanceCaps    &HoldRight LWIN COMMA  &kp N0               &kp DOT
             >;
 
             label = "NavLeft";
