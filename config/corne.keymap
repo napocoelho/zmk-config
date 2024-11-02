@@ -291,6 +291,7 @@
             #binding-cells = <1>;
             release-after-ms = <1000>;
             quick-release;
+            ignore-modifiers;
         };
 
         SkLayer: SkLayer {
@@ -300,6 +301,7 @@
             #binding-cells = <1>;
             release-after-ms = <1000>;
             quick-release;
+            ignore-modifiers;
         };
 
         CapsFrase: CapsFrase {
