@@ -685,10 +685,10 @@
 
         BRgram {
             bindings = <
-&none       &kp B  &kp L  &kp D       &kp V       &kp W         &kp SQT      &kp F         &kp O                  &kp U              &kp J                     &none
-&EscOrBase  &kp N  &kp R  &kp T       &kp S       &kp G         &kp Y        &kp H         &kp E                  &kp A              &kp I                     &kp ENTER
-&kp MINUS   &kp X  &kp Q  &kp M       &kp C       &kp Z         &kp K        &kp P         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
-                          &lt 14 TAB  &lt 13 SQT  &DanceCaps    &SkLayer 12  &lt 14 SPACE  &DncTilCircunflexo
+&none       &kp B  &HoldLeft LGUI L   &kp D             &kp V              &kp W         &kp SQT      &kp F         &kp O                  &kp U              &kp J                     &none
+&EscOrBase  &kp N  &HoldLeft LCTRL R  &HoldLeft LALT T  &HoldLeft LSHFT S  &kp G         &kp Y        &kp H         &kp E                  &kp A              &kp I                     &kp ENTER
+&kp MINUS   &kp X  &kp Q              &kp M             &kp C              &kp Z         &kp K        &kp P         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
+                                      &lt 14 TAB        &lt 13 SQT         &DanceCaps    &SkLayer 12  &lt 14 SPACE  &DncTilCircunflexo
             >;
 
             label = "BRgram";
