@@ -697,10 +697,10 @@
         Delicius {
             label = "Delicius";
             bindings = <
-&none       &kp J  &kp F  &kp L    &kp P    &kp Z         &kp MINUS      &kp U        &kp O                  &kp Q              &kp SQT                   &kp BSPC
-&EscOrBase  &kp D  &kp S  &kp N    &kp T    &kp V         &kp K          &kp I        &kp E                  &kp A              &kp H                     &kp ENTER
-&kp MINUS   &kp C  &kp G  &kp M    &kp B    &kp W         &kp LS(QMARK)  &kp Y        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp X
-                          &kp SQT  &lt 4 R  &DanceCaps    &SkLayer 5     &lt 1 SPACE  &DncTilCircunflexo
+&none       &kp J  &kp F  &kp L    &kp P     &kp Z         &kp MINUS      &kp U         &kp O                  &kp Q              &kp SQT                   &kp BSPC
+&EscOrBase  &kp D  &kp S  &kp N    &kp T     &kp V         &kp K          &kp I         &kp E                  &kp A              &kp H                     &kp ENTER
+&kp MINUS   &kp C  &kp G  &kp M    &kp B     &kp W         &kp LS(QMARK)  &kp Y         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp X
+                          &kp SQT  &lt 13 R  &DanceCaps    &SkLayer 12    &lt 14 SPACE  &DncTilCircunflexo
             >;
         };
 
