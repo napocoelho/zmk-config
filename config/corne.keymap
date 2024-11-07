@@ -559,11 +559,13 @@
         ENTER_1 {
             bindings = <&kp ENTER>;
             key-positions = <26 27>;
+            layers = <0 10 11>;
         };
 
         ENTER_2 {
             bindings = <&kp ENTER>;
             key-positions = <32 33>;
+            layers = <0 10 11>;
         };
     };
 
