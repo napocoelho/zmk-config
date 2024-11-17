@@ -603,7 +603,7 @@
             bindings = <
 &trans  &none  &HoldLeft LWIN PG_UP  &kp UP               &kp PG_DN               &none         &none                  &kp N7               &kp N8              &kp N9               &none  &EscOrBase
 &trans  &none  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none         &none                  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &none  &kp ENTER
-&trans  &none  &kp LC(PG_UP)         &mkp MB3             &kp LC(PG_DN)           &none         &none                  &kp N1               &kp N2              &kp N3               &none  &kp ENTER
+&trans  &none  &kp LC(PG_UP)         &mkp MB1             &kp LC(PG_DN)           &none         &none                  &kp N1               &kp N2              &kp N3               &none  &kp ENTER
                                      &none                &kp SPACE               &DanceCaps    &HoldRight LWIN COMMA  &kp N0               &kp DOT
             >;
 
@@ -687,7 +687,7 @@
 
         BRgram {
             bindings = <
-&none       &kp Q  &HoldLeft LGUI V   &kp L             &kp D              &kp W         &kp SQT      &kp F         &kp O                  &kp U              &kp J                     &none
+&none       &kp F  &HoldLeft LGUI V   &kp L             &kp D              &kp W         &kp SQT      &kp Q         &kp O                  &kp U              &kp J                     &none
 &EscOrBase  &kp C  &HoldLeft LCTRL S  &HoldLeft LALT R  &HoldLeft LSHFT T  &kp G         &kp Y        &kp H         &kp E                  &kp A              &kp I                     &kp ENTER
 &kp MINUS   &kp B  &kp X              &kp N             &kp M              &kp Z         &kp K        &kp P         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
                                       &lt 14 TAB        &lt 13 SQT         &DanceCaps    &SkLayer 12  &lt 14 SPACE  &DncTilCircunflexo
