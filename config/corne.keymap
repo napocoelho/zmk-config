@@ -685,15 +685,15 @@
             label = "Hyper";
         };
 
-        BRgram {
+        Colemak {
             bindings = <
-&none       &kp F  &HoldLeft LGUI V   &kp L             &kp D              &kp W         &kp SQT      &kp P         &kp O                  &kp U              &kp J                     &none
-&EscOrBase  &kp C  &HoldLeft LCTRL S  &HoldLeft LALT R  &HoldLeft LSHFT T  &kp G         &kp Y        &kp H         &kp E                  &kp A              &kp I                     &kp ENTER
-&kp MINUS   &kp B  &kp X              &kp N             &kp M              &kp Z         &kp K        &kp Q         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
+&none       &kp Q  &HoldLeft LGUI W   &kp F             &kp P              &kp G         &kp J        &kp L         &kp U                  &kp Y              &kp SINGLE_QUOTE          &none
+&EscOrBase  &kp A  &HoldLeft LCTRL S  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp D         &kp H        &kp N         &kp E                  &kp I              &kp O                     &kp ENTER
+&kp MINUS   &kp Z  &kp X              &kp C             &kp V              &kp B         &kp K        &kp M         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
                                       &lt 14 TAB        &lt 13 SQT         &DanceCaps    &SkLayer 12  &lt 14 SPACE  &DncTilCircunflexo
             >;
 
-            label = "BRgram";
+            label = "Colemak";
         };
 
         Delicius {
