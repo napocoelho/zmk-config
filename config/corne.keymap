@@ -559,13 +559,13 @@
         ENTER_1 {
             bindings = <&kp ENTER>;
             key-positions = <26 27>;
-            layers = <0 10 11>;
+            layers = <0 10 12>;
         };
 
         ENTER_2 {
             bindings = <&kp ENTER>;
             key-positions = <32 33>;
-            layers = <0 10 11>;
+            layers = <0 10 12>;
         };
     };
 
@@ -634,7 +634,7 @@
 
         Config {
             bindings = <
-&out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &bt BT_CLR_ALL    &none        &none  &none  &to 11  &to 10  &none
+&out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &bt BT_CLR_ALL    &none        &none  &none  &to 12  &to 10  &none
 &EscOrBase    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &none        &none  &none  &none   &none   &none
 &EscOrBase    &none         &none         &none         &none         &bootloader       &bootloader  &none  &none  &none   &none   &none
                                           &none         &none         &none             &none        &none  &none
@@ -690,10 +690,20 @@
 &none       &kp Q  &HoldLeft LGUI W   &kp F             &kp P              &kp G         &kp J        &kp L         &kp U                  &kp Y              &kp SINGLE_QUOTE          &none
 &EscOrBase  &kp A  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp D         &kp H        &kp N         &kp E                  &kp I              &kp O                     &kp ENTER
 &kp MINUS   &kp Z  &kp X              &kp C             &kp V              &kp B         &kp K        &kp M         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
-                                      &lt 14 TAB        &lt 13 SQT         &DanceCaps    &SkLayer 12  &lt 14 SPACE  &DncTilCircunflexo
+                                      &lt 15 TAB        &lt 14 SQT         &DanceCaps    &SkLayer 13  &lt 15 SPACE  &DncTilCircunflexo
             >;
 
             label = "Colemak";
+        };
+
+        Sturdy {
+            label = "Sturdy";
+            bindings = <
+&none       &kp V  &HoldLeft LGUI M   &kp L             &kp C              &kp P         &kp X        &kp F         &kp U                  &kp O              &kp J                     &none
+&EscOrBase  &kp S  &HoldLeft LCTRL T  &HoldLeft LALT R  &HoldLeft LSHFT D  &kp Y         &kp SQT      &kp N         &kp A                  &kp E              &kp I                     &kp ENTER
+&kp MINUS   &kp Z  &kp K              &kp Q             &kp G              &kp W         &kp B        &kp H         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
+                                      &lt 15 TAB        &lt 14 SQT         &DanceCaps    &SkLayer 13  &lt 15 SPACE  &DncTilCircunflexo
+            >;
         };
 
         Delicius {
@@ -702,7 +712,7 @@
 &none       &kp J  &kp F  &kp L    &kp P     &kp Z         &kp MINUS      &kp U         &kp O                  &kp Q              &kp SQT                   &kp BSPC
 &EscOrBase  &kp D  &kp S  &kp N    &kp T     &kp V         &kp K          &kp I         &kp E                  &kp A              &kp H                     &kp ENTER
 &kp MINUS   &kp C  &kp G  &kp M    &kp B     &kp W         &kp LS(QMARK)  &kp Y         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp X
-                          &kp SQT  &lt 13 R  &DanceCaps    &SkLayer 12    &lt 14 SPACE  &DncTilCircunflexo
+                          &kp SQT  &lt 14 R  &DanceCaps    &SkLayer 13    &lt 15 SPACE  &DncTilCircunflexo
             >;
         };
 
