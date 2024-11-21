@@ -696,12 +696,12 @@
             label = "Colemak";
         };
 
-        Sturdy {
-            label = "Sturdy";
+        GraphiteBR {
+            label = "GraphiteBR";
             bindings = <
-&none       &kp V  &HoldLeft LGUI M   &kp L             &kp C              &kp P         &kp X        &kp F         &kp U                  &kp O              &kp J                     &none
-&EscOrBase  &kp S  &HoldLeft LCTRL T  &HoldLeft LALT R  &HoldLeft LSHFT D  &kp Y         &kp SQT      &kp N         &kp A                  &kp E              &kp I                     &kp ENTER
-&kp MINUS   &kp Z  &kp K              &kp Q             &kp G              &kp W         &kp B        &kp H         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
+&none       &kp W  &HoldLeft LGUI L   &kp D             &kp B              &kp Z         &kp SQT      &kp F         &kp O                  &kp U              &kp J                     &none
+&EscOrBase  &kp N  &HoldLeft LCTRL R  &HoldLeft LALT T  &HoldLeft LSHFT S  &kp G         &kp Y        &kp P         &kp E                  &kp A              &kp I                     &kp ENTER
+&kp MINUS   &kp X  &kp Q              &kp M             &kp C              &kp V         &kp K        &kp H         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
                                       &lt 15 TAB        &lt 14 SQT         &DanceCaps    &SkLayer 13  &lt 15 SPACE  &DncTilCircunflexo
             >;
         };
