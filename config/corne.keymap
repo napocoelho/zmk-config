@@ -254,6 +254,20 @@
             bindings = <&kp LC(RIGHT) &kp LS(LC(LEFT))>;
             label = "SELECTWORD";
         };
+
+        Cedilha_Maiusculo: Cedilha_Maiusculo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp LS(C)>;
+            label = "CEDILHA_MAIUSCULO";
+        };
+
+        Cedilha_Minusculo: Cedilha_Minusculo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C>;
+            label = "CEDILHA_MINUSCULO";
+        };
     };
 
     behaviors {
@@ -426,6 +440,15 @@
             quick-release;
             ignore-modifiers;
         };
+
+        Cedilha: Cedilha {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CEDILHA";
+            bindings = <&Cedilha_Minusculo>, <&Cedilha_Maiusculo>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -566,6 +589,11 @@
             bindings = <&kp ENTER>;
             key-positions = <32 33>;
             layers = <0 10 12>;
+        };
+
+        Cedilha {
+            bindings = <&Cedilha>;
+            key-positions = <16 28>;
         };
     };
 
