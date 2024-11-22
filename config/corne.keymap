@@ -598,12 +598,7 @@
 
         Cedilha {
             bindings = <&Cedilha>;
-            key-positions = <16 4>;
-        };
-
-        SC {
-            bindings = <&SC>;
-            key-positions = <28 16>;
+            key-positions = <5 17>;
         };
 
         vEnter1 {
