@@ -571,7 +571,7 @@
 
         ESC_2 {
             bindings = <&kp ESC>;
-            key-positions = <2 3>;
+            key-positions = <1 13>;
         };
 
         SuperDel {
@@ -604,6 +604,41 @@
         SC {
             bindings = <&SC>;
             key-positions = <28 16>;
+        };
+
+        vEnter1 {
+            bindings = <&kp ENTER>;
+            key-positions = <2 14>;
+        };
+
+        vEnter2 {
+            bindings = <&kp ENTER>;
+            key-positions = <21 9>;
+        };
+
+        vDel {
+            bindings = <&kp DEL>;
+            key-positions = <3 15>;
+        };
+
+        vCtrlDel {
+            bindings = <&kp LC(DEL)>;
+            key-positions = <4 16>;
+        };
+
+        vBckspce {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 20>;
+        };
+
+        vCtrlBckspce {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <7 19>;
+        };
+
+        vLeftBkspce {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <13 25>;
         };
     };
 
