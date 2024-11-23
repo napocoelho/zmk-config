@@ -462,11 +462,11 @@
             label = "DANCEMOUSELAYERS";
             #binding-cells = <0>;
             bindings =
-                <&kp LS(LA(LC(LG(A))))>,
-                <&kp LS(LA(LC(LG(B))))>,
-                <&kp LS(LA(LC(LG(C))))>;
+                <&kp LS(LA(LC(A)))>,
+                <&kp LS(LA(LC(B)))>,
+                <&kp LS(LA(LC(C)))>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
         };
     };
 
