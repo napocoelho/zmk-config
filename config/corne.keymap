@@ -647,6 +647,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <13 25>;
         };
+
+        ESC_1 {
+            bindings = <&kp ESC>;
+            key-positions = <3 2>;
+        };
     };
 
     keymap {
