@@ -728,7 +728,7 @@
             label = "CFG";
         };
 
-        MaisAtalhos {
+        Janelas {
             bindings = <
 &none    &none  &none                            &none                          &none                              &none         &none  &none      &none  &none  &none  &EscOrBase
 &kp ESC  &none  &HoldFast LG(LS(LEFT)) LG(LEFT)  &HoldFast LA(LS(TAB)) LA(TAB)  &HoldFast LG(LS(RIGHT)) LG(RIGHT)  &none         &none  &none      &none  &none  &none  &kp ENTER
@@ -736,7 +736,7 @@
                                                  &none                          &kp TAB                            &DanceCaps    &none  &kp SPACE  &none
             >;
 
-            label = "MaisAtalhos";
+            label = "Janelas";
         };
 
         Keys {
