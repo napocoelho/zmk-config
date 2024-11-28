@@ -686,10 +686,10 @@
 
         NavLeft {
             bindings = <
-&trans  &none  &HoldLeft LWIN PG_UP  &kp UP               &kp PG_DN               &none         &none                  &kp N7               &kp N8              &kp N9               &none  &EscOrBase
-&trans  &none  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT  &none         &none                  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &none  &kp ENTER
-&trans  &none  &kp LC(PG_UP)         &mkp MB1             &kp LC(PG_DN)           &none         &none                  &kp N1               &kp N2              &kp N3               &none  &kp ENTER
-                                     &none                &kp SPACE               &DanceCaps    &HoldRight LWIN COMMA  &kp N0               &kp DOT
+&trans  &none  &HoldLeft HOME PG_UP  &kp UP               &HoldLeft END PAGE_DOWN  &none         &none                  &kp N7               &kp N8              &kp N9               &none  &EscOrBase
+&trans  &none  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT   &none         &none                  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &none  &kp ENTER
+&trans  &none  &kp LC(PG_UP)         &mkp MB1             &kp LC(PG_DN)            &none         &none                  &kp N1               &kp N2              &kp N3               &none  &kp ENTER
+                                     &none                &kp SPACE                &DanceCaps    &HoldRight LWIN COMMA  &kp N0               &kp DOT
             >;
 
             label = "NavLeft";
