@@ -652,6 +652,11 @@
             bindings = <&kp ESC>;
             key-positions = <3 2>;
         };
+
+        PontoVirgula {
+            bindings = <&kp LC(LS(SEMICOLON))>;
+            key-positions = <32 20>;
+        };
     };
 
     keymap {
