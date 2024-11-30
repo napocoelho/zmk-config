@@ -657,6 +657,16 @@
             bindings = <&kp LC(LS(SEMICOLON))>;
             key-positions = <32 20>;
         };
+
+        CmbPolegar2 {
+            bindings = <&HoldLayer 6 SINGLE_QUOTE>;
+            key-positions = <38 37>;
+        };
+
+        CmbPolegar3 {
+            bindings = <&DncTilCircunflexo>;
+            key-positions = <39 40>;
+        };
     };
 
     keymap {
