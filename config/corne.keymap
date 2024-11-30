@@ -682,7 +682,7 @@
             bindings = <
 &StickyLongoKp LWIN   &lt 12 Q         &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &mo 10
 &StickyLongoKp LCTRL  &HoldLayer 7 A   &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 6 G    &HoldLayer 6 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 7 APOSTROPHE   &kp ENTER
-&DanceMouseLayers     &HoldLayer 11 Z  &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
+&DanceMouseLayers     &HoldLayer 11 Z  &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &kp SEMICOLON
                                                           &lt 6 TAB         &lt 9 SINGLE_QUOTE  &DanceCaps        &SkLayer 8      &lt 6 SPACE          &DncTilCircunflexo
             >;
 
