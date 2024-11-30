@@ -802,8 +802,8 @@
             label = "Canary";
             bindings = <
 &none       &kp W  &HoldLeft LGUI L   &kp Y             &kp P              &kp B         &kp Z        &kp F         &kp O                  &kp U              &kp SINGLE_QUOTE          &none
-&EscOrBase  &kp C  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp M        &kp N         &kp E                  &kp A              &kp I                     &kp ENTER
-&kp MINUS   &kp Q  &kp J              &kp V             &kp D              &kp K         &kp X        &kp H         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
+&EscOrBase  &kp C  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp H        &kp N         &kp E                  &kp A              &kp I                     &kp ENTER
+&kp MINUS   &kp Q  &kp J              &kp V             &kp D              &kp K         &kp X        &kp M         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
                                       &lt 16 TAB        &lt 15 SQT         &DanceCaps    &SkLayer 14  &lt 16 SPACE  &DncTilCircunflexo
             >;
         };
