@@ -485,14 +485,14 @@
             key-positions = <5 4>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 2 10 11 12>;
+            layers = <0 2 10 11 13>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
             key-positions = <6 7>;
             timeout-ms = <30>;
-            layers = <0 2 10 11 12>;
+            layers = <0 2 10 11 13>;
             require-prior-idle-ms = <300>;
         };
 
@@ -599,13 +599,13 @@
         ENTER_1 {
             bindings = <&kp ENTER>;
             key-positions = <26 27>;
-            layers = <0 10 11 12>;
+            layers = <0 10 11 13>;
         };
 
         ENTER_2 {
             bindings = <&kp ENTER>;
             key-positions = <32 33>;
-            layers = <0 10 11 12>;
+            layers = <0 10 11 13>;
         };
 
         Cedilha {
@@ -724,7 +724,7 @@
 
         Config {
             bindings = <
-&out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &bt BT_CLR_ALL    &none        &none  &to 12  &to 11  &to 10  &none
+&out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &bt BT_CLR_ALL    &none        &none  &to 13  &to 11  &to 10  &none
 &EscOrBase    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &none        &none  &none   &none   &none   &none
 &EscOrBase    &none         &none         &none         &none         &bootloader       &bootloader  &none  &none   &none   &none   &none
                                           &none         &none         &none             &none        &none  &none
@@ -782,7 +782,7 @@
 &none       &kp Q  &HoldLeft LGUI W   &kp F             &kp P              &kp B         &kp J        &kp L         &kp U                  &kp Y              &kp SINGLE_QUOTE          &none
 &EscOrBase  &kp A  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp M        &kp N         &kp E                  &kp I              &kp O                     &kp ENTER
 &kp MINUS   &kp Z  &kp X              &kp C             &kp D              &kp V         &kp K        &kp H         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
-                                      &lt 15 TAB        &lt 14 SQT         &DanceCaps    &SkLayer 13  &lt 15 SPACE  &DncTilCircunflexo
+                                      &lt 16 TAB        &lt 15 SQT         &DanceCaps    &SkLayer 14  &lt 16 SPACE  &DncTilCircunflexo
             >;
 
             label = "Colemak";
@@ -794,7 +794,17 @@
 &none       &kp W  &HoldLeft LGUI L   &kp D             &kp V              &kp Z         &kp SQT      &kp F         &kp O                  &kp U              &kp J                     &none
 &EscOrBase  &kp N  &HoldLeft LCTRL R  &HoldLeft LALT T  &HoldLeft LSHFT S  &kp G         &kp Y        &kp P         &kp E                  &kp A              &kp I                     &kp ENTER
 &kp MINUS   &kp X  &kp Q              &kp M             &kp C              &kp B         &kp K        &kp H         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
-                                      &lt 15 TAB        &lt 14 SQT         &DanceCaps    &SkLayer 13  &lt 15 SPACE  &DncTilCircunflexo
+                                      &lt 16 TAB        &lt 15 SQT         &DanceCaps    &SkLayer 14  &lt 16 SPACE  &DncTilCircunflexo
+            >;
+        };
+
+        Canary {
+            label = "Canary";
+            bindings = <
+&none       &kp W  &HoldLeft LGUI L   &kp Y             &kp P              &kp B         &kp Z        &kp F         &kp O                  &kp U              &kp SINGLE_QUOTE          &none
+&EscOrBase  &kp C  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp M        &kp N         &kp E                  &kp A              &kp I                     &kp ENTER
+&kp MINUS   &kp Q  &kp J              &kp V             &kp D              &kp K         &kp X        &kp H         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
+                                      &lt 16 TAB        &lt 15 SQT         &DanceCaps    &SkLayer 14  &lt 16 SPACE  &DncTilCircunflexo
             >;
         };
 
@@ -804,7 +814,7 @@
 &none       &kp J  &kp F  &kp L    &kp P     &kp Z         &kp MINUS      &kp U         &kp O                  &kp Q              &kp SQT                   &kp BSPC
 &EscOrBase  &kp D  &kp S  &kp N    &kp T     &kp V         &kp K          &kp I         &kp E                  &kp A              &kp H                     &kp ENTER
 &kp MINUS   &kp C  &kp G  &kp M    &kp B     &kp W         &kp LS(QMARK)  &kp Y         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp X
-                          &kp SQT  &lt 14 R  &DanceCaps    &SkLayer 13    &lt 15 SPACE  &DncTilCircunflexo
+                          &kp SQT  &lt 15 R  &DanceCaps    &SkLayer 14    &lt 16 SPACE  &DncTilCircunflexo
             >;
         };
 
