@@ -691,10 +691,10 @@
 
         Colemak {
             bindings = <
-&none       &kp Q           &HoldLeft LGUI W   &kp F             &kp P              &kp B         &kp J       &kp L        &kp U                  &kp Y              &kp SINGLE_QUOTE          &none
-&EscOrBase  &HoldLayer 7 A  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp M       &kp N        &kp E                  &kp I              &HoldLayer 7 O            &kp ENTER
-&kp MINUS   &kp Z           &kp X              &kp C             &kp D              &kp V         &kp K       &kp H        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
-                                               &lt 6 TAB         &lt 9 SQT          &DanceCaps    &SkLayer 8  &lt 6 SPACE  &DncTilCircunflexo
+&none       &HoldLayer 12 Q  &HoldLeft LGUI W   &kp F             &kp P              &kp B         &kp J       &kp L        &kp U                  &kp Y              &kp SINGLE_QUOTE          &none
+&EscOrBase  &HoldLayer 7 A   &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp M       &kp N        &kp E                  &kp I              &HoldLayer 7 O            &kp ENTER
+&kp MINUS   &HoldLayer 11 Z  &kp X              &kp C             &kp D              &kp V         &kp K       &kp H        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
+                                                &lt 6 TAB         &lt 9 SQT          &DanceCaps    &SkLayer 8  &lt 6 SPACE  &DncTilCircunflexo
             >;
 
             label = "Colemak";
