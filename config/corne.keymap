@@ -485,14 +485,14 @@
             key-positions = <5 4>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 13 2 3 4>;
+            layers = <0 7 2 3 4>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
             key-positions = <6 7>;
             timeout-ms = <30>;
-            layers = <0 13 2 3 4>;
+            layers = <0 7 2 3 4>;
             require-prior-idle-ms = <300>;
         };
 
@@ -525,7 +525,7 @@
         };
 
         ToLayerConfig {
-            bindings = <&mo 16>;
+            bindings = <&mo 10>;
             key-positions = <24 25>;
             timeout-ms = <30>;
             require-prior-idle-ms = <250>;
@@ -533,7 +533,7 @@
         };
 
         ToLayerKeys {
-            bindings = <&mo 7>;
+            bindings = <&mo 0>;
             key-positions = <10 9>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
@@ -560,25 +560,25 @@
         ClearBT {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <12 13>;
-            layers = <15>;
+            layers = <9>;
         };
 
         BT1 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <2 3>;
-            layers = <15>;
+            layers = <9>;
         };
 
         BT2 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <14 15>;
-            layers = <15>;
+            layers = <9>;
         };
 
         BT3 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <26 27>;
-            layers = <15>;
+            layers = <9>;
         };
 
         ESC_2 {
@@ -662,7 +662,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Alfa1 {
+        Querty {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -670,31 +670,31 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&StickyLongoKp LWIN   &lt 18 Q         &HoldLeft LWIN W   &kp E             &kp R                &kp T              &kp Y            &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &mo 16
-&StickyLongoKp LCTRL  &HoldLayer 13 A  &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F   &HoldLayer 12 G    &HoldLayer 12 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 13 APOSTROPHE  &kp ENTER
-&DanceMouseLayers     &HoldLayer 17 Z  &kp X              &kp C             &HoldLeft LCTRL V    &kp B              &kp N            &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
-                                                          &lt 12 TAB        &lt 15 SINGLE_QUOTE  &DanceCaps         &SkLayer 14      &lt 12 SPACE         &DncTilCircunflexo
+&StickyLongoKp LWIN   &lt 12 Q         &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &mo 10
+&StickyLongoKp LCTRL  &HoldLayer 7 A   &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 6 G    &HoldLayer 6 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 7 APOSTROPHE   &kp ENTER
+&DanceMouseLayers     &HoldLayer 11 Z  &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &Barra_BarraInvertida
+                                                          &lt 6 TAB         &lt 9 SINGLE_QUOTE  &DanceCaps        &SkLayer 8      &lt 6 SPACE          &DncTilCircunflexo
             >;
 
-            label = "Alfa1";
+            label = "Querty";
         };
 
         Canary {
             label = "Canary";
             bindings = <
-&none       &HoldLayer 18 W  &HoldLeft LGUI L   &kp Y             &kp P              &kp B         &kp Z       &kp F         &kp O                  &kp U              &kp SINGLE_QUOTE          &mo 16
-&EscOrBase  &HoldLayer 13 C  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp H       &kp N         &kp E                  &kp A              &HoldLayer 13 I           &kp ENTER
-&kp MINUS   &HoldLayer 17 Q  &kp J              &kp V             &kp D              &kp K         &kp X       &kp M         &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
-                                                &lt 12 TAB        &lt 15 SQT         &DanceCaps    &SkLayer 8  &lt 12 SPACE  &DncTilCircunflexo
+&none       &HoldLayer 12 W  &HoldLeft LGUI L   &kp Y             &kp P              &kp B         &kp Z       &kp F        &kp O                  &kp U              &kp SINGLE_QUOTE          &mo 10
+&EscOrBase  &HoldLayer 7 C   &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp H       &kp N        &kp E                  &kp A              &HoldLayer 7 I            &kp ENTER
+&kp MINUS   &HoldLayer 11 Q  &kp J              &kp V             &kp D              &kp K         &kp X       &kp M        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
+                                                &lt 6 TAB         &lt 9 SQT          &DanceCaps    &SkLayer 8  &lt 6 SPACE  &DncTilCircunflexo
             >;
         };
 
         Colemak {
             bindings = <
 &none       &kp Q           &HoldLeft LGUI W   &kp F             &kp P              &kp B         &kp J       &kp L        &kp U                  &kp Y              &kp SINGLE_QUOTE          &none
-&EscOrBase  &HoldLayer 8 A  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp M       &kp N        &kp E                  &kp I              &HoldLayer 8 O            &kp ENTER
+&EscOrBase  &HoldLayer 7 A  &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp M       &kp N        &kp E                  &kp I              &HoldLayer 7 O            &kp ENTER
 &kp MINUS   &kp Z           &kp X              &kp C             &kp D              &kp V         &kp K       &kp H        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
-                                               &lt 5 TAB         &lt 9 SQT          &DanceCaps    &SkLayer 8  &lt 5 SPACE  &DncTilCircunflexo
+                                               &lt 6 TAB         &lt 9 SQT          &DanceCaps    &SkLayer 8  &lt 6 SPACE  &DncTilCircunflexo
             >;
 
             label = "Colemak";
@@ -704,9 +704,9 @@
             label = "GraphiteBR";
             bindings = <
 &none       &kp W           &HoldLeft LGUI L   &kp D             &kp V              &kp Z         &kp SQT     &kp F        &kp O                  &kp U              &kp J                     &none
-&EscOrBase  &HoldLayer 8 N  &HoldLeft LCTRL R  &HoldLeft LALT T  &HoldLeft LSHFT S  &kp G         &kp Y       &kp P        &kp E                  &kp A              &HoldLayer 8 I            &kp ENTER
+&EscOrBase  &HoldLayer 7 N  &HoldLeft LCTRL R  &HoldLeft LALT T  &HoldLeft LSHFT S  &kp G         &kp Y       &kp P        &kp E                  &kp A              &HoldLayer 7 I            &kp ENTER
 &kp MINUS   &kp X           &kp Q              &kp M             &kp C              &kp B         &kp K       &kp H        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp FSLH
-                                               &lt 5 TAB         &lt 9 SQT          &DanceCaps    &SkLayer 8  &lt 5 SPACE  &DncTilCircunflexo
+                                               &lt 6 TAB         &lt 9 SQT          &DanceCaps    &SkLayer 8  &lt 6 SPACE  &DncTilCircunflexo
             >;
         };
 
@@ -714,19 +714,9 @@
             label = "Delicius";
             bindings = <
 &none       &kp J           &kp F  &kp L    &kp P    &kp Z         &kp MINUS      &kp U        &kp O                  &kp Q              &kp SQT                   &kp BSPC
-&EscOrBase  &HoldLayer 8 D  &kp S  &kp N    &kp T    &kp V         &kp K          &kp I        &kp E                  &kp A              &HoldLayer 8 H            &kp ENTER
+&EscOrBase  &HoldLayer 7 D  &kp S  &kp N    &kp T    &kp V         &kp K          &kp I        &kp E                  &kp A              &HoldLayer 7 H            &kp ENTER
 &kp MINUS   &kp C           &kp G  &kp M    &kp B    &kp W         &kp LS(QMARK)  &kp Y        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp X
-                                   &kp SQT  &lt 9 R  &DanceCaps    &SkLayer 8     &lt 5 SPACE  &DncTilCircunflexo
-            >;
-        };
-
-        NavRight2 {
-            label = "NavRight2";
-            bindings = <
-&trans  &none    &HoldLeft LWIN F7   &kp F8             &kp F9              &none                    &none         &kp HOME      &kp UP                  &kp END        &none          &EscOrBase
-&trans  &kp F10  &HoldLeft LCTRL F4  &HoldLeft LALT F5  &HoldLeft LSHFT F6  &HoldFast LC(F12) F12    &kp LC(LEFT)  &kp LEFT      &kp DOWN                &kp RIGHT      &kp LC(RIGHT)  &kp ENTER
-&trans  &kp F11  &kp F1              &kp F2             &kp F3              &none                    &kp PG_UP     &select_left  &SelectWord_SelectLine  &select_right  &kp PG_DN      &kp ENTER
-                                     &kp LS(F3)         &kp F2              &DanceCaps               &DanceCaps    &kp SPACE     &none
+                                   &kp SQT  &lt 9 R  &DanceCaps    &SkLayer 8     &lt 6 SPACE  &DncTilCircunflexo
             >;
         };
 
@@ -739,56 +729,6 @@
             >;
 
             label = "Meh";
-        };
-
-        NavLeft2 {
-            label = "NavLeft2";
-            bindings = <
-&trans  &none  &HoldLeft HOME PG_UP  &kp UP               &HoldLeft END PAGE_DOWN  &none         &none                  &kp N7               &kp N8              &kp N9               &none  &EscOrBase
-&trans  &none  &HoldLeft LCTRL LEFT  &HoldLeft LALT DOWN  &HoldLeft LSHIFT RIGHT   &none         &none                  &HoldRight LSHFT N4  &HoldRight LALT N5  &HoldRight LCTRL N6  &none  &kp ENTER
-&trans  &none  &kp LC(PG_UP)         &mkp MB1             &kp LC(PG_DN)            &none         &none                  &kp N1               &kp N2              &kp N3               &none  &kp ENTER
-                                     &none                &kp SPACE                &DanceCaps    &HoldRight LWIN COMMA  &kp N0               &kp DOT
-            >;
-        };
-
-        Simbolos2 {
-            label = "Simbolos2";
-            bindings = <
-&trans  &none            &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET    &kp PLUS   &kp ASTERISK   &kp AMPERSAND     &kp GRAVE  &none
-&trans  &kp EXCLAMATION  &kp COLON    &kp BACKSLASH  &kp EQUAL   &none          &none        &kp MINUS  &kp SLASH      &kp PIPE          &kp UNDER  &none
-&trans  &kp LBRC         &kp LPAR     &kp RPAR       &kp RBRC    &none          &none        &kp LBKT   &kp LESS_THAN  &kp GREATER_THAN  &kp RBKT   &none
-                                      &none          &none       &DanceCaps     &SkLayer 14  &none      &none
-            >;
-        };
-
-        Atalhos2 {
-            label = "Atalhos2";
-            bindings = <
-&kp LG(N1)                       &kp LC(Y)  &HoldFast LC(F4) LC(W)     &kp LG(E)   &HoldFast LC(F5) F5  &mkp MB4                             &kp LS(LA(LC(Y)))  &kp C_MUTE  &kp C_PREVIOUS  &kp C_NEXT  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP
-&HoldFast LG(LS(LEFT)) LG(LEFT)  &kp LC(A)  &HoldFast LC(LS(S)) LC(S)  &kp LS(F3)  &kp F3               &HoldFast LG(LS(RIGHT)) LG(RIGHT)    &kp LS(LA(LC(H)))  &none       &CtrlKD         &none       &none             &kp C_VOLUME_DOWN
-&kp LG(N3)                       &kp LC(Z)  &kp LC(X)                  &kp LC(C)   &kp LC(V)            &mkp MB5                             &kp LS(LA(LC(N)))  &none       &none           &none       &none             &none
-                                                                       &none       &none                &none                                &kp LSHIFT         &kp SPACE   &none
-            >;
-        };
-
-        Janelas2 {
-            label = "Janelas2";
-            bindings = <
-&none    &none  &none                            &none                          &none                              &none         &none  &none      &none  &none  &none  &EscOrBase
-&kp ESC  &none  &HoldFast LG(LS(LEFT)) LG(LEFT)  &HoldFast LA(LS(TAB)) LA(TAB)  &HoldFast LG(LS(RIGHT)) LG(RIGHT)  &none         &none  &none      &none  &none  &none  &kp ENTER
-&none    &none  &kp LG(NUMBER_1)                 &kp LG(NUMBER_2)               &kp LG(NUMBER_3)                   &none         &none  &none      &none  &none  &none  &none
-                                                 &none                          &kp TAB                            &DanceCaps    &none  &kp SPACE  &none
-            >;
-        };
-
-        Keys2 {
-            label = "Keys2";
-            bindings = <
-&none       &NumFacil    &AlfaNumFacil    &AlfaNum1  &AlfaNumR  &AlfaNumT    &none  &none  &none  &none  &none  &none
-&EscOrBase  &NumMedio    &AlfaNumMedio    &vnc       &AlfaNumF  &AlfaNumG    &none  &none  &none  &none  &none  &none
-&EscOrBase  &NumDificil  &AlfaNumDificil  &none      &AlfaNumV  &AlfaNumB    &none  &none  &none  &none  &none  &none
-                                          &none      &none      &none        &none  &none  &none
-            >;
         };
 
         NavRight {
@@ -814,10 +754,10 @@
 
         Simbolos {
             bindings = <
-&trans  &none            &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET    &kp PLUS   &kp ASTERISK   &kp AMPERSAND     &kp GRAVE  &none
-&trans  &kp EXCLAMATION  &kp COLON    &kp BACKSLASH  &kp EQUAL   &none          &none        &kp MINUS  &kp SLASH      &kp PIPE          &kp UNDER  &none
-&trans  &kp LBRC         &kp LPAR     &kp RPAR       &kp RBRC    &none          &none        &kp LBKT   &kp LESS_THAN  &kp GREATER_THAN  &kp RBKT   &none
-                                      &none          &none       &DanceCaps     &SkLayer 14  &none      &none
+&trans  &none            &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET   &kp PLUS   &kp ASTERISK   &kp AMPERSAND     &kp GRAVE  &none
+&trans  &kp EXCLAMATION  &kp COLON    &kp BACKSLASH  &kp EQUAL   &none          &none       &kp MINUS  &kp SLASH      &kp PIPE          &kp UNDER  &none
+&trans  &kp LBRC         &kp LPAR     &kp RPAR       &kp RBRC    &none          &none       &kp LBKT   &kp LESS_THAN  &kp GREATER_THAN  &kp RBKT   &none
+                                      &none          &none       &DanceCaps     &SkLayer 8  &none      &none
             >;
 
             label = "Simbolos";
