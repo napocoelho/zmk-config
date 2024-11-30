@@ -599,13 +599,13 @@
         ENTER_1 {
             bindings = <&kp ENTER>;
             key-positions = <26 27>;
-            layers = <0 2 3 4>;
+            layers = <0 2 3 4 1>;
         };
 
         ENTER_2 {
             bindings = <&kp ENTER>;
             key-positions = <32 33>;
-            layers = <0 2 3 4>;
+            layers = <0 2 3 4 1>;
         };
 
         Cedilha {
