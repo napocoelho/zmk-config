@@ -667,6 +667,11 @@
             bindings = <&DncTilCircunflexo>;
             key-positions = <39 40>;
         };
+
+        CmbSpace {
+            bindings = <&kp SPACE>;
+            key-positions = <40 41>;
+        };
     };
 
     keymap {
@@ -767,7 +772,7 @@
 &trans  &none            &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET   &kp PLUS   &kp ASTERISK   &kp AMPERSAND     &kp GRAVE  &none
 &trans  &kp EXCLAMATION  &kp COLON    &kp BACKSLASH  &kp EQUAL   &none          &none       &kp MINUS  &kp SLASH      &kp PIPE          &kp UNDER  &none
 &trans  &kp LBRC         &kp LPAR     &kp RPAR       &kp RBRC    &none          &none       &kp LBKT   &kp LESS_THAN  &kp GREATER_THAN  &kp RBKT   &none
-                                      &none          &none       &DanceCaps     &SkLayer 8  &none      &none
+                                      &none          &none       &DanceCaps     &SkLayer 8  &kp SPACE  &none
             >;
 
             label = "Simbolos";
