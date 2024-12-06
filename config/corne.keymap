@@ -485,14 +485,14 @@
             key-positions = <5 4>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
-            layers = <0 8 2 3 4>;
+            layers = <0 8 3 4 5>;
         };
 
         EnterDown {
             bindings = <&Enter_Abaixo>;
             key-positions = <6 7>;
             timeout-ms = <30>;
-            layers = <0 8 2 3 4>;
+            layers = <0 8 3 4 5>;
             require-prior-idle-ms = <300>;
         };
 
@@ -599,13 +599,13 @@
         ENTER_1 {
             bindings = <&kp ENTER>;
             key-positions = <26 27>;
-            layers = <0 2 3 4 1 5>;
+            layers = <0 3 4 5 1 2>;
         };
 
         ENTER_2 {
             bindings = <&kp ENTER>;
             key-positions = <32 33>;
-            layers = <0 2 3 4 1 5>;
+            layers = <0 3 4 5 1 2>;
         };
 
         Cedilha {
@@ -704,6 +704,16 @@
             >;
         };
 
+        Canary2 {
+            label = "Canary2";
+            bindings = <
+&none       &HoldLayer 13 W  &HoldLeft LGUI L   &kp M             &kp P              &kp B         &kp Z       &kp F                &kp O                  &kp U               &kp SINGLE_QUOTE          &mo 11
+&EscOrBase  &HoldLayer 8 C   &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp Y       &HoldRight LSHIFT N  &HoldRight LALT E      &HoldRight LCTRL A  &HoldLayer 8 I            &kp ENTER
+&kp MINUS   &HoldLayer 12 Q  &kp J              &kp V             &HoldLeft LCTRL D  &kp K         &kp X       &HoldRight LCTRL H   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &kp SEMICOLON
+                                                &lt 7 TAB         &lt 10 SQT         &DanceCaps    &SkLayer 9  &lt 7 SPACE          &DncTilCircunflexo
+            >;
+        };
+
         Colemak {
             bindings = <
 &none       &HoldLayer 13 Q  &HoldLeft LGUI W   &kp F             &kp P              &kp B         &kp J       &kp L        &kp U                  &kp Y              &kp SINGLE_QUOTE          &none
@@ -732,16 +742,6 @@
 &EscOrBase  &HoldLayer 8 D  &kp S  &kp N    &kp T     &kp V         &kp K          &kp I        &kp E                  &kp A              &HoldLayer 8 H            &kp ENTER
 &kp MINUS   &kp C           &kp G  &kp M    &kp B     &kp W         &kp LS(QMARK)  &kp Y        &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &kp X
                                    &kp SQT  &lt 10 R  &DanceCaps    &SkLayer 9     &lt 7 SPACE  &DncTilCircunflexo
-            >;
-        };
-
-        Canary2 {
-            label = "Canary2";
-            bindings = <
-&none       &HoldLayer 13 W  &HoldLeft LGUI L   &kp M             &kp P              &kp B         &kp Z       &kp F                &kp O                  &kp U               &kp SINGLE_QUOTE          &mo 11
-&EscOrBase  &HoldLayer 8 C   &HoldLeft LCTRL R  &HoldLeft LALT S  &HoldLeft LSHFT T  &kp G         &kp Y       &HoldRight LSHIFT N  &HoldRight LALT E      &HoldRight LCTRL A  &HoldLayer 8 I            &kp ENTER
-&kp MINUS   &HoldLayer 12 Q  &kp J              &kp V             &HoldLeft LCTRL D  &kp K         &kp X       &HoldRight LCTRL H   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &kp SEMICOLON
-                                                &lt 7 TAB         &lt 10 SQT         &DanceCaps    &SkLayer 9  &lt 7 SPACE          &DncTilCircunflexo
             >;
         };
 
@@ -801,7 +801,7 @@
 
         Config {
             bindings = <
-&out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &bt BT_CLR_ALL    &none        &to 5  &to 1  &to 3  &to 2  &none
+&out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &bt BT_CLR_ALL    &none        &to 2  &to 1  &to 4  &to 3  &none
 &EscOrBase    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &none        &none  &none  &none  &none  &none
 &EscOrBase    &none         &none         &none         &none         &bootloader       &bootloader  &none  &none  &none  &none  &none
                                           &none         &none         &none             &none        &none  &none
