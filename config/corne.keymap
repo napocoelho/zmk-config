@@ -814,10 +814,10 @@
 
         Janelas {
             bindings = <
-&none    &none  &none                            &none                          &none                              &none         &none  &none      &none  &none  &none  &EscOrBase
-&kp ESC  &none  &HoldFast LG(LS(LEFT)) LG(LEFT)  &HoldFast LA(LS(TAB)) LA(TAB)  &HoldFast LG(LS(RIGHT)) LG(RIGHT)  &none         &none  &none      &none  &none  &none  &kp ENTER
-&none    &none  &kp LG(NUMBER_1)                 &kp LG(NUMBER_2)               &kp LG(NUMBER_3)                   &none         &none  &none      &none  &none  &none  &none
-                                                 &none                          &kp TAB                            &DanceCaps    &none  &kp SPACE  &none
+&none    &none  &none                            &none                          &none                              &none                &none  &none      &none  &none  &none  &EscOrBase
+&kp ESC  &none  &HoldFast LG(LS(LEFT)) LG(LEFT)  &HoldFast LA(LS(TAB)) LA(TAB)  &HoldFast LG(LS(RIGHT)) LG(RIGHT)  &none                &none  &none      &none  &none  &none  &kp ENTER
+&none    &none  &kp LG(NUMBER_1)                 &kp LG(NUMBER_2)               &kp LG(NUMBER_3)                   &none                &none  &none      &none  &none  &none  &none
+                                                 &none                          &kp LG(LC(LEFT))                   &kp LG(LC(RIGHT))    &none  &kp SPACE  &none
             >;
 
             label = "Janelas";
