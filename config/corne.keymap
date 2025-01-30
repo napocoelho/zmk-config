@@ -621,11 +621,6 @@
             key-positions = <1 13>;
         };
 
-        ESC_1 {
-            bindings = <&kp ESC>;
-            key-positions = <3 2>;
-        };
-
         PontoVirgula {
             bindings = <&kp LC(LS(SEMICOLON))>;
             key-positions = <32 20>;
