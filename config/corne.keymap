@@ -478,7 +478,7 @@
 
         PrintScreen {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <12 17>;
+            key-positions = <0 5>;
             timeout-ms = <50>;
             require-prior-idle-ms = <300>;
         };
@@ -508,21 +508,21 @@
 
         Delete1 {
             bindings = <&kp DEL>;
-            key-positions = <27 28>;
+            key-positions = <3 15>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
 
         Backspace1 {
             bindings = <&kp BACKSPACE>;
-            key-positions = <25 26>;
+            key-positions = <2 14>;
             timeout-ms = <75>;
             require-prior-idle-ms = <300>;
         };
 
         Backspace2 {
             bindings = <&kp BACKSPACE>;
-            key-positions = <31 32>;
+            key-positions = <8 20>;
             timeout-ms = <30>;
             require-prior-idle-ms = <300>;
         };
@@ -545,13 +545,13 @@
 
         PreviousTab {
             bindings = <&kp LC(PG_UP)>;
-            key-positions = <3 14>;
+            key-positions = <26 15>;
             timeout-ms = <30>;
         };
 
         NextTab {
             bindings = <&kp LC(PG_DN)>;
-            key-positions = <3 16>;
+            key-positions = <15 28>;
             timeout-ms = <30>;
         };
 
@@ -584,19 +584,14 @@
             layers = <11>;
         };
 
-        ESC_2 {
-            bindings = <&kp ESC>;
-            key-positions = <1 13>;
-        };
-
         SuperDel {
             bindings = <&kp LC(DEL)>;
-            key-positions = <28 26>;
+            key-positions = <4 16>;
         };
 
         SuperBackspace {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <31 33>;
+            key-positions = <7 19>;
         };
 
         ENTER_1 {
@@ -616,26 +611,6 @@
             key-positions = <5 17>;
         };
 
-        vEnter1 {
-            bindings = <&kp ENTER>;
-            key-positions = <2 14>;
-        };
-
-        vEnter2 {
-            bindings = <&kp ENTER>;
-            key-positions = <21 9>;
-        };
-
-        vDel {
-            bindings = <&kp DEL>;
-            key-positions = <3 15>;
-        };
-
-        vCtrlDel {
-            bindings = <&kp LC(DEL)>;
-            key-positions = <4 16>;
-        };
-
         vBckspce {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 20>;
@@ -643,12 +618,7 @@
 
         vCtrlBckspce {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <7 19>;
-        };
-
-        vLeftBkspce {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <13 25>;
+            key-positions = <1 13>;
         };
 
         ESC_1 {
