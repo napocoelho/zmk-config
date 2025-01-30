@@ -658,10 +658,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&StickyLongoKp LWIN   &lt 14 Q         &HoldLeft LWIN W   &kp E             &kp R                &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &mo 12
-&StickyLongoKp LCTRL  &HoldLayer 9 A   &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F   &HoldLayer 8 G    &HoldLayer 8 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 9 APOSTROPHE   &kp ENTER
-&DanceMouseLayers     &HoldLayer 13 Z  &kp X              &kp C             &HoldLeft LCTRL V    &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &kp SEMICOLON
-                                                          &lt 8 TAB         &lt 11 SINGLE_QUOTE  &DanceCaps        &SkLayer 10     &lt 8 SPACE          &DncTilCircunflexo
+&StickyLongoKp LWIN   &lt 14 Q         &HoldLeft LWIN W   &kp E             &kp R               &kp T             &kp Y           &kp U                &kp I                  &HoldRight LWIN O   &kp P                     &mo 12
+&StickyLongoKp LCTRL  &HoldLayer 9 A   &HoldLeft LCTRL S  &HoldLeft LALT D  &HoldLeft LSHIFT F  &HoldLayer 8 G    &HoldLayer 8 H  &HoldRight LSHIFT J  &HoldRight LALT K      &HoldRight LCTRL L  &HoldLayer 9 APOSTROPHE   &kp ENTER
+&DanceMouseLayers     &HoldLayer 13 Z  &kp X              &kp C             &HoldLeft LCTRL V   &kp B             &kp N           &HoldRight LCTRL M   &Virgula_PontoVirgula  &Ponto_DoisPontos   &Interrogacao_Exclamacao  &kp SEMICOLON
+                                                          &lt 8 ESC         &lt 11 TAB          &DanceCaps        &SkLayer 10     &lt 8 SPACE          &DncTilCircunflexo
             >;
 
             label = "Querty";
