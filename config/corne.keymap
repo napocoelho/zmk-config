@@ -640,6 +640,11 @@
             bindings = <&kp SPACE>;
             key-positions = <40 41>;
         };
+
+        OneHanded {
+            bindings = <&tog 6>;
+            key-positions = <36 37 38>;
+        };
     };
 
     keymap {
