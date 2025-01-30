@@ -859,10 +859,10 @@
 
         OneHanded_B {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp P                     &kp O              &kp I                  &kp U  &kp Y             &none  &none  &none  &none  &none  &none
+&none  &kp SQT                   &kp L              &kp K                  &kp J  &kp H             &none  &none  &none  &none  &none  &none
+&none  &Interrogacao_Exclamacao  &Ponto_DoisPontos  &Virgula_PontoVirgula  &kp M  &kp N             &none  &none  &none  &none  &none  &none
+                                                    &none                  &none  &kp LEFT_SHIFT    &none  &none  &none
             >;
 
             label = "OneHanded_B";
