@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -644,6 +645,11 @@
         OneHanded {
             bindings = <&tog 6>;
             key-positions = <36 37 38>;
+        };
+
+        V_key {
+            bindings = <&kt V>;
+            key-positions = <28 27>;
         };
     };
 
