@@ -525,22 +525,6 @@
             require-prior-idle-ms = <300>;
         };
 
-        EnterUp {
-            bindings = <&Enter_Acima>;
-            key-positions = <5 4>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <300>;
-            layers = <0 10 3 4 5>;
-        };
-
-        EnterDown {
-            bindings = <&Enter_Abaixo>;
-            key-positions = <6 7>;
-            timeout-ms = <30>;
-            layers = <0 10 3 4 5>;
-            require-prior-idle-ms = <300>;
-        };
-
         Insert {
             bindings = <&kp INSERT>;
             key-positions = <23 18>;
@@ -639,7 +623,7 @@
         ENTER_1 {
             bindings = <&kp ENTER>;
             key-positions = <26 27>;
-            layers = <0 3 4 5 1 2>;
+            layers = <0 3 4 5 1 2 6 7>;
         };
 
         ENTER_2 {
