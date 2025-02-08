@@ -277,6 +277,41 @@
             bindings = <&kp S &kp C>;
             label = "SC";
         };
+
+        TH: TH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H>;
+            label = "TH";
+        };
+
+        LH: LH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp H>;
+            label = "LH";
+        };
+
+        CH: CH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H>;
+            label = "CH";
+        };
+
+        NH: NH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp H>;
+            label = "NH";
+        };
+
+        SH: SH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp H>;
+            label = "SH";
+        };
     };
 
     behaviors {
@@ -726,7 +761,7 @@
 
         OneHanded_A {
             bindings = <
-&kp H  &kp L  &kp O  &kp U       &kp R        &kp T                   &kp Y   &kp U   &kp I                  &kp O              &kp P                     &trans
+&kp H  &kp L  &kp O  &kp U       &kp R        &HoldLeft T T           &kp Y   &kp U   &kp I                  &kp O              &kp P                     &trans
 &kp S  &kp I  &kp A  &kp E       &kp N        &kp D                   &kp H   &kp J   &kp K                  &kp L              &kp SQT                   &trans
 &kp Q  &kp V  &kp F  &kp C       &kp M        &kp P                   &kp N   &kp M   &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &none
                      &lt 10 ESC  &lt 7 SPACE  &StickyKp LEFT_SHIFT    &trans  &trans  &trans
