@@ -887,10 +887,10 @@
 
         OneHandSimbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans         &kp LS(AT)     &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp N6  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(EXCL)   &kp LS(COLON)  &kp BSLH       &kp EQUAL     &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(UNDER)  &kp LS(PIPE)   &kp FSLH       &kp MINUS     &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans         &trans        &trans           &trans  &trans  &trans
             >;
         };
     };
