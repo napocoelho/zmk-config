@@ -875,5 +875,14 @@
 
             label = "Hyper";
         };
+
+        OneHandNav {
+            bindings = <
+&trans  &trans                    &kp HOME   &kp UP                  &kp END            &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &HoldLeft LCTRL LC(LEFT)  &kp LEFT   &kp DOWN                &kp RIGHT          &kp LC(RIGHT)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                    &kp PG_DN  &SelectWord_SelectLine  &kp LS(LC(PG_UP))  &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                                             &trans                  &trans             &trans           &trans  &trans  &trans
+            >;
+        };
     };
 };
