@@ -245,7 +245,7 @@
         CtrlKD: M_CtrlKD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(K) &kp LC(D)>;
+            bindings = <&kp LC(K) &kp LC(D) &kp LC(K) &kp LC(E)>;
             label = "M_CTRLKD";
         };
 
@@ -315,8 +315,7 @@
         QU: QU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp Q &kp U>, <&macro_press>;
-
+            bindings = <&kp Q &kp U>;
             label = "QU";
         };
     };
