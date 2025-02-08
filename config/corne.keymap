@@ -688,7 +688,7 @@
             key-positions = <36 37 38>;
         };
 
-        Space {
+        CmbSpace2 {
             bindings = <&kp SPACE>;
             key-positions = <26 28>;
             layers = <6>;
