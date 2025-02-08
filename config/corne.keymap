@@ -772,7 +772,7 @@
 &kp X  &kp LS(LBRC)              &kp LS(LPAR)       &kp LS(RPAR)           &kp LS(RBRC)  &none             &none  &none  &none  &none  &none  &none
 &kp Z  &kp APOS                  &kp J              &kp B                  &kp G         &kp Y             &none  &none  &none  &none  &none  &none
 &kp Q  &Interrogacao_Exclamacao  &Ponto_DoisPontos  &Virgula_PontoVirgula  &kp W         &kp K             &none  &none  &none  &none  &none  &none
-                                                    &none                  &none         &kp LEFT_SHIFT    &none  &none  &none
+                                                    &none                  &mo 17        &kp LEFT_SHIFT    &none  &none  &none
             >;
 
             label = "OneHanded_B";
@@ -882,6 +882,15 @@
 &trans  &HoldLeft LCTRL LC(LEFT)  &kp LEFT   &kp DOWN                &kp RIGHT          &kp LC(RIGHT)    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans                    &kp PG_DN  &SelectWord_SelectLine  &kp LS(LC(PG_UP))  &trans           &trans  &trans  &trans  &trans  &trans  &trans
                                              &trans                  &trans             &trans           &trans  &trans  &trans
+            >;
+        };
+
+        OneHandSimbols {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
