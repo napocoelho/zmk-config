@@ -652,16 +652,6 @@
             key-positions = <32 20>;
         };
 
-        CmbPolegar2 {
-            bindings = <&HoldLayer 12 SINGLE_QUOTE>;
-            key-positions = <38 37>;
-        };
-
-        CmbPolegar3 {
-            bindings = <&DncTilCircunflexo>;
-            key-positions = <39 40>;
-        };
-
         CmbSpace {
             bindings = <&kp SPACE>;
             key-positions = <37 38>;
