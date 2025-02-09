@@ -789,7 +789,7 @@
 &trans  &trans                    &kp HOME   &kp UP                  &kp END            &trans           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &HoldLeft LCTRL LC(LEFT)  &kp LEFT   &kp DOWN                &kp RIGHT          &kp LC(RIGHT)    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans                    &kp PG_DN  &SelectWord_SelectLine  &kp LS(LC(PG_UP))  &trans           &trans  &trans  &trans  &trans  &trans  &trans
-                                             &mo 9                   &none              &mo 10           &trans  &trans  &trans
+                                             &trans                  &trans             &trans           &trans  &trans  &trans
             >;
         };
 
@@ -798,7 +798,7 @@
 &trans  &none                 &none                     &none                  &none              &none     &kp N6  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LS(LEFT_BRACE)    &kp LS(LEFT_PARENTHESIS)  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LS(LEFT_BRACKET)  &kp LS(LESS_THAN)         &kp GREATER_THAN       &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                        &none                  &mo 8              &mo 10    &trans  &trans  &trans
+                                                        &none                  &trans             &trans    &trans  &trans  &trans
             >;
 
             label = "OneHandSimbols1";
@@ -809,7 +809,7 @@
 &trans      &none          &kp LS(AMPS)   &kp LS(STAR)  &kp LS(PLUS)  &trans        &trans   &trans  &trans  &trans  &trans  &trans
 &kp LS(LT)  &kp LS(EXCL)   &kp LS(COLON)  &kp BSLH      &kp EQUAL     &kp LS(GT)    &kp DOT  &trans  &trans  &trans  &trans  &trans
 &trans      &kp LS(UNDER)  &kp LS(PIPE)   &kp FSLH      &kp MINUS     &trans        &trans   &trans  &trans  &trans  &trans  &trans
-                                          &mo 9         &mo 8         &none         &trans   &trans  &trans
+                                          &trans        &trans        &none         &trans   &trans  &trans
             >;
         };
 
