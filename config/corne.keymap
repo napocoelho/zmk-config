@@ -765,10 +765,10 @@
 
         OneHanded_A {
             bindings = <
-&kp D  &kp V    &kp O              &kp U                 &kp R                   &kp T         &kp Y   &kp U   &kp I                  &kp O              &kp P                     &trans
-&kp S  &lt 7 I  &HoldLeft LCTRL A  &HoldLeft LEFT_ALT E  &HoldLeft LEFT_SHIFT N  &kp H         &kp H   &kp J   &kp K                  &kp L              &kp SQT                   &trans
-&kp Q  &kp L    &kp F              &kp C                 &kp M                   &lt 12 P      &kp N   &kp M   &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &none
-                                   &lt 8 ESC             &SkLayer 7              &DanceCaps    &trans  &trans  &trans
+&kp D  &kp V    &HoldLeft LEFT_WIN O  &kp U                 &kp R                   &kp T         &kp Y   &kp U   &kp I                  &kp O              &kp P                     &trans
+&kp S  &lt 7 I  &HoldLeft LCTRL A     &HoldLeft LEFT_ALT E  &HoldLeft LEFT_SHIFT N  &kp H         &kp H   &kp J   &kp K                  &kp L              &kp SQT                   &trans
+&kp Q  &kp L    &kp F                 &kp C                 &HoldLeft LCTRL M       &lt 12 P      &kp N   &kp M   &Virgula_PontoVirgula  &Ponto_DoisPontos  &Interrogacao_Exclamacao  &none
+                                      &lt 8 ESC             &SkLayer 7              &DanceCaps    &trans  &trans  &trans
             >;
 
             label = "OneHanded_A";
@@ -776,10 +776,10 @@
 
         OneHanded_B {
             bindings = <
-&none      &none                     &kp Z              &kp X                  &kp Y  &none     &none  &none  &none  &none  &none  &none
-&kp GRAVE  &kp APOS                  &kp B              &kp K                  &kp J  &kp G     &none  &none  &none  &none  &none  &none
-&none      &Interrogacao_Exclamacao  &Ponto_DoisPontos  &Virgula_PontoVirgula  &kp W  &none     &none  &none  &none  &none  &none  &none
-                                                        &mo 9                  &mo 8  &mo 10    &none  &none  &none
+&none      &none                     &HoldLeft LWIN Z   &kp X                  &kp Y               &none     &none  &none  &none  &none  &none  &none
+&kp GRAVE  &kp APOS                  &HoldLeft LCTRL B  &HoldLeft LALT K       &HoldLeft LSHIFT J  &kp G     &none  &none  &none  &none  &none  &none
+&none      &Interrogacao_Exclamacao  &Ponto_DoisPontos  &Virgula_PontoVirgula  &HoldLeft LCTRL W   &none     &none  &none  &none  &none  &none  &none
+                                                        &mo 9                  &mo 8               &mo 10    &none  &none  &none
             >;
 
             label = "OneHanded_B";
