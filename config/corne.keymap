@@ -683,6 +683,12 @@
             key-positions = <0 12>;
             layers = <6>;
         };
+
+        CmbSpace3 {
+            bindings = <&kp SPACE>;
+            key-positions = <40 41 14 15 16>;
+            layers = <6 7>;
+        };
     };
 
     keymap {
