@@ -686,7 +686,7 @@
 
         CmbSpace3 {
             bindings = <&kp SPACE>;
-            key-positions = <40 41 14 15 16>;
+            key-positions = <14 15 16>;
             layers = <6 7>;
         };
     };
