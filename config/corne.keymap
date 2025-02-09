@@ -893,10 +893,10 @@
 
         OneHandSimbols1 {
             bindings = <
-&trans  &kp EXCLAMATION  &kp LS(AT)     &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp N6  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(EXCL)     &kp LS(COLON)  &kp BSLH       &kp EQUAL     &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(UNDER)    &kp LS(PIPE)   &kp FSLH       &kp MINUS     &trans           &trans  &trans  &trans  &trans  &trans  &trans
-                                        &none          &mo 17        &mo 19           &trans  &trans  &trans
+&trans  &none                 &none                     &none                  &none              &none     &kp N6  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LEFT_BRACE)    &kp LS(LEFT_PARENTHESIS)  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LEFT_BRACKET)  &kp LS(LESS_THAN)         &kp GREATER_THAN       &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                                        &none                  &mo 17             &mo 19    &trans  &trans  &trans
             >;
 
             label = "OneHandSimbols1";
