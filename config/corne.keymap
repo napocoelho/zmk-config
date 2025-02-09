@@ -775,8 +775,8 @@
 
         OneHanded_B {
             bindings = <
-&none      &kp Z                     &kp X              &kp K                  &kp Y  &none     &none  &none  &none  &none  &none  &none
-&kp GRAVE  &kp APOS                  &kp J              &kp B                  &kp G  &none     &none  &none  &none  &none  &none  &none
+&none      &none                     &kp Z              &kp X                  &kp Y  &none     &none  &none  &none  &none  &none  &none
+&kp GRAVE  &kp APOS                  &kp B              &kp K                  &kp J  &kp G     &none  &none  &none  &none  &none  &none
 &none      &Interrogacao_Exclamacao  &Ponto_DoisPontos  &Virgula_PontoVirgula  &kp W  &none     &none  &none  &none  &none  &none  &none
                                                         &mo 9                  &mo 8  &mo 10    &none  &none  &none
             >;
