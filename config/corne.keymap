@@ -893,10 +893,10 @@
 
         OneHandSimbols1 {
             bindings = <
-&trans  &trans         &kp LS(AT)     &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp N6  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(EXCL)   &kp LS(COLON)  &kp BSLH       &kp EQUAL     &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(UNDER)  &kp LS(PIPE)   &kp FSLH       &kp MINUS     &trans           &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans         &trans        &trans           &trans  &trans  &trans
+&trans  &kp EXCLAMATION  &kp LS(AT)     &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp N6  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(EXCL)     &kp LS(COLON)  &kp BSLH       &kp EQUAL     &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(UNDER)    &kp LS(PIPE)   &kp FSLH       &kp MINUS     &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans         &trans        &mo 19           &trans  &trans  &trans
             >;
 
             label = "OneHandSimbols1";
@@ -904,10 +904,10 @@
 
         OneHandSimbols2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans      &none          &kp LS(AMPS)   &kp LS(STAR)  &kp LS(PLUS)  &trans        &trans   &trans  &trans  &trans  &trans  &trans
+&kp LS(LT)  &kp LS(EXCL)   &kp LS(COLON)  &kp BSLH      &kp EQUAL     &kp LS(GT)    &kp DOT  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LS(UNDER)  &kp LS(PIPE)   &kp FSLH      &kp MINUS     &trans        &trans   &trans  &trans  &trans  &trans  &trans
+                                          &mo 18        &trans        &trans        &trans   &trans  &trans
             >;
         };
     };
