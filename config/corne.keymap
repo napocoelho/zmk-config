@@ -622,13 +622,13 @@
 
         ENTER_1 {
             bindings = <&kp ENTER>;
-            key-positions = <26 27>;
+            key-positions = <14 15 16>;
             layers = <0 3 4 5 1 2 6 7>;
         };
 
         ENTER_2 {
             bindings = <&kp ENTER>;
-            key-positions = <32 33>;
+            key-positions = <19 20 21>;
             layers = <0 3 4 5 1 2>;
         };
 
@@ -665,7 +665,7 @@
 
         CmbSpace2 {
             bindings = <&kp SPACE>;
-            key-positions = <26 28>;
+            key-positions = <26 28 27>;
             layers = <6>;
         };
 
@@ -677,8 +677,13 @@
 
         CmbSpace3 {
             bindings = <&kp SPACE>;
-            key-positions = <14 15 16>;
+            key-positions = <31 32 33>;
             layers = <6 7>;
+        };
+
+        Combo_ESC {
+            bindings = <&kp ESC>;
+            key-positions = <16 15 14 13>;
         };
     };
 
